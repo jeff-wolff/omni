@@ -8,10 +8,38 @@ body {
     margin: 0;
 }
 .container {
-    border: 6px solid red;
+    /* border: 6px solid red; */
     max-width: 1280px;
     margin-top: 1rem;
     margin-right: auto;
     margin-bottom: 1rem;
     margin-left: auto;
+}
+.column {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media (min-width: 540px) {
+    .column {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+@media (min-width: 769px) {
+    .column {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+@media (min-width: 1025px) {
+    .column {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+@media (min-width: 1440px) {
+    .column {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
 }

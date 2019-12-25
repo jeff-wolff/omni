@@ -14,7 +14,6 @@
   --scale5: calc(var(--scale4) * var(--int));
   --scale6: calc(var(--scale5) * var(--int));
 }
-
 html {
     font-family: Arial;
     font-size: var(--scale-1);
@@ -22,36 +21,46 @@ html {
 }
 @media (min-width: 540px) {
     html {
-        font-size: var(--scale1);
+        font-size: var(--scale0);
     }
 }
 @media (min-width: 769px) {
     html {
-        font-size: var(--scale2);
+        font-size: var(--scale1);
     }
 }
 @media (min-width: 1025px) {
     html {
-        font-size: var(--scale3);
+        font-size: var(--scale2);
     }
 }
 h1,h2,h3,h4,h5,h6 {
-    /* margin: 0; */
-    line-height: 1.5;
+    margin: 0;
+    line-height: 1.1;
 }
-/* @media (min-width: 1025px) {
-    h1,h2,h3,h4,h5,h6 {
-        margin-top: 2.5rem;
-        margin-bottom: 1rem;
-    }
-    h1,h2 {
-        margin-top: 4rem;
-    }
-    h1+h1,h1+h2,
-    h2+h1,h2+h2,
-    h3+h1,h3+h2,
-    h4+h1,h4+h2,
-    h5+h1,h5+h2{
-        margin-top: 0;
-    }
-} */
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child),
+h4:not(:first-child),
+h5:not(:first-child),
+h6:not(:first-child) {
+    margin-top: 2rem;
+}
+h1 {
+    font-size: var(--scale4);
+}
+h2 {
+    font-size: var(--scale3);
+}
+h3 {
+    font-size: var(--scale2);
+}
+h4 {
+    font-size: var(--scale1);
+}
+h5 {
+    font-size: var(--scale0);
+}
+h6 {
+    font-size: var(--scale-1);
+}
