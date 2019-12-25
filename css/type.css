@@ -45,6 +45,17 @@ html {
     -webkit-font-smoothing:  antialiased;
     font-family: 'Inter';
 }
+/* Font Scale */
+/* @media (min-width: 769px) {
+    html {
+        font-size: 112.5%;
+    }
+}
+@media (min-width: 1920px) {
+    html {
+        font-size: 125%;
+    }
+} */
 /* Font Size */
 body {
     font-size: var(--body-font-size);
@@ -102,42 +113,7 @@ h1,h2,h3,h4,h5,h6 {
 .t-display-s, .t-display, .t-display-m, .t-display-l {
     font-weight: var(--display-font-weight);
 }
-/* Font Scale */
-@media (min-width: 1920px) {
-    p, ul, ol, dl {
-        font-size: calc(var(--p-font-size) * var(--type-scale));
-    }
-    .t-caption {
-        font-size: calc(var(--caption-font-size) * var(--type-scale));
-    }
-    .t-display-l {
-        font-size: calc(var(--display-l-font-size) * var(--type-scale));
-    }
-    .t-display, .t-display-m {
-        font-size: calc(var(--display-m-font-size) * var(--type-scale));
-    }
-    .t-display-s {
-        font-size: calc(var(--display-s-font-size) * var(--type-scale));
-    }
-    h1 {
-        font-size: calc(var(--h1-font-size) * var(--type-scale));
-    }
-    h2 {
-        font-size: calc(var(--h2-font-size) * var(--type-scale));
-    }
-    h3 {
-        font-size: calc(var(--h3-font-size) * var(--type-scale));
-    }
-    h4 {
-        font-size: calc(var(--h4-font-size) * var(--type-scale));
-    }
-    h5 {
-        font-size: calc(var(--h5-font-size) * var(--type-scale));
-    }
-    h6 {
-        font-size: calc(var(--h6-font-size) * var(--type-scale));
-    }
-}
+
 
 /* h1:not(:first-child),
 h2:not(:first-child),
