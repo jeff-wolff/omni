@@ -5,6 +5,7 @@
  @import url('https://rsms.me/inter/inter.css');
 
 :root {
+  --type-scale: 1.5;
   /* Small */
   --small-font-size: 0.75rem; /* 12px */
   --small-line-height: 1.5;
@@ -50,11 +51,11 @@ p, ul, ol, dl {
     line-height: var(--p-line-height);
 }
 
-/* @media (min-width: 769px) {
+@media (min-width: 1920px) {
     p, ul, ol, dl {
-        font-size: calc(var(--p-font-size) * 1.25);
+        font-size: calc(var(--p-font-size) * var(--type-scale));
     }
-} */
+}
 
 /* h1:not(:first-child),
 h2:not(:first-child),
@@ -105,37 +106,36 @@ h6 {
     line-height: var(--h6-line-height);
 }
 
-/* @media (min-width: 769px) {
+@media (min-width: 1920px) {
+    .t-caption {
+        font-size: calc(var(--caption-font-size) * var(--type-scale));
+    }
     .t-display-l {
-        font-size: calc(var(--display-l-font-size) * 1.25);
+        font-size: calc(var(--display-l-font-size) * var(--type-scale));
     }
     .t-display, .t-display-m {
-        font-size: calc(var(--display-m-font-size) * 1.25);
+        font-size: calc(var(--display-m-font-size) * var(--type-scale));
     }
     .t-display-s {
-        font-size: calc(var(--display-s-font-size) * 1.25);
+        font-size: calc(var(--display-s-font-size) * var(--type-scale));
     }
     h1 {
-        font-size: calc(var(--h1-font-size) * 1.25);
+        font-size: calc(var(--h1-font-size) * var(--type-scale));
     }
     h2 {
-        font-size: calc(var(--h2-font-size) * 1.25);
+        font-size: calc(var(--h2-font-size) * var(--type-scale));
     }
     h3 {
-        font-size: calc(var(--h3-font-size) * 1.25);
+        font-size: calc(var(--h3-font-size) * var(--type-scale));
     }
     h4 {
-        font-size: calc(var(--h4-font-size) * 1.25);
+        font-size: calc(var(--h4-font-size) * var(--type-scale));
     }
     h5 {
-        font-size: calc(var(--h5-font-size) * 1.25);
+        font-size: calc(var(--h5-font-size) * var(--type-scale));
     }
     h6 {
-        font-size: calc(var(--h6-font-size) * 1.25);
+        font-size: calc(var(--h6-font-size) * var(--type-scale));
     }
-}
- */
-@media (min-width: 1025px) {
-
 }
 
