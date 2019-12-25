@@ -1,21 +1,38 @@
-body {
+/* 
+ Type Scale:
+ https://24ways.org/2019/a-modern-typographic-scale/ 
+ */
+:root {
+  --int: 1.333333;
+  --scale0: 1rem;
+  --scale-1: calc(var(--scale0) / var(--int));
+  --scale-2: calc(var(--scale-1) / var(--int));
+  --scale1: calc(var(--scale0) * var(--int));
+  --scale2: calc(var(--scale1) * var(--int));
+  --scale3: calc(var(--scale2) * var(--int));
+  --scale4: calc(var(--scale3) * var(--int));
+  --scale5: calc(var(--scale4) * var(--int));
+  --scale6: calc(var(--scale5) * var(--int));
+}
+
+html {
     font-family: Arial;
-    font-size: 75%;
+    font-size: var(--scale-1);
     line-height: 1.5;
 }
 @media (min-width: 540px) {
-    body {
-        font-size: 125%;
+    html {
+        font-size: var(--scale1);
     }
 }
 @media (min-width: 769px) {
-    body {
-        font-size: 150%;
+    html {
+        font-size: var(--scale2);
     }
 }
 @media (min-width: 1025px) {
-    body {
-        font-size: 175%;
+    html {
+        font-size: var(--scale3);
     }
 }
 h1,h2,h3,h4,h5,h6 {
