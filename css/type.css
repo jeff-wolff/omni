@@ -19,13 +19,13 @@
   --p-line-height: 1.44444;
   /* Heading 3 */
   --h3-font-size: 1.375rem; /* 22px  */
-  --h3-line-height: 1.090909;
+  --h3-line-height: 1.13636364;
   /* Heading 2 */
   --h2-font-size: 1.75rem; /* 28px */
-  --h2-line-height: 1.071429; 
+  --h2-line-height: 1.14285714
   /* Heading 1 */
   --h1-font-size: 2.375rem; /* 38px */
-  --h1-line-height: 1.052632; 
+  --h1-line-height: 1.13157895; 
   /* Display S */
   --display-s-font-size: 2rem; /* 32px */
   --display-s-line-height: 1.125;
