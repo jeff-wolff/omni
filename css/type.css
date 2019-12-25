@@ -2,126 +2,105 @@
  Type Scale:
  https://24ways.org/2019/a-modern-typographic-scale/ 
  */
+ @import url('https://rsms.me/inter/inter.css');
+
 :root {
-  --int: 1.25;
-  --scale0: 1rem;
-  --scale-1: calc(var(--scale0) / var(--int));
-  --scale1: calc(var(--scale0) * var(--int));
-  --scale2: calc(var(--scale1) * var(--int));
-  --scale3: calc(var(--scale2) * var(--int));
-  --scale4: calc(var(--scale3) * var(--int));
-  --scale5: calc(var(--scale4) * var(--int));
-  --scale6: calc(var(--scale5) * var(--int));
+  /* Small */
+  --small-font-size: 0.75rem; /* 12px */
+  --small-line-height: 1.5;
+  /* Caption */
+  --caption-font-size: 0.9375rem; /* 15px */
+  --caption-line-height: 1.066667;
+  /* Body */
+  --body-font-size: 1rem; /* 16px */
+  --body-line-height: 1.3125;
+  /* Paragraph */
+  --p-font-size: 1.125rem; /* 18px */
+  --p-line-height: 1.44444;
+  /* Heading 3 */
+  --h3-font-size: 1.375rem; /* 22px  */
+  --h3-line-height: 1.090909;
+  /* Heading 2 */
+  --h2-font-size: 1.75rem; /* 28px */
+  --h2-line-height: 1.071429; 
+  /* Heading 1 */
+  --h1-font-size: 2.375rem; /* 38px */
+  --h1-line-height: 1.052632; 
+  /* Display S */
+  --display-s-font-size: 2rem; /* 32px */
+  --display-s-line-height: 1.125;
+  /* Display M */
+  --display-m-font-size: 3rem; /* 48px */
+  --display-m-line-height: 1;
+  /* Display L */
+  --display-l-font-size: 4rem; /* 64px */
+  --display-l-line-height: 1;  
 }
+/* Mobile */
 html {
-    font-family: Arial;
-    font-size: var(--scale-1);
-    line-height: 1.5;
+    -webkit-font-smoothing:  antialiased;
+    font-family: 'Inter';
+}
+body {
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+}
+p, ul, ol, dl {
+    font-size: var(--p-font-size);
+    line-height: var(--p-line-height);
 }
 
-@media (min-width: 540px) {
-    html {
-        font-size: var(--scale0);
-    }
-}
-@media (min-width: 769px) {
-    html {
-        font-size: var(--scale1);
-    }
-}
-@media (min-width: 1025px) {
-    html {
-        font-size: var(--scale2);
-    }
-}
-h1,h2,h3,h4,h5,h6 {
-    margin: 0;
-    line-height: 1.1;
-}
-h4,h5,h6 {
-    line-height: 1.333333;
-}
-h1:not(:first-child),
+
+/* h1:not(:first-child),
 h2:not(:first-child),
 h3:not(:first-child),
 h4:not(:first-child),
 h5:not(:first-child),
 h6:not(:first-child) {
     margin-top: 2rem;
-}
+} */
 .t-display-l {
-    font-size: 5.25em;
+    font-size: var(--display-l-font-size);
+    line-height: var(--display-l-line-height);
 }
 .t-display, .t-display-m {
-    font-size: 4.25em;
+    font-size: var(--display-m-font-size);
+    line-height: var(--display-m-line-height);
 }
 .t-display-s {
-    font-size: 3.25em;
+    font-size: var(--display-s-font-size);
+    line-height: var(--display-s-line-height);
 }
 h1 {
-    font-size: 2.25em;
+    font-size: var(--h1-font-size);
+    line-height: var(--h1-line-height);
 }
 h2 {
-    font-size: 2em;
+    font-size: var(--h2-font-size);
+    line-height: var(--h2-line-height);
 }
 h3 {
-    font-size: 1.75em;
+    font-size: var(--h3-font-size);
+    line-height: var(--h3-line-height);
 }
 h4 {
-    font-size: 1.5em;
+    font-size: var(--h4-font-size);
+    line-height: var(--h4-line-height);
 }
 h5 {
-    font-size: 1.25em;
+    font-size: var(--h5-font-size);
+    line-height: var(--h5-line-height);
 }
 h6 {
-    font-size: 1em;
+    font-size: var(--h6-font-size);
+    line-height: var(--h6-line-height);
 }
 
-/* @media (min-width: 769px) {
-    .t-display {
-        font-size: var(--scale6);
-    }
-    h1 {
-        font-size: var(--scale5);
-    }
-    h2 {
-        font-size: var(--scale4);
-    }
-    h3 {
-        font-size: var(--scale3);
-    }
-    h4 {
-        font-size: var(--scale2);
-    }
-    h5 {
-        font-size: var(--scale1);
-    }
-    h6 {
-        font-size: var(--scale1);
-    }
-} */
-/* 
-@media (min-width: 1025px) {
-    .t-display {
-        font-size: var(--scale6);
-    }
-    h1 {
-        font-size: var(--scale5);
-    }
-    h2 {
-        font-size: var(--scale4);
-    }
-    h3 {
-        font-size: var(--scale3);
-    }
-    h4 {
-        font-size: var(--scale2);
-    }
-    h5 {
-        font-size: var(--scale2);
-    }
-    h6 {
-        font-size: var(--scale2);
-    }
+@media (min-width: 769px) {
+
 }
- */
+
+@media (min-width: 1025px) {
+
+}
+
