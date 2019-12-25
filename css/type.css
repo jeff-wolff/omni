@@ -3,10 +3,9 @@
  https://24ways.org/2019/a-modern-typographic-scale/ 
  */
 :root {
-  --int: 1.333333;
+  --int: 1.25;
   --scale0: 1rem;
   --scale-1: calc(var(--scale0) / var(--int));
-  --scale-2: calc(var(--scale-1) / var(--int));
   --scale1: calc(var(--scale0) * var(--int));
   --scale2: calc(var(--scale1) * var(--int));
   --scale3: calc(var(--scale2) * var(--int));
@@ -19,6 +18,7 @@ html {
     font-size: var(--scale-1);
     line-height: 1.5;
 }
+
 @media (min-width: 540px) {
     html {
         font-size: var(--scale0);
@@ -38,6 +38,9 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
     line-height: 1.1;
 }
+h4,h5,h6 {
+    line-height: 1.333333;
+}
 h1:not(:first-child),
 h2:not(:first-child),
 h3:not(:first-child),
@@ -46,21 +49,79 @@ h5:not(:first-child),
 h6:not(:first-child) {
     margin-top: 2rem;
 }
+.t-display-l {
+    font-size: 5.25em;
+}
+.t-display, .t-display-m {
+    font-size: 4.25em;
+}
+.t-display-s {
+    font-size: 3.25em;
+}
 h1 {
-    font-size: var(--scale4);
+    font-size: 2.25em;
 }
 h2 {
-    font-size: var(--scale3);
+    font-size: 2em;
 }
 h3 {
-    font-size: var(--scale2);
+    font-size: 1.75em;
 }
 h4 {
-    font-size: var(--scale1);
+    font-size: 1.5em;
 }
 h5 {
-    font-size: var(--scale0);
+    font-size: 1.25em;
 }
 h6 {
-    font-size: var(--scale-1);
+    font-size: 1em;
 }
+
+/* @media (min-width: 769px) {
+    .t-display {
+        font-size: var(--scale6);
+    }
+    h1 {
+        font-size: var(--scale5);
+    }
+    h2 {
+        font-size: var(--scale4);
+    }
+    h3 {
+        font-size: var(--scale3);
+    }
+    h4 {
+        font-size: var(--scale2);
+    }
+    h5 {
+        font-size: var(--scale1);
+    }
+    h6 {
+        font-size: var(--scale1);
+    }
+} */
+/* 
+@media (min-width: 1025px) {
+    .t-display {
+        font-size: var(--scale6);
+    }
+    h1 {
+        font-size: var(--scale5);
+    }
+    h2 {
+        font-size: var(--scale4);
+    }
+    h3 {
+        font-size: var(--scale3);
+    }
+    h4 {
+        font-size: var(--scale2);
+    }
+    h5 {
+        font-size: var(--scale2);
+    }
+    h6 {
+        font-size: var(--scale2);
+    }
+}
+ */
