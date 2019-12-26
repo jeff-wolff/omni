@@ -1,20 +1,20 @@
 /**
 XXS
-xxs: (min-width: 320px)
+xxs: (max-width: 320px)
 
 XS
-xs: (min-width: 320px) and (max-width: 579px)
 xs-up: (min-width: 320px)
+xs: (min-width: 320px) and (max-width: 579px)
 xs-down: (max-width: 579px)
 
 Small
-s: (min-width: 580px) and (max-width: 959px)
 s-up: (min-width: 580px)
+s: (min-width: 580px) and (max-width: 959px)
 s-down: (max-width: 959px)
 
 Medium
-m: (min-width: 960px) and (max-width: 1279px)
 m-up: (min-width: 960px)
+m: (min-width: 960px) and (max-width: 1279px)
 m-down: (max-width: 1279px)
 
 l-up: (min-width: 1280px)
