@@ -7,7 +7,13 @@
 /* Base */
 @import './base/_global.css';
 @import './base/_body.css';
+
+/* Primitives */
+@import './primitives/_buttons.css';
+@import './primitives/_links.css';
+@import './primitives/_list.css';
+@import './primitives/_formats.css';
+
 /* Typography */
 @import './typography/_headings.css';
 @import './typography/_paragraph.css';
-@import './typography/_list.css';
