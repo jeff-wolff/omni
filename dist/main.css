@@ -23,13 +23,51 @@ body {
     padding-right: 20px;
 }
 
-/* <= 320px */ /* >= 320px */ /* 320px - 579px */ /* <= 579px */ /* >= 580px */ /* 580px - 959px */ /* <= 959px */ /* >= 960px */ /* 960px - 1279px */ /* <= 1279px */ /* >= 1280px */ /* 1280px - 1679px */ /* <= 1679px */ /* >= 1680px */ /* 1680px - 1919px */ /* <= 1919px */ /* >= 1920px */ /* 768px - iPad */ /* 1024px - iPad Horizontal / iPad Pro */
+/**
+XXS
+xxs: (min-width: 320px)
 
-@media (max-width: 36.1875rem) {
+XS
+xs: (min-width: 320px) and (max-width: 579px)
+xs-up: (min-width: 320px)
+xs-down: (max-width: 579px)
+
+Small
+s: (min-width: 580px) and (max-width: 959px)
+s-up: (min-width: 580px)
+s-down: (max-width: 959px)
+
+Medium
+m: (min-width: 960px) and (max-width: 1279px)
+m-up: (min-width: 960px)
+m-down: (max-width: 1279px)
+
+l-up: (min-width: 1280px)
+l: (min-width: 1280px) and (max-width: 1679px)
+l-down: (max-width: 1679px)
+
+xl-up: (min-width: 1680px)
+xl: (min-width: 1680px) and (max-width: 1919px)
+xl-down: (max-width: 1919px)
+
+xxl: (min-width: 1920px)
+
+tablet: 768px - iPad
+tablet-h: 1024px - iPad Horizontal / iPad Pro
+
+ */ 
+
+/* @media (--xs-down) {
     body {
         background: red;
     }
 }
+
+@media (--s-up) {
+    body {
+        background: blue;
+    }
+} */
 
 :root {
   /* Small */
@@ -175,18 +213,12 @@ h6:not(:first-child) {
     margin-top: 2rem;
 } */
 
-[dir="ltr"] ul {
-    padding-left: 2rem
+ul, ol {
+    padding-left: 2rem;
 }
-
-[dir="rtl"] ul {
-    padding-right: 2rem
-}
-
 ul {
-    list-style: none
+    list-style-type: none;
 }
-
 li {
     margin: 0.5rem 0;
     position: relative;
@@ -196,7 +228,7 @@ ul li::before {
     position: absolute;
     width: 6px;
     height: 6px;
-    left: -24px;
+    left: -22px;
     top: 8px;
     border-radius: 50%;
     background: #000;
