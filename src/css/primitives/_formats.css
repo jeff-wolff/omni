@@ -1,0 +1,10 @@
+small {
+  font-size: var(--small-font-size);
+  line-height: var(--small-line-height);
+}
+mark {
+  background-color: var(--light);
+  padding: 0.0625em .5em;
+  border-radius: 0.25em;
+  margin: 0 .25em;
+}
