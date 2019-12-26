@@ -1,0 +1,52 @@
+/* Font Size */
+.t-caption {
+    font-size: var(--caption-font-size);
+    line-height: var(--caption-line-height);
+}
+h1 {
+    font-size: var(--h1-font-size);
+    line-height: var(--h1-line-height);
+}
+h2 {
+    font-size: var(--h2-font-size);
+    line-height: var(--h2-line-height);
+}
+h3 {
+    font-size: var(--h3-font-size);
+    line-height: var(--h3-line-height);
+}
+h4 {
+    font-size: var(--h4-font-size);
+    line-height: var(--h4-line-height);
+}
+h5 {
+    font-size: var(--h5-font-size);
+    line-height: var(--h5-line-height);
+}
+h6 {
+    font-size: var(--h6-font-size);
+    line-height: var(--h6-line-height);
+}
+.t-display-l {
+    font-size: var(--display-l-font-size);
+    line-height: var(--display-l-line-height);
+}
+.t-display, .t-display-m {
+    font-size: var(--display-m-font-size);
+    line-height: var(--display-m-line-height);
+}
+.t-display-s {
+    font-size: var(--display-s-font-size);
+    line-height: var(--display-s-line-height);
+}
+/* Heading Weight */
+h1,h2,h3,h4,h5,h6 {
+    font-weight: var(--heading-font-weight);
+}
+.t-display-s, .t-display, .t-display-m, .t-display-l {
+    font-weight: var(--display-font-weight);
+}
+/* Heading Margin */
+h1,h2,h3,h4,h5,h6 {
+    margin: var(--heading-margin) 0;
+}

@@ -1,71 +1,62 @@
 /**
-XXS
-xxs: (max-width: 320px)
-
-XS
-xs-up: (min-width: 320px)
-xs: (min-width: 320px) and (max-width: 579px)
-xs-down: (max-width: 579px)
-
-Small
-s-up: (min-width: 580px)
-s: (min-width: 580px) and (max-width: 959px)
-s-down: (max-width: 959px)
-
-Medium
-m-up: (min-width: 960px)
-m: (min-width: 960px) and (max-width: 1279px)
-m-down: (max-width: 1279px)
-
-l-up: (min-width: 1280px)
-l: (min-width: 1280px) and (max-width: 1679px)
-l-down: (max-width: 1679px)
-
-xl-up: (min-width: 1680px)
-xl: (min-width: 1680px) and (max-width: 1919px)
-xl-down: (max-width: 1919px)
-
-xxl: (min-width: 1920px)
-
-tablet: 768px - iPad
-tablet-h: 1024px - iPad Horizontal / iPad Pro
-
- */
+    XXS
+        xxs: (max-width: 320px)
+*/
 @custom-media --xxs (max-width: 22.5rem); 
-
+/** 
+    XS
+        xs-up: (min-width: 320px)
+        xs: (min-width: 320px) and (max-width: 579px)
+        xs-down: (max-width: 579px)
+ */
 @custom-media --xs-up (min-width: 22.5rem); 
 @custom-media --xs (min-width: 22.5rem) and (max-width: 36.1875rem); 
 @custom-media --xs-down (max-width: 36.1875rem); 
-
+/** 
+    Small
+        s-up: (min-width: 580px)
+        s: (min-width: 580px) and (max-width: 959px)
+        s-down: (max-width: 959px)
+*/
 @custom-media --s-up (min-width: 36.25rem); 
 @custom-media --s (min-width: 36.25rem) and (max-width: 59.9375rem); 
 @custom-media --s-down (max-width: 59.9375rem); 
-
+/** 
+    Medium
+        m-up: (min-width: 960px)
+        m: (min-width: 960px) and (max-width: 1279px)
+        m-down: (max-width: 1279px)
+ */
 @custom-media --m-up (min-width: 60rem); 
 @custom-media --m (min-width: 60rem) and (max-width: 79.9375rem); 
 @custom-media --m-down (max-width: 79.9375rem); 
-
+/** 
+    Large
+        l-up: (min-width: 1280px)
+        l: (min-width: 1280px) and (max-width: 1679px)
+        l-down: (max-width: 1679px)
+*/
 @custom-media --l-up (min-width: 80rem); 
 @custom-media --l (min-width: 80rem) and (max-width: 104.9375rem); 
 @custom-media --l-down (max-width: 104.9375rem); 
-
+/** 
+    XLarge
+        xl-up: (min-width: 1680px)
+        xl: (min-width: 1680px) and (max-width: 1919px)
+        xl-down: (max-width: 1919px)
+*/
 @custom-media --xl-up (min-width: 105rem); 
 @custom-media --xl (min-width: 105rem) and (max-width: 119.9375rem); 
 @custom-media --xl-down (max-width: 119.9375rem); 
-
+/** 
+    XXLarge
+        xxl: (min-width: 1920px)
+*/
 @custom-media --xxl (min-width: 120rem); 
-
+/** 
+    Misc
+        tablet: 768px - iPad
+        tablet-h: 1024px - iPad Horizontal / iPad Pro
+*/
 @custom-media --tablet (min-width: 48rem) and (max-width: 48rem); 
 @custom-media --tablet-h (min-width: 64rem) and (max-width: 64rem); 
-
-/* @media (--xs-down) {
-    body {
-        background: red;
-    }
-}
-
-@media (--s-up) {
-    body {
-        background: blue;
-    }
-} */

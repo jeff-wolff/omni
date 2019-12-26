@@ -1,4 +1,13 @@
-@import './_global.css';
+@import url('https://rsms.me/inter/inter.css');
+/* Vars */
 @import './_breakpoints.css';
-@import './_type.css';
-@import './_lists.css';
+@import './_color.css';
+@import './_base.css';
+@import './_typography.css';
+/* Base */
+@import './base/_global.css';
+@import './base/_body.css';
+/* Typography */
+@import './typography/_headings.css';
+@import './typography/_paragraph.css';
+@import './typography/_list.css';

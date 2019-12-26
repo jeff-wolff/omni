@@ -1,5 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const postcssImport = require("postcss-import");
 const postcssPresetEnv = require("postcss-preset-env");
 
 // [hash]
@@ -24,28 +25,29 @@ module.exports = {
                 test: /\.css$/,
                 exclude: /node_modules/,
                 use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
+                    { loader: MiniCssExtractPlugin.loader, options: {
                             publicPath: path.resolve(__dirname,"dist/")
-                        }
-                    },
-                    {
-                        loader: 'css-loader',
-                        options: {importLoaders: 1}
-                    },
-                    {
-                        loader: 'postcss-loader',
-                        options: {
-                            ident: 'postcss',
-                            plugins: () => [
-                                postcssPresetEnv({
-                                    browsers: 'last 2 versions',
-                                    stage: 1
-                                })
-                            ]
-                        }
-                    },
+                    } },
+                    { loader: 'css-loader', options: { importLoaders: 1 } },
+                    { loader: 'postcss-loader', options: {
+                        ident: 'postcss',
+                        plugins: () => [
+                            postcssImport(),
+                            postcssPresetEnv({
+                                browsers: 'last 2 versions',
+                                stage: 1,
+                                features: {
+                                    'color-mod-function': {
+                                        unresolved: 'warn'
+                                    },
+                                    'custom-properties': {
+                                        preserve: false
+                                    },
+                                    'nesting-rules': true
+                                }
+                            })
+                        ]
+                    } },
                 ],
             },
         ],
@@ -60,6 +62,8 @@ module.exports = {
         port: 8000,
         contentBase: "dist",
         stats: "minimal",
-        open: true
+        open: true,
+        // compress: true,
+        // host: "0.0.0.0"
     },
 }
