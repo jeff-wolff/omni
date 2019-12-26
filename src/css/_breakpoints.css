@@ -1,28 +1,31 @@
 /**
+XXS
+xxs: (min-width: 320px)
 
-xxs: <= 320px
+XS
+xs: (min-width: 320px) and (max-width: 579px)
+xs-up: (min-width: 320px)
+xs-down: (max-width: 579px)
 
-xs-up: >= 320px
-xs: 320px - 579px
-xs-down: <= 579px
+Small
+s: (min-width: 580px) and (max-width: 959px)
+s-up: (min-width: 580px)
+s-down: (max-width: 959px)
 
-s-up: >= 580px
-s: 580px - 959px
-s-down: <= 959px
+Medium
+m: (min-width: 960px) and (max-width: 1279px)
+m-up: (min-width: 960px)
+m-down: (max-width: 1279px)
 
-m-up: >= 960px
-m: 960px - 1279px
-m-down: <= 1279px
+l-up: (min-width: 1280px)
+l: (min-width: 1280px) and (max-width: 1679px)
+l-down: (max-width: 1679px)
 
-l-up: >= 1280px
-l: 1280px - 1679px
-l-down: <= 1679px
+xl-up: (min-width: 1680px)
+xl: (min-width: 1680px) and (max-width: 1919px)
+xl-down: (max-width: 1919px)
 
-xl-up: >= 1680px
-xl: 1680px - 1919px
-xl-down: <= 1919px
-
-xxl: >= 1920px
+xxl: (min-width: 1920px)
 
 tablet: 768px - iPad
 tablet-h: 1024px - iPad Horizontal / iPad Pro
@@ -55,8 +58,14 @@ tablet-h: 1024px - iPad Horizontal / iPad Pro
 @custom-media --tablet (min-width: 48rem) and (max-width: 48rem); 
 @custom-media --tablet-h (min-width: 64rem) and (max-width: 64rem); 
 
-@media (--xs-down) {
+/* @media (--xs-down) {
     body {
         background: red;
     }
 }
+
+@media (--s-up) {
+    body {
+        background: blue;
+    }
+} */
