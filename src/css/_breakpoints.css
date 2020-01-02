@@ -1,62 +1,67 @@
 /**
+  Breakpoints Sizes:
+
     XXS
-        xxs: (max-width: 320px)
-*/
-@custom-media --xxs (max-width: 22.5rem); 
-/** 
+      --xxs:        <= 320
+
     XS
-        xs-up: (min-width: 320px)
-        xs: (min-width: 320px) and (max-width: 579px)
-        xs-down: (max-width: 579px)
- */
-@custom-media --xs-up (min-width: 22.5rem); 
-@custom-media --xs (min-width: 22.5rem) and (max-width: 36.1875rem); 
-@custom-media --xs-down (max-width: 36.1875rem); 
-/** 
+      --xs:         >= 320
+      --xs-only:    >= 320 and <= 579
+      --xs-down:    <= 579 
+
     Small
-        s-up: (min-width: 580px)
-        s: (min-width: 580px) and (max-width: 959px)
-        s-down: (max-width: 959px)
-*/
-@custom-media --s-up (min-width: 36.25rem); 
-@custom-media --s (min-width: 36.25rem) and (max-width: 59.9375rem); 
-@custom-media --s-down (max-width: 59.9375rem); 
-/** 
+      --s:          >= 580
+      --s-only:     >= 580 and <= 959
+      --s-down:     <= 959 
+
     Medium
-        m-up: (min-width: 960px)
-        m: (min-width: 960px) and (max-width: 1279px)
-        m-down: (max-width: 1279px)
- */
-@custom-media --m-up (min-width: 60rem); 
-@custom-media --m (min-width: 60rem) and (max-width: 79.9375rem); 
-@custom-media --m-down (max-width: 79.9375rem); 
-/** 
+      --m:          >= 960
+      --m-only:     >= 960 and <= 1279
+      --m-down:     <= 1279 
+
     Large
-        l-up: (min-width: 1280px)
-        l: (min-width: 1280px) and (max-width: 1679px)
-        l-down: (max-width: 1679px)
-*/
-@custom-media --l-up (min-width: 80rem); 
-@custom-media --l (min-width: 80rem) and (max-width: 104.9375rem); 
-@custom-media --l-down (max-width: 104.9375rem); 
-/** 
-    XLarge
-        xl-up: (min-width: 1680px)
-        xl: (min-width: 1680px) and (max-width: 1919px)
-        xl-down: (max-width: 1919px)
-*/
-@custom-media --xl-up (min-width: 105rem); 
-@custom-media --xl (min-width: 105rem) and (max-width: 119.9375rem); 
-@custom-media --xl-down (max-width: 119.9375rem); 
-/** 
-    XXLarge
-        xxl: (min-width: 1920px)
-*/
-@custom-media --xxl (min-width: 120rem); 
-/** 
+      --l:          >= 1280
+      --l-only:     >= 1280 and <= 1679
+      --l-down:     <= 1679 
+      
+    XL
+      --xl:         >= 1680
+      --xl-only:    >= 1680 and <= 1919
+      --xl-down:    <= 1919 
+
+    XXL
+      --xxl:        >= 1920
+
     Misc
-        tablet: 768px - iPad
-        tablet-h: 1024px - iPad Horizontal / iPad Pro
-*/
-@custom-media --tablet (min-width: 48rem) and (max-width: 48rem); 
-@custom-media --tablet-h (min-width: 64rem) and (max-width: 64rem); 
+      --tablet:         >= 768 - iPad
+      --tablet-only:       768 - iPad
+      --tablet-down:    <= 768 - iPad
+      --tablet-h:       >= 1024 - iPad Horizontal / iPad Pro
+      --tablet-h-only:     1024 - iPad Horizontal / iPad Pro
+      --tablet-h-down:  <= 1024 - iPad Horizontal / iPad Pro
+
+ */
+@custom-media --xxs (max-width: 20rem); 
+@custom-media --xs (min-width: 20rem); 
+@custom-media --xs-only (min-width: 20rem) and (max-width: 36.1875rem); 
+@custom-media --xs-down (max-width: 36.1875rem); 
+@custom-media --s (min-width: 36.25rem); 
+@custom-media --s-only (min-width: 36.25rem) and (max-width: 59.9375rem); 
+@custom-media --s-down (max-width: 59.9375rem); 
+@custom-media --m (min-width: 60rem); 
+@custom-media --m-only (min-width: 60rem) and (max-width: 79.9375rem); 
+@custom-media --m-down (max-width: 79.9375rem); 
+@custom-media --l (min-width: 80rem); 
+@custom-media --l-only (min-width: 80rem) and (max-width: 104.9375rem); 
+@custom-media --l-down (max-width: 104.9375rem); 
+@custom-media --xl (min-width: 105rem);
+@custom-media --xl-only (min-width: 105rem) and (max-width: 119.9375rem); 
+@custom-media --xl-down (max-width: 119.9375rem); 
+@custom-media --xxl (min-width: 120rem); 
+
+@custom-media --tablet (min-width: 48rem); 
+@custom-media --tablet-only (min-width: 48rem) and (max-width: 48rem);
+@custom-media --tablet-down (max-width: 48rem);
+@custom-media --tablet-h (min-width: 64rem);
+@custom-media --tablet-h-only (min-width: 64rem) and (max-width: 64rem);
+@custom-media --tablet-h-down (max-width: 64rem);
