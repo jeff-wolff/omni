@@ -2,57 +2,57 @@
 /** 
     Size Units 
 */
-    --size-1: 0.0625rem;        /* 1px */
-    --size-2: 0.125rem;         /* 2px */
-    --size-4: 0.25rem;          /* 4px */
-    --size-6: 0.375rem;         /* 6px */
-    --size-8: 0.5rem;           /* 8px */
-    --size-10: 0.625rem;        /* 10px */
-    --size-12: 0.75rem;         /* 12px */
-    --size-14: 0.875rem;        /* 14px */
-    --size-15: 0.9375rem;       /* 15px */
-    --size-16: 1rem;            /* 16px */
-    --size-18: 1.125rem;        /* 18px */
-    --size-20: 1.25rem;         /* 20px */
-    --size-22: 1.375rem;        /* 22px */
-    --size-24: 1.5rem;          /* 24px */
-    --size-26: 1.625rem;        /* 26px */
-    --size-28: 1.75rem;         /* 28px */
-    --size-30: 1.875rem;        /* 30px */
-    --size-32: 2rem;            /* 32px */
-    --size-34: 2.125rem;        /* 34px */
-    --size-36: 2.25rem;         /* 36px */
-    --size-38: 2.375rem;        /* 38px */
-    --size-40: 2.5rem;          /* 40px */
-    --size-42: 2.625rem;        /* 42px */
-    --size-44: 2.75rem;         /* 44px */
-    --size-46: 2.875rem;        /* 46px */
-    --size-48: 3rem;            /* 48px */
-    --size-50: 3.125rem;        /* 50px */
-    --size-52: 3.25rem;         /* 52px */
-    --size-54: 3.375rem;        /* 54px */
-    --size-56: 3.5rem;          /* 56px */
-    --size-58: 3.625rem;        /* 58px */
-    --size-60: 3.75rem;         /* 60px */
-    --size-62: 3.875rem;        /* 62px */
-    --size-64: 4rem;            /* 64px */
-    --size-68: 4.25rem;         /* 68px */
-    --size-72: 4.5rem;          /* 72px */
-    --size-76: 4.75rem;         /* 76px */
-    --size-80: 5rem;            /* 80px */
-    --size-84: 5.25rem;         /* 84px */
-    --size-88: 5.5rem;          /* 88px */
-    --size-92: 5.75rem;         /* 92px */
-    --size-96: 6rem;            /* 96px */
-    --size-100: 6.25rem;        /* 100px */
-    --size-104: 6.5rem;         /* 104px */
-    --size-108: 6.75rem;        /* 108px */
-    --size-116: 7.25rem;        /* 116px */
-    --size-124: 7.75rem;        /* 124px */
-    --size-132: 8.25rem;        /* 132px */
-    --size-140: 8.75rem;        /* 140px */
-    --size-148: 9.25rem;        /* 148px */
-    --size-156: 9.75rem;        /* 156px */
+    --size-1:    0.0625rem;     /*   1px */
+    --size-2:    0.125rem;      /*   2px */
+    --size-4:    0.25rem;       /*   4px */
+    --size-6:    0.375rem;      /*   6px */
+    --size-8:    0.5rem;        /*   8px */
+    --size-10:   0.625rem;      /*  10px */
+    --size-12:   0.75rem;       /*  12px */
+    --size-14:   0.875rem;      /*  14px */
+    --size-15:   0.9375rem;     /*  15px */
+    --size-16:   1rem;          /*  16px */
+    --size-18:   1.125rem;      /*  18px */
+    --size-20:   1.25rem;       /*  20px */
+    --size-22:   1.375rem;      /*  22px */
+    --size-24:   1.5rem;        /*  24px */
+    --size-26:   1.625rem;      /*  26px */
+    --size-28:   1.75rem;       /*  28px */
+    --size-30:   1.875rem;      /*  30px */
+    --size-32:   2rem;          /*  32px */
+    --size-34:   2.125rem;      /*  34px */
+    --size-36:   2.25rem;       /*  36px */
+    --size-38:   2.375rem;      /*  38px */
+    --size-40:   2.5rem;        /*  40px */
+    --size-42:   2.625rem;      /*  42px */
+    --size-44:   2.75rem;       /*  44px */
+    --size-46:   2.875rem;      /*  46px */
+    --size-48:   3rem;          /*  48px */
+    --size-50:   3.125rem;      /*  50px */
+    --size-52:   3.25rem;       /*  52px */
+    --size-54:   3.375rem;      /*  54px */
+    --size-56:   3.5rem;        /*  56px */
+    --size-58:   3.625rem;      /*  58px */
+    --size-60:   3.75rem;       /*  60px */
+    --size-62:   3.875rem;      /*  62px */
+    --size-64:   4rem;          /*  64px */
+    --size-68:   4.25rem;       /*  68px */
+    --size-72:   4.5rem;        /*  72px */
+    --size-76:   4.75rem;       /*  76px */
+    --size-80:   5rem;          /*  80px */
+    --size-84:   5.25rem;       /*  84px */
+    --size-88:   5.5rem;        /*  88px */
+    --size-92:   5.75rem;       /*  92px */
+    --size-96:   6rem;          /*  96px */
+    --size-100:  6.25rem;       /* 100px */
+    --size-104:  6.5rem;        /* 104px */
+    --size-108:  6.75rem;       /* 108px */
+    --size-116:  7.25rem;       /* 116px */
+    --size-124:  7.75rem;       /* 124px */
+    --size-132:  8.25rem;       /* 132px */
+    --size-140:  8.75rem;       /* 140px */
+    --size-148:  9.25rem;       /* 148px */
+    --size-156:  9.75rem;       /* 156px */
     --size-164: 10.25rem;       /* 164px */
     --size-172: 10.75rem;       /* 172px */
     --size-180: 11.25rem;       /* 180px */
@@ -60,22 +60,22 @@
 /**
     Font
  */
-    --font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    --font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-family-serif: Georgia, 'Times New Roman', Times, serif;
-    --font-family-monospace: Monaco, Menlo, Consolas, 'Courier New', monospace;
-    --font-family-omni: 'Inter', sans-serif;
+    --font-family-system:            -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-family-sans-serif:        'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-serif:             Georgia, 'Times New Roman', Times, serif;
+    --font-family-monospace:         Monaco, Menlo, Consolas, 'Courier New', monospace;
+    --font-family-omni:              'Inter', sans-serif;
 /**
     Font Weights
  */
-    --font-weight-thin: 100;
-    --font-weight-extra-light: 200;
-    --font-weight-light: 300;
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
-    --font-weight-extra-bold: 800;
-    --font-weight-black: 900;
-    --font-weight: normal;
+    --font-weight-thin:               100;
+    --font-weight-extra-light:        200;
+    --font-weight-light:              300;
+    --font-weight-regular:            400;
+    --font-weight-medium:             500;
+    --font-weight-semibold:           600;
+    --font-weight-bold:               700;
+    --font-weight-extra-bold:         800;
+    --font-weight-black:              900;
+    --font-weight:                    normal;
 }

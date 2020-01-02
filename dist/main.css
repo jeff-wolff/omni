@@ -1,48 +1,48 @@
 @import url(https://rsms.me/inter/inter.css);
 /* Vars */
 /**
+  Breakpoints Sizes:
+
     XXS
-        xxs: (max-width: 320px)
-*/
-/** 
+      --xxs:            <= 320
+
     XS
-        xs-up: (min-width: 320px)
-        xs: (min-width: 320px) and (max-width: 579px)
-        xs-down: (max-width: 579px)
- */
-/** 
+      --xs:             >= 320
+      --xs-only:        >= 320 and <= 579
+      --xs-down:        <= 579 
+
     Small
-        s-up: (min-width: 580px)
-        s: (min-width: 580px) and (max-width: 959px)
-        s-down: (max-width: 959px)
-*/
-/** 
+      --s:              >= 580
+      --s-only:         >= 580 and <= 959
+      --s-down:         <= 959 
+
     Medium
-        m-up: (min-width: 960px)
-        m: (min-width: 960px) and (max-width: 1279px)
-        m-down: (max-width: 1279px)
- */
-/** 
+      --m:              >= 960
+      --m-only:         >= 960 and <= 1279
+      --m-down:         <= 1279 
+
     Large
-        l-up: (min-width: 1280px)
-        l: (min-width: 1280px) and (max-width: 1679px)
-        l-down: (max-width: 1679px)
-*/
-/** 
-    XLarge
-        xl-up: (min-width: 1680px)
-        xl: (min-width: 1680px) and (max-width: 1919px)
-        xl-down: (max-width: 1919px)
-*/
-/** 
-    XXLarge
-        xxl: (min-width: 1920px)
-*/
-/** 
+      --l:              >= 1280
+      --l-only:         >= 1280 and <= 1679
+      --l-down:         <= 1679 
+
+    XL
+      --xl:             >= 1680
+      --xl-only:        >= 1680 and <= 1919
+      --xl-down:        <= 1919 
+
+    XXL
+      --xxl:            >= 1920
+
     Misc
-        tablet: 768px - iPad
-        tablet-h: 1024px - iPad Horizontal / iPad Pro
-*/
+      --tablet:         >= 768 - iPad
+      --tablet-only:       768 - iPad
+      --tablet-down:    <= 768 - iPad
+      --tablet-h:       >= 1024 - iPad Horizontal / iPad Pro
+      --tablet-h-only:     1024 - iPad Horizontal / iPad Pro
+      --tablet-h-down:  <= 1024 - iPad Horizontal / iPad Pro
+
+ */
 :root {
   /**
    * Color
@@ -222,55 +222,107 @@
 }
 :root {
 /** 
-    Body 
+    Size Units 
 */
-    --body-font-family: var(--font-family-omni);
-    --body-font-size: 0.875rem; /* 14px */
-    --body-line-height: 1.3125;
+    --size-1:    0.0625rem;     /*   1px */
+    --size-2:    0.125rem;      /*   2px */
+    --size-4:    0.25rem;       /*   4px */
+    --size-6:    0.375rem;      /*   6px */
+    --size-8:    0.5rem;        /*   8px */
+    --size-10:   0.625rem;      /*  10px */
+    --size-12:   0.75rem;       /*  12px */
+    --size-14:   0.875rem;      /*  14px */
+    --size-15:   0.9375rem;     /*  15px */
+    --size-16:   1rem;          /*  16px */
+    --size-18:   1.125rem;      /*  18px */
+    --size-20:   1.25rem;       /*  20px */
+    --size-22:   1.375rem;      /*  22px */
+    --size-24:   1.5rem;        /*  24px */
+    --size-26:   1.625rem;      /*  26px */
+    --size-28:   1.75rem;       /*  28px */
+    --size-30:   1.875rem;      /*  30px */
+    --size-32:   2rem;          /*  32px */
+    --size-34:   2.125rem;      /*  34px */
+    --size-36:   2.25rem;       /*  36px */
+    --size-38:   2.375rem;      /*  38px */
+    --size-40:   2.5rem;        /*  40px */
+    --size-42:   2.625rem;      /*  42px */
+    --size-44:   2.75rem;       /*  44px */
+    --size-46:   2.875rem;      /*  46px */
+    --size-48:   3rem;          /*  48px */
+    --size-50:   3.125rem;      /*  50px */
+    --size-52:   3.25rem;       /*  52px */
+    --size-54:   3.375rem;      /*  54px */
+    --size-56:   3.5rem;        /*  56px */
+    --size-58:   3.625rem;      /*  58px */
+    --size-60:   3.75rem;       /*  60px */
+    --size-62:   3.875rem;      /*  62px */
+    --size-64:   4rem;          /*  64px */
+    --size-68:   4.25rem;       /*  68px */
+    --size-72:   4.5rem;        /*  72px */
+    --size-76:   4.75rem;       /*  76px */
+    --size-80:   5rem;          /*  80px */
+    --size-84:   5.25rem;       /*  84px */
+    --size-88:   5.5rem;        /*  88px */
+    --size-92:   5.75rem;       /*  92px */
+    --size-96:   6rem;          /*  96px */
+    --size-100:  6.25rem;       /* 100px */
+    --size-104:  6.5rem;        /* 104px */
+    --size-108:  6.75rem;       /* 108px */
+    --size-116:  7.25rem;       /* 116px */
+    --size-124:  7.75rem;       /* 124px */
+    --size-132:  8.25rem;       /* 132px */
+    --size-140:  8.75rem;       /* 140px */
+    --size-148:  9.25rem;       /* 148px */
+    --size-156:  9.75rem;       /* 156px */
+    --size-164: 10.25rem;       /* 164px */
+    --size-172: 10.75rem;       /* 172px */
+    --size-180: 11.25rem;       /* 180px */
+
 /**
     Font
  */
-    --font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    --font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-family-serif: Georgia, 'Times New Roman', Times, serif;
-    --font-family-monospace: Monaco, Menlo, Consolas, 'Courier New', monospace;
-    --font-family-omni: 'Inter', sans-serif;
+    --font-family-system:            -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-family-sans-serif:        'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-serif:             Georgia, 'Times New Roman', Times, serif;
+    --font-family-monospace:         Monaco, Menlo, Consolas, 'Courier New', monospace;
+    --font-family-omni:              'Inter', sans-serif;
 /**
     Font Weights
  */
-    --font-weight-thin: 100;
-    --font-weight-extra-light: 200;
-    --font-weight-light: 300;
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
-    --font-weight-extra-bold: 800;
-    --font-weight-black: 900;
-    --font-weight: normal;
+    --font-weight-thin:               100;
+    --font-weight-extra-light:        200;
+    --font-weight-light:              300;
+    --font-weight-regular:            400;
+    --font-weight-medium:             500;
+    --font-weight-semibold:           600;
+    --font-weight-bold:               700;
+    --font-weight-extra-bold:         800;
+    --font-weight-black:              900;
+    --font-weight:                    normal;
 }
 :root {
 /* Paragraph */
-  --p-font-size: 1rem; /* 16px */
+  --p-font-size: var(--size-16);
   --p-line-height: 1.44444;
   
 /* Lists */
-  --list-font-size: var(--p-font-size); /* 16px */
+  --list-font-size: var(--size-16);
   --list-line-height: var(--p-line-height);
 
 /* * * * * * * *
   Heading Vars 
  * * * * * * * */
   --heading-font-weight: 600;
-  --heading-margin: 1rem; /* 16px */
+  --heading-margin: var(--size-16);
 /* Heading 1 */
-  --h1-font-size: 2.375rem; /* 38px */
+  --h1-font-size: var(--size-38);
   --h1-line-height: 1.13157895; 
 /* Heading 2 */
-  --h2-font-size: 1.75rem; /* 28px */
+  --h2-font-size: var(--size-28);
   --h2-line-height: 1.14285714;
 /* Heading 3 */
-  --h3-font-size: 1.375rem; /* 22px  */
+  --h3-font-size: var(--size-22);
   --h3-line-height: 1.13636364;
 
 /* * * * * * * *
@@ -278,21 +330,21 @@
  * * * * * * * */
   --display-font-weight: bold;
 /* Display S */
-  --display-s-font-size: 2rem; /* 32px */
+  --display-s-font-size: var(--size-32);
   --display-s-line-height: 1.125;
 /* Display M */
-  --display-m-font-size: 3rem; /* 48px */
+  --display-m-font-size: var(--size-48);
   --display-m-line-height: 1;
 /* Display L */
-  --display-l-font-size: 4rem; /* 64px */
+  --display-l-font-size: var(--size-64);
   --display-l-line-height: 1;  
 
 /* Small */
-  --small-font-size: 0.75rem; /* 12px */
+  --small-font-size: var(--size-12);
   --small-line-height: 1.5;
 
 /* Caption */
-  --caption-font-size: 0.9375rem; /* 15px */
+  --caption-font-size: var(--size-15);
   --caption-line-height: 1.066667;
 }
 /* Base */
@@ -390,7 +442,7 @@ html {
     padding-right: 20px;
 }
 /* TESTING Font Scale */
-/* @media (--l-up) {
+@media (min-width: 80rem) {
     html {
         font-size: 133%;
     }
@@ -398,7 +450,7 @@ html {
       max-width: 1024px;
     }
 }
-@media (--xxl) {
+@media (min-width: 120rem) {
     html {
         font-size: 174%;
     }
@@ -406,8 +458,15 @@ html {
       max-width: 1280px;
     }
 }
- */
 /* temp stuff that you don't know where to put */
+:root {
+/** 
+    Body 
+*/
+    --body-font-family: var(--font-family-omni);
+    --body-font-size: var(--size-14);
+    --body-line-height: 1.3125;
+}
 body {
     font-family: 'Inter', sans-serif;
     font-family: var(--body-font-family);

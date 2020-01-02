@@ -14,7 +14,7 @@ html {
     padding-right: 20px;
 }
 /* TESTING Font Scale */
-/* @media (--l-up) {
+/* @media (--l) {
     html {
         font-size: 133%;
     }
@@ -29,5 +29,5 @@ html {
     .container {
       max-width: 1280px;
     }
-}
- */
+} */
+
