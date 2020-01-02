@@ -1,4 +1,10 @@
 :root {
+/**
+    Body 
+*/
+    --body-font-family: var(--font-family-omni);
+    --body-font-size: var(--size-14);
+    --body-line-height: 1.3125;
 /** 
     Size Units 
 */
@@ -78,4 +84,5 @@
     --font-weight-extra-bold:         800;
     --font-weight-black:              900;
     --font-weight:                    normal;
+
 }

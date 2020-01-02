@@ -221,6 +221,12 @@
   --info-900: hsl(200.00000000000003, 5%, 14.28%);
 }
 :root {
+/**
+    Body 
+*/
+    --body-font-family: var(--font-family-omni);
+    --body-font-size: var(--size-14);
+    --body-line-height: 1.3125;
 /** 
     Size Units 
 */
@@ -300,6 +306,7 @@
     --font-weight-extra-bold:         800;
     --font-weight-black:              900;
     --font-weight:                    normal;
+
 }
 :root {
 /* Paragraph */
@@ -442,7 +449,7 @@ html {
     padding-right: 20px;
 }
 /* TESTING Font Scale */
-@media (min-width: 80rem) {
+/* @media (--l) {
     html {
         font-size: 133%;
     }
@@ -450,23 +457,15 @@ html {
       max-width: 1024px;
     }
 }
-@media (min-width: 120rem) {
+@media (--xxl) {
     html {
         font-size: 174%;
     }
     .container {
       max-width: 1280px;
     }
-}
+} */
 /* temp stuff that you don't know where to put */
-:root {
-/** 
-    Body 
-*/
-    --body-font-family: var(--font-family-omni);
-    --body-font-size: var(--size-14);
-    --body-line-height: 1.3125;
-}
 body {
     font-family: 'Inter', sans-serif;
     font-family: var(--body-font-family);
