@@ -2,35 +2,35 @@
   Breakpoints Sizes:
 
     XXS
-      --xxs:        <= 320
+      --xxs:            <= 320
 
     XS
-      --xs:         >= 320
-      --xs-only:    >= 320 and <= 579
-      --xs-down:    <= 579 
+      --xs:             >= 320
+      --xs-only:        >= 320 and <= 579
+      --xs-down:        <= 579 
 
     Small
-      --s:          >= 580
-      --s-only:     >= 580 and <= 959
-      --s-down:     <= 959 
+      --s:              >= 580
+      --s-only:         >= 580 and <= 959
+      --s-down:         <= 959 
 
     Medium
-      --m:          >= 960
-      --m-only:     >= 960 and <= 1279
-      --m-down:     <= 1279 
+      --m:              >= 960
+      --m-only:         >= 960 and <= 1279
+      --m-down:         <= 1279 
 
     Large
-      --l:          >= 1280
-      --l-only:     >= 1280 and <= 1679
-      --l-down:     <= 1679 
-      
+      --l:              >= 1280
+      --l-only:         >= 1280 and <= 1679
+      --l-down:         <= 1679 
+
     XL
-      --xl:         >= 1680
-      --xl-only:    >= 1680 and <= 1919
-      --xl-down:    <= 1919 
+      --xl:             >= 1680
+      --xl-only:        >= 1680 and <= 1919
+      --xl-down:        <= 1919 
 
     XXL
-      --xxl:        >= 1920
+      --xxl:            >= 1920
 
     Misc
       --tablet:         >= 768 - iPad
