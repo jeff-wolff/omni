@@ -105,19 +105,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_omni_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/omni.css */ \"./src/css/omni.css\");\n/* harmony import */ var _css_omni_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_omni_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _text__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./text */ \"./src/js/text.js\");\n\r\n\r\n\r\nObject(_text__WEBPACK_IMPORTED_MODULE_1__[\"writeToScreen\"])()\r\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
-
-/***/ }),
-
-/***/ "./src/js/text.js":
-/*!************************!*\
-  !*** ./src/js/text.js ***!
-  \************************/
-/*! exports provided: writeToScreen */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"writeToScreen\", function() { return writeToScreen; });\nfunction writeToScreen() {\r\n    document.write('Hello world!!');\r\n}\r\n\n\n//# sourceURL=webpack:///./src/js/text.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_omni_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/omni.css */ \"./src/css/omni.css\");\n/* harmony import */ var _css_omni_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_omni_css__WEBPACK_IMPORTED_MODULE_0__);\n\r\n// import { writeToScreen } from './text'\r\n// writeToScreen()\r\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ })
 

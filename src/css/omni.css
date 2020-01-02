@@ -5,7 +5,8 @@
 @import './_base.css';
 @import './_typography.css';
 /* Base */
-@import './base/_global.css';
+@import './base/_reset.css';
+@import './base/_global.css'; /* temp stuff that you don't know where to put */
 @import './base/_body.css';
 
 /* Primitives */

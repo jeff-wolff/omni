@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build": "webpack"
+    "dev": "webpack && webpack-dev-server",
+    "build": "cross-env NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/jeff-wolff/omni#readme",
   "devDependencies": {
+    "cross-env": "^6.0.3",
     "css-loader": "^3.4.0",
     "cssnano": "^4.1.10",
     "mini-css-extract-plugin": "^0.9.0",
