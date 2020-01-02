@@ -1,7 +1,7 @@
 button {
-  border: 1px solid #E0E0E0;
-  border-radius: 6px;
-  padding: 8px 16px;
-  font-size: 16px;
-  line-height: 21px;
+  border: var(--rem-1) solid #E0E0E0;
+  border-radius: var(--rem-6);
+  padding: var(--rem-8) var(--rem-16);
+  font-size: var(--rem-16);
+  line-height: var(--rem-21);
 }

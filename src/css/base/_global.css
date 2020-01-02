@@ -2,32 +2,26 @@ html {
     -webkit-font-smoothing:  antialiased;
 }
 .container {
-    /* border: 6px solid red; */
-    max-width: 760px;
+    /* border: var(--rem-6) solid red; */
+    max-width: 38.75rem;
     margin-top: 1rem;
     margin-right: auto;
     margin-bottom: 1rem;
     margin-left: auto;
 }
 .column {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: var(--rem-20);
+    padding-right: var(--rem-20);
 }
 /* TESTING Font Scale */
-/* @media (--l) {
+/* @media (--xl) {
     html {
-        font-size: 133%;
-    }
-    .container {
-      max-width: 1024px;
+        font-size: 125%;
     }
 }
 @media (--xxl) {
     html {
-        font-size: 174%;
+        font-size: 150%;
     }
-    .container {
-      max-width: 1280px;
-    }
-} */
-
+}
+ */
