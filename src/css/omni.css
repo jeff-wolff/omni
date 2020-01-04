@@ -1,20 +1,31 @@
 @import url('https://rsms.me/inter/inter.css');
+
 /* Vars */
 @import './_breakpoints.css';
 @import './_color.css';
 @import './_base.css';
 @import './_typography.css';
+
 /* Base */
 @import './base/_reset.css';
-@import './base/_global.css'; /* temp stuff that you don't know where to put */
 @import './base/_body.css';
-
-/* Primitives */
-@import './primitives/_buttons.css';
-@import './primitives/_links.css';
-@import './primitives/_list.css';
-@import './primitives/_formats.css';
+@import './base/_global.css'; /* TODO: Delete */
 
 /* Typography */
 @import './typography/_headings.css';
 @import './typography/_paragraph.css';
+
+/* Primitives */
+@import './primitives/_buttons.css';
+@import './primitives/_formats.css';
+@import './primitives/_links.css';
+@import './primitives/_list.css';
+
+/* Components */
+
+/* Patterns */
+
+/* Templates */
+
+/* Pages */
+
