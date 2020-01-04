@@ -514,9 +514,9 @@ html {
 }
  */
 
-/* temp stuff that you don't know where to put */
+/* TODO: Delete */
 
-/* Typography */
+/* Primitives */
 
 /* Font Size */
 
@@ -608,21 +608,6 @@ p {
     line-height: var(--p-line-height);
 }
 
-/* Primitives */
-
-button {
-  border: 0.0625rem solid #E0E0E0;
-  border: var(--rem-1) solid #E0E0E0;
-  border-radius: 0.375rem;
-  border-radius: var(--rem-6);
-  padding: 0.5rem 1rem;
-  padding: var(--rem-8) var(--rem-16);
-  font-size: 1rem;
-  font-size: var(--rem-16);
-  line-height: 1.3125rem;
-  line-height: var(--rem-21);
-}
-
 small {
   font-size: 0.75rem;
   font-size: var(--small-font-size);
@@ -636,12 +621,6 @@ mark {
   padding: 0.0625em .5em;
   border-radius: 0.25em;
   margin: 0 .25em;
-}
-
-a {
-  font-weight: 600;
-  color: hsl(220, 10%, 0%);
-  color: var(--black);
 }
 
 ul, ol, dl {
@@ -706,6 +685,25 @@ dt {
 dd {
     margin-left: 0;
     margin-bottom: 0.5rem;
+}
+
+a {
+  font-weight: 600;
+  color: hsl(220, 10%, 0%);
+  color: var(--black);
+}
+
+button {
+  border: 0.0625rem solid #E0E0E0;
+  border: var(--rem-1) solid #E0E0E0;
+  border-radius: 0.375rem;
+  border-radius: var(--rem-6);
+  padding: 0.5rem 1rem;
+  padding: var(--rem-8) var(--rem-16);
+  font-size: 1rem;
+  font-size: var(--rem-16);
+  line-height: 1.3125rem;
+  line-height: var(--rem-21);
 }
 
 /* Components */

@@ -11,15 +11,13 @@
 @import './base/_body.css';
 @import './base/_global.css'; /* TODO: Delete */
 
-/* Typography */
-@import './typography/_headings.css';
-@import './typography/_paragraph.css';
-
 /* Primitives */
-@import './primitives/_buttons.css';
+@import './primitives/_headings.css';
+@import './primitives/_paragraph.css';
 @import './primitives/_formats.css';
-@import './primitives/_links.css';
 @import './primitives/_list.css';
+@import './primitives/_links.css';
+@import './primitives/_buttons.css';
 
 /* Components */
 
