@@ -516,7 +516,29 @@ html {
 
 /* TODO: Delete */
 
-/* Primitives */
+/* Type */
+
+p {
+    font-size: 1rem;
+    font-size: var(--p-font-size);
+    line-height: 1.44444;
+    line-height: var(--p-line-height);
+}
+
+small {
+  font-size: 0.75rem;
+  font-size: var(--small-font-size);
+  line-height: 1.5;
+  line-height: var(--small-line-height);
+}
+
+mark {
+  background-color: hsl(220, 10%, 85%);
+  background-color: var(--light);
+  padding: 0.0625em .5em;
+  border-radius: 0.25em;
+  margin: 0 .25em;
+}
 
 /* Font Size */
 
@@ -601,28 +623,6 @@ h1,h2,h3,h4,h5,h6 {
     margin: var(--heading-margin) 0;
 }
 
-p {
-    font-size: 1rem;
-    font-size: var(--p-font-size);
-    line-height: 1.44444;
-    line-height: var(--p-line-height);
-}
-
-small {
-  font-size: 0.75rem;
-  font-size: var(--small-font-size);
-  line-height: 1.5;
-  line-height: var(--small-line-height);
-}
-
-mark {
-  background-color: hsl(220, 10%, 85%);
-  background-color: var(--light);
-  padding: 0.0625em .5em;
-  border-radius: 0.25em;
-  margin: 0 .25em;
-}
-
 ul, ol, dl {
     font-size: 1rem;
     font-size: var(--list-font-size);
@@ -692,6 +692,8 @@ a {
   color: hsl(220, 10%, 0%);
   color: var(--black);
 }
+
+/* Primitives */
 
 button {
   border: 0.0625rem solid #E0E0E0;

@@ -4,19 +4,21 @@
 @import './_breakpoints.css';
 @import './_color.css';
 @import './_base.css';
-@import './_typography.css';
+@import './_type.css';
 
 /* Base */
 @import './base/_reset.css';
 @import './base/_body.css';
 @import './base/_global.css'; /* TODO: Delete */
 
+/* Type */
+@import './type/_paragraph.css';
+@import './type/_formats.css';
+@import './type/_headings.css';
+@import './type/_list.css';
+@import './type/_links.css';
+
 /* Primitives */
-@import './primitives/_headings.css';
-@import './primitives/_paragraph.css';
-@import './primitives/_formats.css';
-@import './primitives/_list.css';
-@import './primitives/_links.css';
 @import './primitives/_buttons.css';
 
 /* Components */
