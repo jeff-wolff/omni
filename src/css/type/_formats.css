@@ -3,15 +3,48 @@
  * * * * * * * */
 :root {
 /* Blockquote */
---blockquote-margin: 1rem .75rem;
---blockquote-padding: 0 .75rem;
---blockquote-border-width: var(--rem-4);
---blockquote-border-color: var(--black);
+--blockquote-margin: 2em 0 3em;
+--blockquote-padding: 0;
+/* --blockquote-border-width: var(--rem-4); */
+/* --blockquote-border-color: var(--black); */
 }
 blockquote {
   margin: var(--blockquote-margin);
   padding: var(--blockquote-padding);
-  border-left: var(--blockquote-border-width) solid var(--blockquote-border-color);
+  /* border-left: var(--blockquote-border-width) solid var(--blockquote-border-color); */
+}
+blockquote p {
+  font-size: var(--caption-font-size);
+  line-height: var(--caption-line-height);
+}
+blockquote cite {
+  display: block;
+  font-size: var(--paragraph-font-size);
+  font-weight: var(--font-weight-semibold);
+  font-style: normal;
+  margin: 0 0 .4em -1.2em;
+}
+blockquote cite:before {
+  content: "\2014";
+  /* font-weight: 400; */
+  color: var(--primary);
+  margin-right: .4em;
+}
+blockquote q {
+  font-size: 1.5em;
+  font-family: var(--font-family-serif);
+  font-weight: var(--font-weight-extralight);
+  font-style: italic;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: .75em;
+}
+blockquote q:before {
+  margin-left: -.6em;
+}
+blockquote.pull q {
+  font-size: 1.9em;
+  line-height: 1.25;
 }
 small {
   color: var(--small-color);

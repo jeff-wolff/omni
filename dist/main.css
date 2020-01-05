@@ -2,9 +2,115 @@
 /* Vars */
 
 :root {
-/**
-  Color
-*/
+/* * * * * * * * * * *
+  Sizing Unit Vars
+ * * * * * * * * * * */
+
+--size-1:    var(--rem-16);
+--size-2:    var(--rem-32);
+--size-3:    var(--rem-48);
+--size-4:    var(--rem-64);
+--size-5:    var(--rem-80);
+--size-6:    var(--rem-96);
+--size-7:    var(--rem-112);
+--size-8:    var(--rem-128);
+--size-9:    var(--rem-144);
+--size-10:   var(--rem-160);
+
+--rem-1:    0.0625rem;    /*   1px */
+--rem-2:    0.125rem;     /*   2px */
+--rem-3:    0.1875rem;    /*   3px */
+--rem-4:    0.25rem;      /*   4px */
+--rem-5:    0.3125rem;    /*   5px */
+--rem-6:    0.375rem;     /*   6px */
+--rem-7:    0.4375rem;    /*   7px */
+--rem-8:    0.5rem;       /*   8px */
+--rem-9:    0.5625rem;    /*   9px */
+--rem-10:   0.625rem;     /*  10px */
+--rem-11:   0.6875rem;    /*  11px */
+--rem-12:   0.75rem;      /*  12px */
+--rem-13:   0.8125rem;    /*  13px */
+--rem-14:   0.875rem;     /*  14px */
+--rem-15:   0.9375rem;    /*  15px */
+--rem-16:   1rem;         /*  16px */
+
+--rem-17:   1.0625rem;    /*  17px */
+--rem-18:   1.125rem;     /*  18px */
+--rem-19:   1.1875rem;    /*  19px */
+--rem-20:   1.25rem;      /*  20px */
+--rem-21:   1.3125rem;    /*  21px */
+--rem-22:   1.375rem;     /*  22px */
+--rem-23:   1.4375rem;    /*  23px */
+--rem-24:   1.5rem;       /*  24px */
+--rem-25:   1.5625rem;    /*  25px */
+--rem-26:   1.625rem;     /*  26px */
+--rem-27:   1.6875rem;    /*  27px */
+--rem-28:   1.75rem;      /*  28px */
+--rem-29:   1.8125rem;    /*  29px */
+--rem-30:   1.875rem;     /*  30px */
+--rem-31:   1.9375rem;    /*  31px */
+--rem-32:   2rem;         /*  32px */
+
+--rem-34:   2.125rem;     /*  34px */
+--rem-36:   2.25rem;      /*  36px */
+--rem-38:   2.375rem;     /*  38px */
+--rem-40:   2.5rem;       /*  40px */
+--rem-42:   2.625rem;     /*  42px */
+--rem-44:   2.75rem;      /*  44px */
+--rem-46:   2.875rem;     /*  46px */
+--rem-48:   3rem;         /*  48px */
+
+--rem-50:   3.125rem;     /*  50px */
+--rem-52:   3.25rem;      /*  52px */
+--rem-54:   3.375rem;     /*  54px */
+--rem-56:   3.5rem;       /*  56px */
+--rem-58:   3.625rem;     /*  58px */
+--rem-60:   3.75rem;      /*  60px */
+--rem-62:   3.875rem;     /*  62px */
+--rem-64:   4rem;         /*  64px */
+
+--rem-68:   4.25rem;      /*  68px */
+--rem-72:   4.5rem;       /*  72px */
+--rem-76:   4.75rem;      /*  76px */
+--rem-80:   5rem;         /*  80px */
+
+--rem-84:   5.25rem;      /*  84px */
+--rem-88:   5.5rem;       /*  88px */
+--rem-92:   5.75rem;      /*  92px */
+--rem-96:   6rem;         /*  96px */
+
+--rem-100:  6.25rem;      /* 100px */
+--rem-104:  6.5rem;       /* 104px */
+--rem-108:  6.75rem;      /* 108px */
+--rem-112:  7rem;         /* 112px */
+
+--rem-116:  7.25rem;      /* 116px */
+--rem-120:  7.5rem;       /* 120px */
+--rem-124:  7.75rem;      /* 124px */
+--rem-128:  8rem;         /* 128px */
+
+--rem-132:  8.25rem;      /* 132px */
+--rem-136:  8.5rem;       /* 136px */
+--rem-140:  8.75rem;      /* 140px */
+--rem-144:  9rem;         /* 144px */
+
+--rem-148:  9.25rem;      /* 148px */
+--rem-152:  9.5rem;       /* 152px */
+--rem-156:  9.75rem;      /* 156px */
+--rem-160:  10rem;        /* 160px */
+
+--rem-164:  10.25rem;      /* 164px */
+--rem-168:  10.25rem;      /* 164px */
+--rem-172:  10.75rem;      /* 172px */
+--rem-176:  11rem;         /* 176px */
+
+--rem-180:  11.25rem;      /* 180px */
+}
+
+:root {
+/* * * * * * * *
+  Color Vars
+ * * * * * * * */
 
 /* White */
 --white: hsl(220, 10%, 100%);
@@ -16,9 +122,9 @@
 --black-hover: rgb(51, 51, 51);
 --black-active: rgb(26, 26, 26);
 
-/**
- * Shades
- */
+/* * * * * * * *
+  Shades
+ * * * * * * * */
 
 /* Light */
 --light: hsl(220, 10%, 85%);
@@ -65,9 +171,9 @@
 --dark-800: hsl(220.00000000000009, 5%, 14.535%);
 --dark-900: hsl(220.0000000000001, 5%, 11.628%);
 
-/**
- * Palette
- */
+/* * * * * * * *
+  Palette
+ * * * * * * * */
 
 /* Primary */
 --primary: hsl(220, 80%, 50%);
@@ -114,9 +220,9 @@
 --tertiary-800: hsl(320, 5%, 25.5%);
 --tertiary-900: hsl(320.0000000000001, 5%, 17.85%);
 
-/**
- * Indicators
- */
+/* * * * * * * *
+  Indicators
+ * * * * * * * */
 
 /* Error */
 --error: hsl(0, 100%, 40%);
@@ -177,55 +283,61 @@
 --info-700: hsl(200, 5%, 27.2%);
 --info-800: hsl(200, 5%, 20.4%);
 --info-900: hsl(200.00000000000003, 5%, 14.28%);
+
 }
 
 :root {
-
 /* * * * * * * *
   Text Vars
  * * * * * * * */
 
 /* Body */
+--body-color: var(--black);
 --body-font-family: var(--font-family-omni);
 --body-font-size: var(--rem-14);
---body-line-height: 1.3125;
+--body-font-weight: inherit;
 --body-letter-spacing: inherit;
+--body-line-height: 1.3125;
 
 /* Paragraph */
+--paragraph-color: var(--body-color);
 --paragraph-font-size: var(--rem-16);
---paragraph-line-height: 1.44444;
+--paragraph-font-weight: var(--font-weight-normal);
 --paragraph-letter-spacing: inherit;
+--paragraph-line-height: 1.44444;
 
 /* Link */
---link-color: var(--black);
---link-font-size: var(--rem-16);
---link-line-height: 1.44444;
---link-letter-spacing: inherit;
+--link-color: var(--primary);
+--link-font-size: inherit;
 --link-font-weight: var(--font-weight-semibold);
-
-/* Small */
---small-font-size: var(--rem-12);
---small-line-height: 1.5;
---small-letter-spacing: inherit;
-
-/* Caption */
---caption-font-size: var(--rem-15);
---caption-line-height: 1.066667;
---caption-letter-spacing: inherit;
+--link-letter-spacing: inherit;
+--link-line-height: inherit;
 
 /* Lists */
+--list-color: var(--paragraph-color);
 --list-font-size: var(--paragraph-font-size);
---list-line-height: var(--paragraph-line-height);
 --list-letter-spacing: inherit;
+--list-line-height: var(--paragraph-line-height);
 
+/* Small */
+--small-color: var(--paragraph-color);
+--small-font-size: var(--rem-12);
+--small-letter-spacing: inherit;
+--small-line-height: 1.5;
+
+/* Caption */
+--caption-color: var(--paragraph-color);
+--caption-font-size: var(--rem-15);
+--caption-letter-spacing: inherit;
+--caption-line-height: 1.066667;
 
 /* * * * * * * * *
   Heading Vars
 * * * * * * * * */
-
+--heading-color: var(--black);
+--heading-font-family: var(--font-family-omni);
 --heading-font-weight: var(--font-weight-semibold);
 --heading-letter-spacing: inherit;
---heading-margin: var(--size-2) 0 var(--size-1);
 
 /* Heading 1 */
 --h1-font-size: var(--rem-38);
@@ -249,16 +361,16 @@
 
 /* Heading 6 */
 --h6-font-size: var(--paragraph-font-size);
---h6-line-height: var(--paragraph-line-height);
+--h6-line-height: .75;
 
 
 /* * * * * * * *
   Display Vars
  * * * * * * * */
-
+--display-color: var(--heading-color);
+--display-font-family: var(--heading-font-family);
 --display-font-weight: var(--font-weight-bold);
 --display-letter-spacing: inherit;
---display-margin: inherit;
 
 /* Display S */
 --display-s-font-size: var(--rem-32);
@@ -272,17 +384,17 @@
 --display-l-font-size: var(--rem-64);
 --display-l-line-height: 1;
 
-
 /* * * * * * * *
-  Type Vars
+  Font Vars
  * * * * * * * */
 
 /* Font Family */
+--font-family-monospace:      Monaco, Menlo, Consolas, 'Courier New', monospace;
 --font-family-omni:           'Inter', sans-serif;
 --font-family-system:         -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 --font-family-sans-serif:     'Helvetica Neue', Helvetica, Arial, sans-serif;
 --font-family-serif:          Georgia, 'Times New Roman', Times, serif;
---font-family-monospace:      Monaco, Menlo, Consolas, 'Courier New', monospace;
+
 /* Font Weights  */
 --font-weight-thin:           100;
 --font-weight-extra-light:    200;
@@ -294,123 +406,11 @@
 --font-weight-extra-bold:     800;
 --font-weight-black:          900;
 --font-weight:                normal;
-}
 
-:root {
-
-/* * * * * * * *
-  Size Unit Vars
- * * * * * * * */
-
---size-1:    var(--rem-16);
---size-2:    var(--rem-32);
---size-3:    var(--rem-48);
---size-4:    var(--rem-64);
---size-5:    var(--rem-80);
---size-6:    var(--rem-96);
---size-7:    var(--rem-112);
---size-8:    var(--rem-128);
---size-9:    var(--rem-144);
---size-10:   var(--rem-160);
-
---rem-1:    0.0625rem;    /*   1px */
---rem-2:    0.125rem;     /*   2px */
---rem-3:    0.1875rem;    /*   3px */
---rem-4:    0.25rem;      /*   4px */
---rem-5:    0.3125rem;    /*   5px */
---rem-6:    0.375rem;     /*   6px */
---rem-7:    0.4375rem;    /*   7px */
---rem-8:    0.5rem;       /*   8px */
---rem-9:    0.5625rem;    /*   9px */
---rem-10:   0.625rem;     /*  10px */
---rem-11:   0.6875rem;    /*  11px */
---rem-12:   0.75rem;      /*  12px */
---rem-13:   0.8125rem;    /*  13px */
---rem-14:   0.875rem;     /*  14px */
---rem-15:   0.9375rem;    /*  15px */
---rem-16:   1rem;         /*  16px */
---rem-17:   1.0625rem;    /*  17px */
---rem-18:   1.125rem;     /*  18px */
---rem-19:   1.1875rem;    /*  19px */
---rem-20:   1.25rem;      /*  20px */
---rem-21:   1.3125rem;    /*  21px */
---rem-22:   1.375rem;     /*  22px */
---rem-23:   1.4375rem;    /*  23px */
---rem-24:   1.5rem;       /*  24px */
---rem-25:   1.5625rem;    /*  25px */
---rem-26:   1.625rem;     /*  26px */
---rem-27:   1.6875rem;    /*  27px */
---rem-28:   1.75rem;      /*  28px */
---rem-29:   1.8125rem;    /*  29px */
---rem-30:   1.875rem;     /*  30px */
---rem-31:   1.9375rem;    /*  31px */
---rem-32:   2rem;         /*  32px */
---rem-34:   2.125rem;     /*  34px */
---rem-36:   2.25rem;      /*  36px */
---rem-38:   2.375rem;     /*  38px */
---rem-40:   2.5rem;       /*  40px */
---rem-42:   2.625rem;     /*  42px */
---rem-44:   2.75rem;      /*  44px */
---rem-46:   2.875rem;     /*  46px */
---rem-48:   3rem;         /*  48px */
---rem-50:   3.125rem;     /*  50px */
---rem-52:   3.25rem;      /*  52px */
---rem-54:   3.375rem;     /*  54px */
---rem-56:   3.5rem;       /*  56px */
---rem-58:   3.625rem;     /*  58px */
---rem-60:   3.75rem;      /*  60px */
---rem-62:   3.875rem;     /*  62px */
---rem-64:   4rem;         /*  64px */
---rem-68:   4.25rem;      /*  68px */
---rem-72:   4.5rem;       /*  72px */
---rem-76:   4.75rem;      /*  76px */
---rem-80:   5rem;         /*  80px */
---rem-84:   5.25rem;      /*  84px */
---rem-88:   5.5rem;       /*  88px */
---rem-92:   5.75rem;      /*  92px */
---rem-96:   6rem;         /*  96px */
---rem-100:  6.25rem;      /* 100px */
---rem-104:  6.5rem;       /* 104px */
---rem-108:  6.75rem;      /* 108px */
---rem-112:  7rem;         /* 112px */
---rem-116:  7.25rem;      /* 116px */
---rem-120:  7.5rem;       /* 120px */
---rem-124:  7.75rem;      /* 124px */
---rem-128:  8rem;         /* 128px */
---rem-132:  8.25rem;      /* 132px */
---rem-136:  8.5rem;       /* 136px */
---rem-140:  8.75rem;      /* 140px */
---rem-144:  9rem;         /* 144px */
---rem-148:  9.25rem;      /* 148px */
---rem-152:  9.5rem;       /* 152px */
---rem-156:  9.75rem;      /* 156px */
---rem-160:  10rem;        /* 160px */
---rem-164: 10.25rem;      /* 164px */
---rem-168: 10.25rem;      /* 164px */
---rem-172: 10.75rem;      /* 172px */
---rem-176: 11rem;         /* 176px */
---rem-180: 11.25rem;      /* 180px */
-
-}
-
-:root {
-/**
-  Figure
-*/
---figure-display: block;
---figure-margin: 0;
---figure-padding: 0;
-
---figure-caption-margin: 1rem 0 1.5rem;
---figure-caption-font-family: inherit;
---figure-caption-font-weight: inherit;
---figure-caption-font-size: var(--caption-font-size);
---figure-caption-color: inherit;
---figure-caption-text-align: left;
 }
 
 /**
-  Breakpoints Sizes:
+  Breakpoints Sizes
 
   XXS
     --xxs:            <= 320
@@ -455,10 +455,10 @@
 
 /* Base */
 
-/**
-    A Modern CSS Reset
-    https://hankchizljaw.com/wrote/a-modern-css-reset/ 
-*/
+/* * * * * * * * * * * * * * * * * * * * * * * * * * *
+  A Modern CSS Reset
+  https://hankchizljaw.com/wrote/a-modern-css-reset/
+ * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 /* Box sizing rules */
 
@@ -483,6 +483,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 ul[class],
 ol[class],
@@ -561,16 +563,26 @@ select {
   }
 }
 
+/* * * * * * * * * *
+  Base
+ * * * * * * * * * */
+
 body {
+  color: hsl(220, 10%, 0%);
+  color: var(--body-color);
   font-family: 'Inter', sans-serif;
   font-family: var(--body-font-family);
   font-size: 0.875rem;
   font-size: var(--body-font-size);
-  line-height: 1.3125;
-  line-height: var(--body-line-height);
+  font-weight: inherit;
+  font-weight: var(--body-font-weight);
   letter-spacing: inherit;
   letter-spacing: var(--body-letter-spacing);
+  line-height: 1.3125;
+  line-height: var(--body-line-height);
 }
+
+/* TODO: DELETE */
 
 .container {
   /* border: var(--rem-6) solid red; */
@@ -582,6 +594,7 @@ body {
 }
 
 .column {
+  width: 100%;
   padding-left: 1.25rem;
   padding-left: var(--rem-20);
   padding-right: 1.25rem;
@@ -606,16 +619,97 @@ body {
 
 /* Type */
 
+/* * * * * * * * * *
+  Paragraph
+ * * * * * * * * * */
+
+:root {
+  --paragraph-margin: 0 0 var(--rem-16);
+}
+
 p {
+  color: hsl(220, 10%, 0%);
+  color: var(--paragraph-color);
   font-size: 1rem;
   font-size: var(--paragraph-font-size);
+  font-weight: var(--font-weight-normal);
+  font-weight: var(--paragraph-font-weight);
+  letter-spacing: inherit;
+  letter-spacing: var(--paragraph-letter-spacing);
   line-height: 1.44444;
   line-height: var(--paragraph-line-height);
-  letter-spacing: inheritl;
-  letter-spacing: var(--paragraph-letter-spacing)l
+  margin: 0 0 1rem;
+  margin: var(--paragraph-margin);
+}
+
+/* * * * * * * *
+  Formats
+ * * * * * * * */
+
+:root {
+/* Blockquote */
+--blockquote-margin: 2em 0 3em;
+--blockquote-padding: 0;
+/* --blockquote-border-width: var(--rem-4); */
+/* --blockquote-border-color: var(--black); */
+}
+
+blockquote {
+  margin: 2em 0 3em;
+  margin: var(--blockquote-margin);
+  padding: 0;
+  padding: var(--blockquote-padding);
+  /* border-left: var(--blockquote-border-width) solid var(--blockquote-border-color); */
+}
+
+blockquote p {
+  font-size: 0.9375rem;
+  font-size: var(--caption-font-size);
+  line-height: 1.066667;
+  line-height: var(--caption-line-height);
+}
+
+blockquote cite {
+  display: block;
+  font-size: 1rem;
+  font-size: var(--paragraph-font-size);
+  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
+  font-style: normal;
+  margin: 0 0 .4em -1.2em;
+}
+
+blockquote cite:before {
+  content: "\2014";
+  /* font-weight: 400; */
+  color: hsl(220, 80%, 50%);
+  color: var(--primary);
+  margin-right: .4em;
+}
+
+blockquote q {
+  font-size: 1.5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: var(--font-family-serif);
+  font-weight: var(--font-weight-extralight);
+  font-style: italic;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: .75em;
+}
+
+blockquote q:before {
+  margin-left: -.6em;
+}
+
+blockquote.pull q {
+  font-size: 1.9em;
+  line-height: 1.25;
 }
 
 small {
+  color: hsl(220, 10%, 0%);
+  color: var(--small-color);
   font-size: 0.75rem;
   font-size: var(--small-font-size);
   line-height: 1.5;
@@ -630,9 +724,18 @@ mark {
   padding: 0.0625em .5em;
   border-radius: 0.25em;
   margin: 0 .25em;
+  color: inherit;
 }
 
-caption, figcaption, .t-caption {
+pre, code {
+  font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
+  font-family: var(--font-family-monospace);
+  overflow: auto;
+}
+
+figcaption, caption, .t-caption {
+  color: hsl(220, 10%, 0%);
+  color: var(--caption-color);
   font-size: 0.9375rem;
   font-size: var(--caption-font-size);
   line-height: 1.066667;
@@ -641,15 +744,29 @@ caption, figcaption, .t-caption {
   letter-spacing: var(--caption-letter-spacing);
 }
 
-/* Heading */
+/* * * * * * * *
+  Headings
+ * * * * * * * */
+
+:root {
+  --display-margin: inherit;
+  --heading-margin: 1rem 0;
+  --heading-padding: 0;
+}
 
 h1,h2,h3,h4,h5,h6 {
+  color: hsl(220, 10%, 0%);
+  color: var(--heading-color);
+  font-family: 'Inter', sans-serif;
+  font-family: var(--heading-font-family);
   font-weight: 600;
   font-weight: var(--heading-font-weight);
   letter-spacing: inherit;
   letter-spacing: var(--heading-letter-spacing);
-  margin: 2rem 0 1rem 0;
-  margin: var(--heading-margin) 0;
+  margin: 1rem 0;
+  margin: var(--heading-margin);
+  padding: 0;
+  padding: var(--heading-padding);
 }
 
 /* Heading Font Size */
@@ -692,17 +809,28 @@ h5 {
 h6 {
   font-size: 1rem;
   font-size: var(--h6-font-size);
-  line-height: 1.44444;
+  line-height: .75;
   line-height: var(--h6-line-height);
 }
 
-/* Display */
+/* * * * * * * * * *
+  Display Headings
+ * * * * * * * * * */
 
 .t-display, .t-display-s, .t-display-m, .t-display-l {
+  color: hsl(220, 10%, 0%);
+  color: var(--display-color);
+  font-family: 'Inter', sans-serif;
+  font-family: var(--display-font-family);
   font-weight: 700;
   font-weight: var(--display-font-weight);
   letter-spacing: inherit;
   letter-spacing: var(--display-letter-spacing);
+  word-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 /* Display Font Sizes */
@@ -728,22 +856,29 @@ h6 {
   line-height: var(--display-l-line-height);
 }
 
+/* * * * * * * * * *
+  Lists
+ * * * * * * * * * */
+
+:root {
+  --list-margin: 1rem 0;
+  --list-padding: 0 0 0 1.2em;
+}
+
 ul, ol, dl {
+  color: hsl(220, 10%, 0%);
+  color: var(--list-color);
   font-size: 1rem;
   font-size: var(--list-font-size);
-  line-height: 1.44444;
-  line-height: var(--list-line-height);
   letter-spacing: inherit;
   letter-spacing: var(--list-letter-spacing);
-}
-
-ul, ol {
-  padding-left: 2rem;
-  list-style-type: none;
-}
-
-ol {
-  counter-reset: a;
+  line-height: 1.44444;
+  line-height: var(--list-line-height);
+  list-style-position: inherit;
+  margin: 1rem 0;
+  margin: var(--list-margin);
+  padding: 0 0 0 1.2em;
+  padding: var(--list-padding);
 }
 
 li {
@@ -751,66 +886,49 @@ li {
   position: relative;
 }
 
-ul li::before {
-  content: "";
-  position: absolute;
-  width: 0.375em;
-  height: 0.375em;
-  left: -1.5em;
-  top: 0.5em;
-  border-radius: 50%;
-  background: #000;
-}
-
-ol li {
-  counter-increment: a;
-}
-
-ol li::before {
-  content: counter(a);
-  position: absolute;
-  font-size: 0.75rem;
-  font-size: var(--small-font-size);
-  line-height: 1.5;
-  line-height: var(--small-line-height);
-  font-weight: 600;
-  left: -2.5em;
-  /* background: #f1f1f1; */
-  top: 0.25em;
-  border-radius: 0.25em;
-  width: 1.5em;
-  height: 1.5em;
-  text-align: center;  
+dl {
+  padding: 0;
 }
 
 dt {
   font-weight: 600;
   font-weight: var(--font-weight-semibold);
-  margin-top: 0.5rem;
 }
 
 dd {
-  margin-left: 0;
   margin-bottom: 0.5rem;
 }
 
-/* TODO: hover, active, visited, focus, etc */
+/* * * * * * * * * *
+  Link
+  TODO: hover, active, visited, focus, etc
+ * * * * * * * * * */
 
 a {
-  font-size: 1rem;
-  font-size: var(--paragraph-font-size);
-  line-height: 1.44444;
-  line-height: var(--paragraph-line-height);
-  letter-spacing: var(--link-letter-spcaing);
+  color: hsl(220, 80%, 50%);
+  color: var(--link-color);
+  font-family: inherit;
+  font-size: inherit;
+  font-size: var(--link-font-size);
   font-weight: 600;
   font-weight: var(--link-font-weight);
-  color: hsl(220, 10%, 0%);
-  color: var(--link-color);
+  letter-spacing: inherit;
+  letter-spacing: var(--link-letter-spacing);
+  line-height: inherit;
+  line-height: var(--link-line-height);
 }
 
 /* Primitives */
 
-button {
+/* * * * * * * * * *
+  Buttons
+ * * * * * * * * * */
+
+button,
+.button,
+input[type="submit"],
+input[type="reset"] {
+  display: inline-block;
   border: 0.0625rem solid #E0E0E0;
   border: var(--rem-1) solid #E0E0E0;
   border-radius: 0.375rem;
@@ -819,14 +937,30 @@ button {
   padding: var(--rem-8) var(--rem-16);
   font-size: 1rem;
   font-size: var(--rem-16);
-  line-height: 1.3125rem;
-  line-height: var(--rem-21);
+  line-height: 1.3125;
+}
+
+/* * * * * * * * * *
+  Figure
+ * * * * * * * * * */
+
+:root {
+ --figure-display: block;
+ --figure-margin: var(--paragraph-margin);
+ --figure-padding: 0;
+ /* Figure Caption */
+ --figure-caption-margin: 1rem 0 1.5rem;
+ --figure-caption-font-family: inherit;
+ --figure-caption-font-weight: inherit;
+ --figure-caption-font-size: var(--caption-font-size);
+ --figure-caption-color: var(--caption-color);
+ --figure-caption-text-align: left;
 }
 
 figure {
   display: block;
   display: var(--figure-display);
-  margin: 0;
+  margin: 0 0 1rem;
   margin: var(--figure-margin);
   padding: 0;
   padding: var(--figure-padding);
@@ -841,13 +975,100 @@ figcaption {
   font-weight: var(--figure-caption-font-weight);
   font-size: 0.9375rem;
   font-size: var(--figure-caption-font-size);
-  color: inherit;
+  color: hsl(220, 10%, 0%);
   color: var(--figure-caption-color);
   text-align: left;
   text-align: var(--figure-caption-text-align);
 }
 
 /* Components */
+
+/* TEMPORARY */
+
+.omni-form {
+  max-width: 100vw;
+  overflow: auto;
+  width: 100%;
+  font-size: 1rem;
+  font-size: var(--paragraph-font-size);
+}
+
+.omni-form label {
+  margin: .5rem 0 .25rem;
+}
+
+.omni-form label,
+.omni-form input {
+  display: block;
+  max-width: 30rem;
+}
+
+.omni-form input[type="submit"],
+.omni-form input[type="reset"],
+.omni-form button {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+.omni-checkbox,
+.omni-radio {
+  max-width: none;
+}
+
+.omni-checkbox label,
+.omni-checkbox input,
+.omni-radio label,
+.omni-radio input {
+  display: inline-block;
+}
+
+/* * * * * * * * * *
+  Deco List
+ * * * * * * * * * */
+
+ul.deco-list,
+ol.deco-list {
+  --list-padding: 0 0 0 2rem;
+  padding: 0 0 0 1.2em;
+  padding: var(--list-padding);
+}
+
+ol.deco-list {
+  counter-reset: a;
+}
+
+ul.deco-list li::before {
+  content: "";
+  position: absolute;
+  width: 0.375em;
+  height: 0.375em;
+  left: -1.5em;
+  top: 0.5em;
+  border-radius: 50%;
+  background: hsl(220, 10%, 0%);
+  background: var(--list-color);
+}
+
+ol.deco-list li {
+  counter-increment: a;
+}
+
+ol.deco-list li::before {
+  content: counter(a);
+  position: absolute;
+  font-size: 0.75rem;
+  font-size: var(--small-font-size);
+  line-height: 1.5;
+  line-height: var(--small-line-height);
+  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
+  left: -2.5em;
+  top: 0.25em;
+  border-radius: 0.25em;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+}
 
 /* Patterns */
 

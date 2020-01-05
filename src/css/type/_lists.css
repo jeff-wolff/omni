@@ -2,15 +2,15 @@
   Lists
  * * * * * * * * * */
 :root {
-  --list-margin: 0.5rem 0;
-  --list-padding: 0 0 0 2em;
+  --list-margin: 0 0 1rem;
+  --list-padding: 0 0 0 1.2em;
 }
 ul, ol, dl {
   color: var(--list-color);
   font-size: var(--list-font-size);
   letter-spacing: var(--list-letter-spacing);
   line-height: var(--list-line-height);
-  list-style-position: inherit;
+  list-style-position: outside;
   margin: var(--list-margin);
   padding: var(--list-padding);
 }
