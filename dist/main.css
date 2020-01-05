@@ -197,9 +197,11 @@
 --paragraph-letter-spacing: inherit;
 
 /* Link */
+--link-color: var(--black);
 --link-font-size: var(--rem-16);
 --link-line-height: 1.44444;
 --link-letter-spacing: inherit;
+--link-font-weight: var(--font-weight-semibold);
 
 /* Small */
 --small-font-size: var(--rem-12);
@@ -212,8 +214,8 @@
 --caption-letter-spacing: inherit;
 
 /* Lists */
---list-font-size: var(--rem-16);
---list-line-height: var(--p-line-height);
+--list-font-size: var(--paragraph-font-size);
+--list-line-height: var(--paragraph-line-height);
 --list-letter-spacing: inherit;
 
 
@@ -566,6 +568,8 @@ body {
   font-size: var(--body-font-size);
   line-height: 1.3125;
   line-height: var(--body-line-height);
+  letter-spacing: inherit;
+  letter-spacing: var(--body-letter-spacing);
 }
 
 .container {
@@ -611,13 +615,13 @@ p {
   letter-spacing: var(--paragraph-letter-spacing)l
 }
 
-/* TODO: Add Letter-spacing */
-
 small {
   font-size: 0.75rem;
   font-size: var(--small-font-size);
   line-height: 1.5;
   line-height: var(--small-line-height);
+  letter-spacing: inherit;
+  letter-spacing: var(--small-letter-spacing);
 }
 
 mark {
@@ -633,11 +637,22 @@ caption, figcaption, .t-caption {
   font-size: var(--caption-font-size);
   line-height: 1.066667;
   line-height: var(--caption-line-height);
+  letter-spacing: inherit;
+  letter-spacing: var(--caption-letter-spacing);
 }
 
-/* TODO: Add Letter-spacing */
+/* Heading */
 
-/* Font Font Size */
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 600;
+  font-weight: var(--heading-font-weight);
+  letter-spacing: inherit;
+  letter-spacing: var(--heading-letter-spacing);
+  margin: 2rem 0 1rem 0;
+  margin: var(--heading-margin) 0;
+}
+
+/* Heading Font Size */
 
 h1 {
   font-size: 2.375rem;
@@ -681,35 +696,16 @@ h6 {
   line-height: var(--h6-line-height);
 }
 
-/* Heading Font Weight */
+/* Display */
 
-h1,h2,h3,h4,h5,h6 {
-  font-weight: 600;
-  font-weight: var(--heading-font-weight);
-}
-
-/* Heading Margin */
-
-h1,h2,h3,h4,h5,h6 {
-  margin: 2rem 0 1rem 0;
-  margin: var(--heading-margin) 0;
+.t-display, .t-display-s, .t-display-m, .t-display-l {
+  font-weight: 700;
+  font-weight: var(--display-font-weight);
+  letter-spacing: inherit;
+  letter-spacing: var(--display-letter-spacing);
 }
 
 /* Display Font Sizes */
-
-.t-display-l {
-  font-size: 4rem;
-  font-size: var(--display-l-font-size);
-  line-height: 1;
-  line-height: var(--display-l-line-height);
-}
-
-.t-display, .t-display-m {
-  font-size: 3rem;
-  font-size: var(--display-m-font-size);
-  line-height: 1;
-  line-height: var(--display-m-line-height);
-}
 
 .t-display-s {
   font-size: 2rem;
@@ -718,20 +714,27 @@ h1,h2,h3,h4,h5,h6 {
   line-height: var(--display-s-line-height);
 }
 
-/* Display Font Weight */
-
-.t-display-s, .t-display, .t-display-m, .t-display-l {
-  font-weight: 700;
-  font-weight: var(--display-font-weight);
+.t-display-m, .t-display {
+  font-size: 3rem;
+  font-size: var(--display-m-font-size);
+  line-height: 1;
+  line-height: var(--display-m-line-height);
 }
 
-/* TODO: Add Letter-spacing */
+.t-display-l {
+  font-size: 4rem;
+  font-size: var(--display-l-font-size);
+  line-height: 1;
+  line-height: var(--display-l-line-height);
+}
 
 ul, ol, dl {
   font-size: 1rem;
   font-size: var(--list-font-size);
-  line-height: var(--p-line-height);
+  line-height: 1.44444;
   line-height: var(--list-line-height);
+  letter-spacing: inherit;
+  letter-spacing: var(--list-letter-spacing);
 }
 
 ul, ol {
@@ -791,14 +794,18 @@ dd {
   margin-bottom: 0.5rem;
 }
 
-/* TODO: Add Letter-spacing */
-
 /* TODO: hover, active, visited, focus, etc */
 
 a {
+  font-size: 1rem;
+  font-size: var(--paragraph-font-size);
+  line-height: 1.44444;
+  line-height: var(--paragraph-line-height);
+  letter-spacing: var(--link-letter-spcaing);
   font-weight: 600;
+  font-weight: var(--link-font-weight);
   color: hsl(220, 10%, 0%);
-  color: var(--black);
+  color: var(--link-color);
 }
 
 /* Primitives */
