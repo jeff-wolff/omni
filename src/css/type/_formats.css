@@ -14,6 +14,9 @@ mark {
   margin: 0 .25em;
   color: inherit;
 }
+pre, code {
+  font-family: var(--font-family-monospace);
+}
 
 figcaption, caption, .t-caption {
   color: var(--caption-color);
