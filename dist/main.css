@@ -294,7 +294,31 @@
 /* Body */
 --body-color: var(--black);
 --body-font-family: var(--font-family-omni);
---body-font-size: var(--rem-14);
+--body-font-size: 100%;
+
+/* Type Scale (Comment out) */
+
+}
+
+@media (min-width: 105rem) {
+
+:root {
+--body-font-size: 125%;
+
+}
+}
+
+@media (min-width: 120rem) {
+
+:root {
+--body-font-size: 150%;
+
+}
+}
+
+:root {
+
+
 --body-font-weight: inherit;
 --body-letter-spacing: inherit;
 --body-line-height: 1.3125;
@@ -361,7 +385,7 @@
 
 /* Heading 6 */
 --h6-font-size: var(--paragraph-font-size);
---h6-line-height: .75;
+--h6-line-height: 1;
 
 
 /* * * * * * * *
@@ -567,12 +591,12 @@ select {
   Base
  * * * * * * * * * */
 
-body {
+html, body {
   color: hsl(220, 10%, 0%);
   color: var(--body-color);
   font-family: 'Inter', sans-serif;
   font-family: var(--body-font-family);
-  font-size: 0.875rem;
+  font-size: 100%;
   font-size: var(--body-font-size);
   font-weight: inherit;
   font-weight: var(--body-font-weight);
@@ -601,20 +625,6 @@ body {
   padding-right: var(--rem-20);
 }
 
-/* TESTING Font Scale */
-
-/* @media (--xl) {
-  html {
-    font-size: 125%;
-  }
-}
-@media (--xxl) {
-  html {
-    font-size: 150%;
-  }
-}
- */
-
 /* TODO: Delete */
 
 /* Type */
@@ -624,7 +634,7 @@ body {
  * * * * * * * * * */
 
 :root {
-  --paragraph-margin: 0 0 var(--rem-16);
+  --paragraph-margin: 0 0 1em;
 }
 
 p {
@@ -638,7 +648,7 @@ p {
   letter-spacing: var(--paragraph-letter-spacing);
   line-height: 1.44444;
   line-height: var(--paragraph-line-height);
-  margin: 0 0 1rem;
+  margin: 0 0 1em;
   margin: var(--paragraph-margin);
 }
 
@@ -648,25 +658,32 @@ p {
 
 :root {
 /* Blockquote */
---blockquote-margin: 2em 0 3em;
+--blockquote-margin: 0 0 1em;
 --blockquote-padding: 0;
 /* --blockquote-border-width: var(--rem-4); */
 /* --blockquote-border-color: var(--black); */
 }
 
 blockquote {
-  margin: 2em 0 3em;
+  margin: 0 0 1em;
   margin: var(--blockquote-margin);
   padding: 0;
   padding: var(--blockquote-padding);
-  /* border-left: var(--blockquote-border-width) solid var(--blockquote-border-color); */
 }
 
-blockquote p {
-  font-size: 0.9375rem;
-  font-size: var(--caption-font-size);
-  line-height: 1.066667;
-  line-height: var(--caption-line-height);
+blockquote q {
+  font-size: 1.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: var(--font-family-serif);
+  font-weight: var(--font-weight-extralight);
+  font-style: italic;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: .4em;
+}
+
+blockquote q:before {
+  margin-left: -.6em;
 }
 
 blockquote cite {
@@ -676,7 +693,7 @@ blockquote cite {
   font-weight: 600;
   font-weight: var(--font-weight-semibold);
   font-style: normal;
-  margin: 0 0 .4em -1.2em;
+  margin: 0 0 .2rem -1.2em;
 }
 
 blockquote cite:before {
@@ -687,23 +704,11 @@ blockquote cite:before {
   margin-right: .4em;
 }
 
-blockquote q {
-  font-size: 1.5em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-family: var(--font-family-serif);
-  font-weight: var(--font-weight-extralight);
-  font-style: italic;
-  line-height: 1.4;
-  display: block;
-  margin-bottom: .75em;
-}
-
-blockquote q:before {
-  margin-left: -.6em;
+blockquote p {
 }
 
 blockquote.pull q {
-  font-size: 1.9em;
+  font-size: 1.9rem;
   line-height: 1.25;
 }
 
@@ -750,7 +755,7 @@ figcaption, caption, .t-caption {
 
 :root {
   --display-margin: inherit;
-  --heading-margin: 1rem 0;
+  --heading-margin: 0 0 1rem;
   --heading-padding: 0;
 }
 
@@ -763,7 +768,7 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: var(--heading-font-weight);
   letter-spacing: inherit;
   letter-spacing: var(--heading-letter-spacing);
-  margin: 1rem 0;
+  margin: 0 0 1rem;
   margin: var(--heading-margin);
   padding: 0;
   padding: var(--heading-padding);
@@ -809,7 +814,7 @@ h5 {
 h6 {
   font-size: 1rem;
   font-size: var(--h6-font-size);
-  line-height: .75;
+  line-height: 1;
   line-height: var(--h6-line-height);
 }
 
@@ -861,7 +866,7 @@ h6 {
  * * * * * * * * * */
 
 :root {
-  --list-margin: 1rem 0;
+  --list-margin: 0 0 1em;
   --list-padding: 0 0 0 1.2em;
 }
 
@@ -874,15 +879,15 @@ ul, ol, dl {
   letter-spacing: var(--list-letter-spacing);
   line-height: 1.44444;
   line-height: var(--list-line-height);
-  list-style-position: inherit;
-  margin: 1rem 0;
+  list-style-position: outside;
+  margin: 0 0 1em;
   margin: var(--list-margin);
   padding: 0 0 0 1.2em;
   padding: var(--list-padding);
 }
 
 li {
-  margin: 0.5rem 0;
+  margin: 0 0 0.5em;
   position: relative;
 }
 
@@ -893,10 +898,11 @@ dl {
 dt {
   font-weight: 600;
   font-weight: var(--font-weight-semibold);
+  margin-bottom: .1em;
 }
 
 dd {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1em;
 }
 
 /* * * * * * * * * *
@@ -949,7 +955,7 @@ input[type="reset"] {
  --figure-margin: var(--paragraph-margin);
  --figure-padding: 0;
  /* Figure Caption */
- --figure-caption-margin: 1rem 0 1.5rem;
+ --figure-caption-margin: 1rem 0;
  --figure-caption-font-family: inherit;
  --figure-caption-font-weight: inherit;
  --figure-caption-font-size: var(--caption-font-size);
@@ -960,14 +966,14 @@ input[type="reset"] {
 figure {
   display: block;
   display: var(--figure-display);
-  margin: 0 0 1rem;
+  margin: 0 0 1em;
   margin: var(--figure-margin);
   padding: 0;
   padding: var(--figure-padding);
 }
 
 figcaption {
-  margin: 1rem 0 1.5rem;
+  margin: 1rem 0;
   margin: var(--figure-caption-margin);
   font-family: inherit;
   font-family: var(--figure-caption-font-family);

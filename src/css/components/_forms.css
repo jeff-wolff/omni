@@ -6,7 +6,7 @@
   font-size: var(--paragraph-font-size);
 }
 .omni-form label {
-  margin: .5rem 0 .25rem;
+  margin: .5em 0 .25em;
 }
 .omni-form label,
 .omni-form input {
@@ -17,7 +17,7 @@
 .omni-form input[type="reset"],
 .omni-form button {
   display: inline-block;
-  margin-top: 1.5rem;
+  margin-top: 1.5em;
 }
 .omni-checkbox,
 .omni-radio {

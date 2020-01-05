@@ -2,7 +2,7 @@
   Paragraph
  * * * * * * * * * */
 :root {
-  --paragraph-margin: 0 0 var(--rem-16);
+  --paragraph-margin: 0 0 1em;
 }
 p {
   color: var(--paragraph-color);

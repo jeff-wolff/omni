@@ -2,7 +2,7 @@
   Lists
  * * * * * * * * * */
 :root {
-  --list-margin: 0 0 1rem;
+  --list-margin: 0 0 1em;
   --list-padding: 0 0 0 1.2em;
 }
 ul, ol, dl {
@@ -15,7 +15,7 @@ ul, ol, dl {
   padding: var(--list-padding);
 }
 li {
-  margin: 0.5rem 0;
+  margin: 0 0 0.5em;
   position: relative;
 }
 dl {
@@ -23,7 +23,8 @@ dl {
 }
 dt {
   font-weight: var(--font-weight-semibold);
+  margin-bottom: .1em;
 }
 dd {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1em;
 }

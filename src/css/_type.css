@@ -6,7 +6,18 @@
 /* Body */
 --body-color: var(--black);
 --body-font-family: var(--font-family-omni);
---body-font-size: var(--rem-14);
+--body-font-size: 100%;
+
+/* Type Scale */
+@media (--xxl) {
+--body-font-size: 125%;
+}
+/* 
+@media (--xxl) {
+--body-font-size: 150%;
+} */
+
+
 --body-font-weight: inherit;
 --body-letter-spacing: inherit;
 --body-line-height: 1.3125;
@@ -73,7 +84,7 @@
 
 /* Heading 6 */
 --h6-font-size: var(--paragraph-font-size);
---h6-line-height: .75;
+--h6-line-height: 1;
 
 
 /* * * * * * * *

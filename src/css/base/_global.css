@@ -12,15 +12,3 @@
   padding-left: var(--rem-20);
   padding-right: var(--rem-20);
 }
-/* TESTING Font Scale */
-/* @media (--xl) {
-  html {
-    font-size: 125%;
-  }
-}
-@media (--xxl) {
-  html {
-    font-size: 150%;
-  }
-}
- */
