@@ -24,6 +24,7 @@
 @import './primitives/_figure.css';
 
 /* Components */
+@import './components/_deco-list.css';
 
 /* Patterns */
 

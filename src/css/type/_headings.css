@@ -1,8 +1,9 @@
 /* Heading */
 h1,h2,h3,h4,h5,h6 {
+  color: var(--heading-color);
   font-weight: var(--heading-font-weight);
   letter-spacing: var(--heading-letter-spacing);
-  margin: var(--heading-margin) 0;
+  margin: var(--heading-margin);
 }
 /* Heading Font Size */
 h1 {
@@ -31,6 +32,7 @@ h6 {
 }
 /* Display */
 .t-display, .t-display-s, .t-display-m, .t-display-l {
+  color: var(--display-color);
   font-weight: var(--display-font-weight);
   letter-spacing: var(--display-letter-spacing);
 }

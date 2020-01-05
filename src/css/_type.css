@@ -5,15 +5,18 @@
  * * * * * * * */
 
 /* Body */
+--body-color: var(--black);
 --body-font-family: var(--font-family-omni);
 --body-font-size: var(--rem-14);
 --body-line-height: 1.3125;
 --body-letter-spacing: inherit;
 
 /* Paragraph */
+--paragraph-color: var(--body-color);
 --paragraph-font-size: var(--rem-16);
 --paragraph-line-height: 1.44444;
 --paragraph-letter-spacing: inherit;
+--paragraph-margin: var(--size-1) 0;
 
 /* Link */
 --link-color: var(--black);
@@ -23,28 +26,32 @@
 --link-font-weight: var(--font-weight-semibold);
 
 /* Small */
+--small-color: var(--body-color);
 --small-font-size: var(--rem-12);
 --small-line-height: 1.5;
 --small-letter-spacing: inherit;
 
 /* Caption */
+--caption-color: var(--body-color);
 --caption-font-size: var(--rem-15);
 --caption-line-height: 1.066667;
 --caption-letter-spacing: inherit;
 
 /* Lists */
+--list-color: var(--body-color);
 --list-font-size: var(--paragraph-font-size);
 --list-line-height: var(--paragraph-line-height);
 --list-letter-spacing: inherit;
-
+--list-margin: 0.5rem 0;
+--list-padding: 0 0 0 1.125rem;
 
 /* * * * * * * * *
   Heading Vars
 * * * * * * * * */
-
+--heading-color: var(--black);
 --heading-font-weight: var(--font-weight-semibold);
 --heading-letter-spacing: inherit;
---heading-margin: var(--size-2) 0 var(--size-1);
+--heading-margin: 1.5rem 0;
 
 /* Heading 1 */
 --h1-font-size: var(--rem-38);
@@ -74,7 +81,7 @@
 /* * * * * * * *
   Display Vars
  * * * * * * * */
-
+--display-color: var(--heading-color);
 --display-font-weight: var(--font-weight-bold);
 --display-letter-spacing: inherit;
 --display-margin: inherit;

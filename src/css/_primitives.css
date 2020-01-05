@@ -10,6 +10,6 @@
 --figure-caption-font-family: inherit;
 --figure-caption-font-weight: inherit;
 --figure-caption-font-size: var(--caption-font-size);
---figure-caption-color: inherit;
+--figure-caption-color: var(--caption-color);
 --figure-caption-text-align: left;
 }

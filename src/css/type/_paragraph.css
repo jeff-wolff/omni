@@ -1,5 +1,7 @@
 p {
+  color: var(--paragraph-color);
   font-size: var(--paragraph-font-size);
   line-height: var(--paragraph-line-height);
-  letter-spacing: var(--paragraph-letter-spacing)l
+  letter-spacing: var(--paragraph-letter-spacing);
+  margin: var(--paragraph-margin);
 }

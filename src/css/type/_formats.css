@@ -1,4 +1,5 @@
 small {
+  color: var(--small-color);
   font-size: var(--small-font-size);
   line-height: var(--small-line-height);
   letter-spacing: var(--small-letter-spacing);
@@ -10,7 +11,8 @@ mark {
   margin: 0 .25em;
 }
 
-caption, figcaption, .t-caption {
+figcaption, caption, .t-caption {
+  color: var(--caption-color);
   font-size: var(--caption-font-size);
   line-height: var(--caption-line-height);
   letter-spacing: var(--caption-letter-spacing);
