@@ -1,3 +1,6 @@
+/* * * * * * * * * *
+  Figure
+ * * * * * * * * * */
 figure {
   display: var(--figure-display);
   margin: var(--figure-margin);

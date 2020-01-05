@@ -1,7 +1,7 @@
 :root {
-/**
-  Color
-*/
+/* * * * * * * *
+  Color Vars
+ * * * * * * * */
 
 /* White */
 --white: hsl(220, 10%, 100%);
@@ -13,9 +13,9 @@
 --black-hover: color-mod(var(--black) tint(20%));
 --black-active: color-mod(var(--black) tint(10%));
 
-/**
- * Shades
- */
+/* * * * * * * *
+  Shades
+ * * * * * * * */
 
 /* Light */
 --light: hsl(220, 10%, 85%);
@@ -62,9 +62,9 @@
 --dark-800: color-mod(var(--dark-700) shade(15%) saturation(+2.5%));
 --dark-900: color-mod(var(--dark-800) shade(20%) saturation(+2.5%));
 
-/**
- * Palette
- */
+/* * * * * * * *
+  Palette
+ * * * * * * * */
 
 /* Primary */
 --primary: hsl(220, 80%, 50%);
@@ -111,9 +111,9 @@
 --tertiary-800: color-mod(var(--tertiary-700) shade(25%) saturation(+2.5%));
 --tertiary-900: color-mod(var(--tertiary-800) shade(30%) saturation(+2.5%));
 
-/**
- * Indicators
- */
+/* * * * * * * *
+  Indicators
+ * * * * * * * */
 
 /* Error */
 --error: hsl(0, 100%, 40%);
@@ -174,4 +174,5 @@
 --info-700: color-mod(var(--info-600) shade(20%) saturation(+2.5%));
 --info-800: color-mod(var(--info-700) shade(25%) saturation(+2.5%));
 --info-900: color-mod(var(--info-800) shade(30%) saturation(+2.5%));
+
 }

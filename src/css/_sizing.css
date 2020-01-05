@@ -1,8 +1,7 @@
 :root {
-
-/* * * * * * * *
-  Size Unit Vars
- * * * * * * * */
+/* * * * * * * * * * *
+  Sizing Unit Vars
+ * * * * * * * * * * */
 
 --size-1:    var(--rem-16);
 --size-2:    var(--rem-32);

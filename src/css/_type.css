@@ -1,5 +1,4 @@
 :root {
-
 /* * * * * * * *
   Text Vars
  * * * * * * * */
@@ -25,29 +24,35 @@
 --link-letter-spacing: inherit;
 --link-font-weight: var(--font-weight-semibold);
 
+/* * * * * * * * *
+  Format Vars
+* * * * * * * * */
+
 /* Small */
---small-color: var(--body-color);
+--small-color: var(--paragraph-color);
 --small-font-size: var(--rem-12);
 --small-line-height: 1.5;
 --small-letter-spacing: inherit;
 
 /* Caption */
---caption-color: var(--body-color);
+--caption-color: var(--paragraph-color);
 --caption-font-size: var(--rem-15);
 --caption-line-height: 1.066667;
 --caption-letter-spacing: inherit;
 
 /* Lists */
---list-color: var(--body-color);
+--list-color: var(--paragraph-color);
 --list-font-size: var(--paragraph-font-size);
 --list-line-height: var(--paragraph-line-height);
 --list-letter-spacing: inherit;
 --list-margin: 0.5rem 0;
 --list-padding: 0 0 0 1.125rem;
 
+
 /* * * * * * * * *
   Heading Vars
 * * * * * * * * */
+
 --heading-color: var(--black);
 --heading-font-weight: var(--font-weight-semibold);
 --heading-letter-spacing: inherit;
@@ -81,6 +86,7 @@
 /* * * * * * * *
   Display Vars
  * * * * * * * */
+
 --display-color: var(--heading-color);
 --display-font-weight: var(--font-weight-bold);
 --display-letter-spacing: inherit;
@@ -100,7 +106,7 @@
 
 
 /* * * * * * * *
-  Type Vars
+  Font Vars
  * * * * * * * */
 
 /* Font Family */
@@ -109,6 +115,7 @@
 --font-family-sans-serif:     'Helvetica Neue', Helvetica, Arial, sans-serif;
 --font-family-serif:          Georgia, 'Times New Roman', Times, serif;
 --font-family-monospace:      Monaco, Menlo, Consolas, 'Courier New', monospace;
+
 /* Font Weights  */
 --font-weight-thin:           100;
 --font-weight-extra-light:    200;
@@ -120,4 +127,5 @@
 --font-weight-extra-bold:     800;
 --font-weight-black:          900;
 --font-weight:                normal;
+
 }

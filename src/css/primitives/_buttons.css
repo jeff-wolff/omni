@@ -1,4 +1,7 @@
-button {
+/* * * * * * * * * *
+  Buttons
+ * * * * * * * * * */
+button, .button {
   border: var(--rem-1) solid #E0E0E0;
   border-radius: var(--rem-6);
   padding: var(--rem-8) var(--rem-16);

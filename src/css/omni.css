@@ -1,9 +1,9 @@
 @import url('https://rsms.me/inter/inter.css');
 
 /* Vars */
+@import './_sizing.css';
 @import './_color.css';
 @import './_type.css';
-@import './_base.css';
 @import './_primitives.css';
 @import './_breakpoints.css';
 
@@ -16,8 +16,8 @@
 @import './type/_paragraph.css';
 @import './type/_formats.css';
 @import './type/_headings.css';
-@import './type/_list.css';
-@import './type/_links.css';
+@import './type/_lists.css';
+@import './type/_link.css';
 
 /* Primitives */
 @import './primitives/_buttons.css';

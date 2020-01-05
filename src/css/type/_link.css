@@ -1,4 +1,7 @@
-/* TODO: hover, active, visited, focus, etc */
+/* * * * * * * * * *
+  Link
+  TODO: hover, active, visited, focus, etc
+ * * * * * * * * * */
 a {
   font-size: var(--paragraph-font-size);
   line-height: var(--paragraph-line-height);
