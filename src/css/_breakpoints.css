@@ -41,25 +41,25 @@
     --tablet-h-down:  <= 1024 - iPad Horizontal / iPad Pro
 
  */
-@custom-media --xxs (max-width: 20rem); 
-@custom-media --xs (min-width: 20rem); 
-@custom-media --xs-only (min-width: 20rem) and (max-width: 36.1875rem); 
-@custom-media --xs-down (max-width: 36.1875rem); 
-@custom-media --s (min-width: 36.25rem); 
-@custom-media --s-only (min-width: 36.25rem) and (max-width: 59.9375rem); 
-@custom-media --s-down (max-width: 59.9375rem); 
-@custom-media --m (min-width: 60rem); 
-@custom-media --m-only (min-width: 60rem) and (max-width: 79.9375rem); 
-@custom-media --m-down (max-width: 79.9375rem); 
-@custom-media --l (min-width: 80rem); 
-@custom-media --l-only (min-width: 80rem) and (max-width: 104.9375rem); 
-@custom-media --l-down (max-width: 104.9375rem); 
+@custom-media --xxs (max-width: 20rem);
+@custom-media --xs (min-width: 20rem);
+@custom-media --xs-only (min-width: 20rem) and (max-width: 36.1875rem);
+@custom-media --xs-down (max-width: 36.1875rem);
+@custom-media --s (min-width: 36.25rem);
+@custom-media --s-only (min-width: 36.25rem) and (max-width: 59.9375rem);
+@custom-media --s-down (max-width: 59.9375rem);
+@custom-media --m (min-width: 60rem);
+@custom-media --m-only (min-width: 60rem) and (max-width: 79.9375rem);
+@custom-media --m-down (max-width: 79.9375rem);
+@custom-media --l (min-width: 80rem);
+@custom-media --l-only (min-width: 80rem) and (max-width: 104.9375rem);
+@custom-media --l-down (max-width: 104.9375rem);
 @custom-media --xl (min-width: 105rem);
-@custom-media --xl-only (min-width: 105rem) and (max-width: 119.9375rem); 
-@custom-media --xl-down (max-width: 119.9375rem); 
-@custom-media --xxl (min-width: 120rem); 
+@custom-media --xl-only (min-width: 105rem) and (max-width: 119.9375rem);
+@custom-media --xl-down (max-width: 119.9375rem);
+@custom-media --xxl (min-width: 120rem);
 
-@custom-media --tablet (min-width: 48rem); 
+@custom-media --tablet (min-width: 48rem);
 @custom-media --tablet-only (min-width: 48rem) and (max-width: 48rem);
 @custom-media --tablet-down (max-width: 48rem);
 @custom-media --tablet-h (min-width: 64rem);
