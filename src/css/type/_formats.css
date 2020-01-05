@@ -3,7 +3,7 @@
  * * * * * * * */
 :root {
 /* Blockquote */
---blockquote-margin: 0 0 2rem;
+--blockquote-margin: 0 0 1em;
 --blockquote-padding: 0;
 /* --blockquote-border-width: var(--rem-4); */
 /* --blockquote-border-color: var(--black); */
@@ -22,7 +22,7 @@ blockquote cite {
   font-size: var(--paragraph-font-size);
   font-weight: var(--font-weight-semibold);
   font-style: normal;
-  margin: 0 0 .4em -1.2em;
+  margin: 0 0 .2rem -1.2em;
 }
 blockquote cite:before {
   content: "\2014";
@@ -37,7 +37,7 @@ blockquote q {
   font-style: italic;
   line-height: 1.4;
   display: block;
-  margin-bottom: .75em;
+  margin-bottom: .4em;
 }
 blockquote q:before {
   margin-left: -.6em;

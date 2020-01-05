@@ -3,9 +3,10 @@
  * * * * * * * */
 :root {
   --display-margin: inherit;
-  --heading-margin: 1rem 0;
+  --heading-margin: 0 0 1rem;
   --heading-padding: 0;
 }
+
 h1,h2,h3,h4,h5,h6 {
   color: var(--heading-color);
   font-family: var(--heading-font-family);
