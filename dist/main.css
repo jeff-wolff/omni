@@ -296,11 +296,11 @@
 --body-font-family: var(--font-family-omni);
 --body-font-size: 100%;
 
-/* Type Scale (Comment out) */
+/* Type Scale */
 
 }
 
-@media (min-width: 105rem) {
+@media (min-width: 120rem) {
 
 :root {
 --body-font-size: 125%;
@@ -308,15 +308,11 @@
 }
 }
 
-@media (min-width: 120rem) {
-
 :root {
+/* 
+@media (--xxl) {
 --body-font-size: 150%;
-
-}
-}
-
-:root {
+} */
 
 
 --body-font-weight: inherit;
@@ -660,8 +656,6 @@ p {
 /* Blockquote */
 --blockquote-margin: 0 0 1em;
 --blockquote-padding: 0;
-/* --blockquote-border-width: var(--rem-4); */
-/* --blockquote-border-color: var(--black); */
 }
 
 blockquote {
@@ -679,7 +673,6 @@ blockquote q {
   font-style: italic;
   line-height: 1.4;
   display: block;
-  margin-bottom: .4em;
 }
 
 blockquote q:before {
@@ -693,12 +686,11 @@ blockquote cite {
   font-weight: 600;
   font-weight: var(--font-weight-semibold);
   font-style: normal;
-  margin: 0 0 .2rem -1.2em;
+  margin: 1em 0 .2em -1.2em;
 }
 
 blockquote cite:before {
   content: "\2014";
-  /* font-weight: 400; */
   color: hsl(220, 80%, 50%);
   color: var(--primary);
   margin-right: .4em;
@@ -708,7 +700,7 @@ blockquote p {
 }
 
 blockquote.pull q {
-  font-size: 1.9rem;
+  font-size: 1.875rem;
   line-height: 1.25;
 }
 
@@ -955,7 +947,7 @@ input[type="reset"] {
  --figure-margin: var(--paragraph-margin);
  --figure-padding: 0;
  /* Figure Caption */
- --figure-caption-margin: 1rem 0;
+ --figure-caption-margin: 1em 0;
  --figure-caption-font-family: inherit;
  --figure-caption-font-weight: inherit;
  --figure-caption-font-size: var(--caption-font-size);
@@ -973,7 +965,7 @@ figure {
 }
 
 figcaption {
-  margin: 1rem 0;
+  margin: 1em 0;
   margin: var(--figure-caption-margin);
   font-family: inherit;
   font-family: var(--figure-caption-font-family);
@@ -1000,7 +992,7 @@ figcaption {
 }
 
 .omni-form label {
-  margin: .5rem 0 .25rem;
+  margin: .5em 0 .25em;
 }
 
 .omni-form label,
@@ -1013,7 +1005,7 @@ figcaption {
 .omni-form input[type="reset"],
 .omni-form button {
   display: inline-block;
-  margin-top: 1.5rem;
+  margin-top: 1.5em;
 }
 
 .omni-checkbox,
@@ -1034,7 +1026,7 @@ figcaption {
 
 ul.deco-list,
 ol.deco-list {
-  --list-padding: 0 0 0 2rem;
+  --list-padding: 0 0 0 2em;
   padding: 0 0 0 1.2em;
   padding: var(--list-padding);
 }

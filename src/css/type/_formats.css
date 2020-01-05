@@ -17,7 +17,6 @@ blockquote q {
   font-style: italic;
   line-height: 1.4;
   display: block;
-  margin-bottom: .4em;
 }
 blockquote q:before {
   margin-left: -.6em;
@@ -27,7 +26,7 @@ blockquote cite {
   font-size: var(--paragraph-font-size);
   font-weight: var(--font-weight-semibold);
   font-style: normal;
-  margin: 0 0 .2em -1.2em;
+  margin: 1em 0 .2em -1.2em;
 }
 blockquote cite:before {
   content: "\2014";
@@ -37,7 +36,7 @@ blockquote cite:before {
 blockquote p {
 }
 blockquote.pull q {
-  font-size: 1.9rem;
+  font-size: 1.875rem;
   line-height: 1.25;
 }
 small {
