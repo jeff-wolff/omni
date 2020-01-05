@@ -52,9 +52,11 @@ mark {
   margin: 0 .25em;
   color: inherit;
 }
+pre {
+  overflow: auto;
+}
 pre, code {
   font-family: var(--font-family-monospace);
-  overflow: auto;
 }
 
 figcaption, caption, .t-caption {
