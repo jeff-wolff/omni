@@ -3,7 +3,7 @@
  * * * * * * * */
 :root {
 /* Blockquote */
---blockquote-margin: 2em 0 3em;
+--blockquote-margin: 0 0 2rem;
 --blockquote-padding: 0;
 /* --blockquote-border-width: var(--rem-4); */
 /* --blockquote-border-color: var(--black); */
