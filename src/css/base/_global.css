@@ -1,27 +1,24 @@
-html {
-    -webkit-font-smoothing:  antialiased;
-}
 .container {
-    /* border: var(--rem-6) solid red; */
-    max-width: 38.75rem;
-    margin-top: 1rem;
-    margin-right: auto;
-    margin-bottom: 1rem;
-    margin-left: auto;
+  /* border: var(--rem-6) solid red; */
+  max-width: 38.75rem;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-left: auto;
 }
 .column {
-    padding-left: var(--rem-20);
-    padding-right: var(--rem-20);
+  padding-left: var(--rem-20);
+  padding-right: var(--rem-20);
 }
 /* TESTING Font Scale */
 /* @media (--xl) {
-    html {
-        font-size: 125%;
-    }
+  html {
+    font-size: 125%;
+  }
 }
 @media (--xxl) {
-    html {
-        font-size: 150%;
-    }
+  html {
+    font-size: 150%;
+  }
 }
  */

@@ -1,4 +1,8 @@
+/* TODO: hover, active, visited, focus, etc */
 a {
-  font-weight: 600;
-  color: var(--black);
+  font-size: var(--paragraph-font-size);
+  line-height: var(--paragraph-line-height);
+  letter-spacing: var(--link-letter-spcaing);
+  font-weight: var(--link-font-weight);
+  color: var(--link-color);
 }

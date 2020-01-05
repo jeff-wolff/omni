@@ -1,99 +1,96 @@
 :root {
-/**
-    Body 
-*/
-    --body-font-family: var(--font-family-omni);
-    --body-font-size: var(--rem-14);
-    --body-line-height: 1.3125;
-/** 
-    Size Units 
-*/
-    --rem-1:    0.0625rem;     /*   1px */
-    --rem-2:    0.125rem;      /*   2px */
-    --rem-3:    0.1875rem;     /*   3px */
-    --rem-4:    0.25rem;       /*   4px */
-    --rem-5:    0.3125rem;     /*   5px */
-    --rem-6:    0.375rem;      /*   6px */
-    --rem-7:    0.4375rem;     /*   7px */
-    --rem-8:    0.5rem;        /*   8px */
-    --rem-9:    0.5625rem;     /*   9px */
-    --rem-10:   0.625rem;      /*  10px */
-    --rem-11:   0.6875rem;     /*  11px */
-    --rem-12:   0.75rem;       /*  12px */
-    --rem-13:   0.8125rem;     /*  13px */
-    --rem-14:   0.875rem;      /*  14px */
-    --rem-15:   0.9375rem;     /*  15px */
-    --rem-16:   1rem;          /*  16px */
-    --rem-17:   1.0625rem;     /*  17px */
-    --rem-18:   1.125rem;      /*  18px */
-    --rem-19:   1.1875rem;     /*  19px */
-    --rem-20:   1.25rem;       /*  20px */
-    --rem-21:   1.3125rem;     /*  21px */
-    --rem-22:   1.375rem;      /*  22px */
 
-    --rem-24:   1.5rem;        /*  24px */
-    --rem-26:   1.625rem;      /*  26px */
-    --rem-28:   1.75rem;       /*  28px */
-    --rem-30:   1.875rem;      /*  30px */
-    --rem-32:   2rem;          /*  32px */
-    --rem-34:   2.125rem;      /*  34px */
-    --rem-36:   2.25rem;       /*  36px */
-    --rem-38:   2.375rem;      /*  38px */
-    --rem-40:   2.5rem;        /*  40px */
-    --rem-42:   2.625rem;      /*  42px */
-    --rem-44:   2.75rem;       /*  44px */
-    --rem-46:   2.875rem;      /*  46px */
-    --rem-48:   3rem;          /*  48px */
-    --rem-50:   3.125rem;      /*  50px */
-    --rem-52:   3.25rem;       /*  52px */
-    --rem-54:   3.375rem;      /*  54px */
-    --rem-56:   3.5rem;        /*  56px */
-    --rem-58:   3.625rem;      /*  58px */
-    --rem-60:   3.75rem;       /*  60px */
-    --rem-62:   3.875rem;      /*  62px */
-    --rem-64:   4rem;          /*  64px */
-    --rem-68:   4.25rem;       /*  68px */
-    --rem-72:   4.5rem;        /*  72px */
-    --rem-76:   4.75rem;       /*  76px */
-    --rem-80:   5rem;          /*  80px */
-    --rem-84:   5.25rem;       /*  84px */
-    --rem-88:   5.5rem;        /*  88px */
-    --rem-92:   5.75rem;       /*  92px */
-    --rem-96:   6rem;          /*  96px */
-    --rem-100:  6.25rem;       /* 100px */
-    --rem-104:  6.5rem;        /* 104px */
-    --rem-108:  6.75rem;       /* 108px */
-    
-    --rem-116:  7.25rem;       /* 116px */
-    --rem-124:  7.75rem;       /* 124px */
-    --rem-132:  8.25rem;       /* 132px */
-    --rem-140:  8.75rem;       /* 140px */
-    --rem-148:  9.25rem;       /* 148px */
-    --rem-156:  9.75rem;       /* 156px */
-    --rem-164: 10.25rem;       /* 164px */
-    --rem-172: 10.75rem;       /* 172px */
-    --rem-180: 11.25rem;       /* 180px */
+/* * * * * * * *
+  Size Unit Vars
+ * * * * * * * */
 
-/**
-    Font
- */
-    --font-family-system:            -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    --font-family-sans-serif:        'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-family-serif:             Georgia, 'Times New Roman', Times, serif;
-    --font-family-monospace:         Monaco, Menlo, Consolas, 'Courier New', monospace;
-    --font-family-omni:              'Inter', sans-serif;
-/**
-    Font Weights
- */
-    --font-weight-thin:               100;
-    --font-weight-extra-light:        200;
-    --font-weight-light:              300;
-    --font-weight-regular:            400;
-    --font-weight-medium:             500;
-    --font-weight-semibold:           600;
-    --font-weight-bold:               700;
-    --font-weight-extra-bold:         800;
-    --font-weight-black:              900;
-    --font-weight:                    normal;
+--size-1:    var(--rem-16);
+--size-2:    var(--rem-32);
+--size-3:    var(--rem-48);
+--size-4:    var(--rem-64);
+--size-5:    var(--rem-80);
+--size-6:    var(--rem-96);
+--size-7:    var(--rem-112);
+--size-8:    var(--rem-128);
+--size-9:    var(--rem-144);
+--size-10:   var(--rem-160);
+
+--rem-1:    0.0625rem;    /*   1px */
+--rem-2:    0.125rem;     /*   2px */
+--rem-3:    0.1875rem;    /*   3px */
+--rem-4:    0.25rem;      /*   4px */
+--rem-5:    0.3125rem;    /*   5px */
+--rem-6:    0.375rem;     /*   6px */
+--rem-7:    0.4375rem;    /*   7px */
+--rem-8:    0.5rem;       /*   8px */
+--rem-9:    0.5625rem;    /*   9px */
+--rem-10:   0.625rem;     /*  10px */
+--rem-11:   0.6875rem;    /*  11px */
+--rem-12:   0.75rem;      /*  12px */
+--rem-13:   0.8125rem;    /*  13px */
+--rem-14:   0.875rem;     /*  14px */
+--rem-15:   0.9375rem;    /*  15px */
+--rem-16:   1rem;         /*  16px */
+--rem-17:   1.0625rem;    /*  17px */
+--rem-18:   1.125rem;     /*  18px */
+--rem-19:   1.1875rem;    /*  19px */
+--rem-20:   1.25rem;      /*  20px */
+--rem-21:   1.3125rem;    /*  21px */
+--rem-22:   1.375rem;     /*  22px */
+--rem-23:   1.4375rem;    /*  23px */
+--rem-24:   1.5rem;       /*  24px */
+--rem-25:   1.5625rem;    /*  25px */
+--rem-26:   1.625rem;     /*  26px */
+--rem-27:   1.6875rem;    /*  27px */
+--rem-28:   1.75rem;      /*  28px */
+--rem-29:   1.8125rem;    /*  29px */
+--rem-30:   1.875rem;     /*  30px */
+--rem-31:   1.9375rem;    /*  31px */
+--rem-32:   2rem;         /*  32px */
+--rem-34:   2.125rem;     /*  34px */
+--rem-36:   2.25rem;      /*  36px */
+--rem-38:   2.375rem;     /*  38px */
+--rem-40:   2.5rem;       /*  40px */
+--rem-42:   2.625rem;     /*  42px */
+--rem-44:   2.75rem;      /*  44px */
+--rem-46:   2.875rem;     /*  46px */
+--rem-48:   3rem;         /*  48px */
+--rem-50:   3.125rem;     /*  50px */
+--rem-52:   3.25rem;      /*  52px */
+--rem-54:   3.375rem;     /*  54px */
+--rem-56:   3.5rem;       /*  56px */
+--rem-58:   3.625rem;     /*  58px */
+--rem-60:   3.75rem;      /*  60px */
+--rem-62:   3.875rem;     /*  62px */
+--rem-64:   4rem;         /*  64px */
+--rem-68:   4.25rem;      /*  68px */
+--rem-72:   4.5rem;       /*  72px */
+--rem-76:   4.75rem;      /*  76px */
+--rem-80:   5rem;         /*  80px */
+--rem-84:   5.25rem;      /*  84px */
+--rem-88:   5.5rem;       /*  88px */
+--rem-92:   5.75rem;      /*  92px */
+--rem-96:   6rem;         /*  96px */
+--rem-100:  6.25rem;      /* 100px */
+--rem-104:  6.5rem;       /* 104px */
+--rem-108:  6.75rem;      /* 108px */
+--rem-112:  7rem;         /* 112px */
+--rem-116:  7.25rem;      /* 116px */
+--rem-120:  7.5rem;       /* 120px */
+--rem-124:  7.75rem;      /* 124px */
+--rem-128:  8rem;         /* 128px */
+--rem-132:  8.25rem;      /* 132px */
+--rem-136:  8.5rem;       /* 136px */
+--rem-140:  8.75rem;      /* 140px */
+--rem-144:  9rem;         /* 144px */
+--rem-148:  9.25rem;      /* 148px */
+--rem-152:  9.5rem;       /* 152px */
+--rem-156:  9.75rem;      /* 156px */
+--rem-160:  10rem;        /* 160px */
+--rem-164: 10.25rem;      /* 164px */
+--rem-168: 10.25rem;      /* 164px */
+--rem-172: 10.75rem;      /* 172px */
+--rem-176: 11rem;         /* 176px */
+--rem-180: 11.25rem;      /* 180px */
 
 }

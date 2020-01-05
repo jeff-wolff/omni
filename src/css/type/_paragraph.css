@@ -1,4 +1,5 @@
 p {
-    font-size: var(--p-font-size);
-    line-height: var(--p-line-height);
+  font-size: var(--paragraph-font-size);
+  line-height: var(--paragraph-line-height);
+  letter-spacing: var(--paragraph-letter-spacing)l
 }

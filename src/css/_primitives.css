@@ -1,0 +1,15 @@
+:root {
+/**
+  Figure
+*/
+--figure-display: block;
+--figure-margin: 0;
+--figure-padding: 0;
+
+--figure-caption-margin: 1rem 0 1.5rem;
+--figure-caption-font-family: inherit;
+--figure-caption-font-weight: inherit;
+--figure-caption-font-size: var(--caption-font-size);
+--figure-caption-color: inherit;
+--figure-caption-text-align: left;
+}

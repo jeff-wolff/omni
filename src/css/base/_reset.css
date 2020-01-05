@@ -34,6 +34,12 @@ dd {
   margin: 0;
 }
 
+/* OS X font smoothing */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* Set core body defaults */
 body {
   min-height: 100vh;

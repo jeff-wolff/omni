@@ -1,10 +1,17 @@
 small {
   font-size: var(--small-font-size);
   line-height: var(--small-line-height);
+  letter-spacing: var(--small-letter-spacing);
 }
 mark {
   background-color: var(--light);
   padding: 0.0625em .5em;
   border-radius: 0.25em;
   margin: 0 .25em;
+}
+
+caption, figcaption, .t-caption {
+  font-size: var(--caption-font-size);
+  line-height: var(--caption-line-height);
+  letter-spacing: var(--caption-letter-spacing);
 }

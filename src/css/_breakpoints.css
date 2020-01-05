@@ -1,44 +1,44 @@
 /**
   Breakpoints Sizes:
 
-    XXS
-      --xxs:            <= 320
+  XXS
+    --xxs:            <= 320
 
-    XS
-      --xs:             >= 320
-      --xs-only:        >= 320 and <= 579
-      --xs-down:        <= 579 
+  XS
+    --xs:             >= 320
+    --xs-only:        >= 320 and <= 579
+    --xs-down:        <= 579 
 
-    Small
-      --s:              >= 580
-      --s-only:         >= 580 and <= 959
-      --s-down:         <= 959 
+  Small
+    --s:              >= 580
+    --s-only:         >= 580 and <= 959
+    --s-down:         <= 959 
 
-    Medium
-      --m:              >= 960
-      --m-only:         >= 960 and <= 1279
-      --m-down:         <= 1279 
+  Medium
+    --m:              >= 960
+    --m-only:         >= 960 and <= 1279
+    --m-down:         <= 1279 
 
-    Large
-      --l:              >= 1280
-      --l-only:         >= 1280 and <= 1679
-      --l-down:         <= 1679 
+  Large
+    --l:              >= 1280
+    --l-only:         >= 1280 and <= 1679
+    --l-down:         <= 1679 
 
-    XL
-      --xl:             >= 1680
-      --xl-only:        >= 1680 and <= 1919
-      --xl-down:        <= 1919 
+  XL
+    --xl:             >= 1680
+    --xl-only:        >= 1680 and <= 1919
+    --xl-down:        <= 1919 
 
-    XXL
-      --xxl:            >= 1920
+  XXL
+    --xxl:            >= 1920
 
-    Misc
-      --tablet:         >= 768 - iPad
-      --tablet-only:       768 - iPad
-      --tablet-down:    <= 768 - iPad
-      --tablet-h:       >= 1024 - iPad Horizontal / iPad Pro
-      --tablet-h-only:     1024 - iPad Horizontal / iPad Pro
-      --tablet-h-down:  <= 1024 - iPad Horizontal / iPad Pro
+  Misc
+    --tablet:         >= 768 - iPad
+    --tablet-only:       768 - iPad
+    --tablet-down:    <= 768 - iPad
+    --tablet-h:       >= 1024 - iPad Horizontal / iPad Pro
+    --tablet-h-only:     1024 - iPad Horizontal / iPad Pro
+    --tablet-h-down:  <= 1024 - iPad Horizontal / iPad Pro
 
  */
 @custom-media --xxs (max-width: 20rem); 
