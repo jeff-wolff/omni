@@ -1,12 +1,18 @@
 /* * * * * * * *
   Headings
  * * * * * * * */
+:root {
+  --display-margin: inherit;
+  --heading-margin: 1rem 0;
+  --heading-padding: 0;
+}
 h1,h2,h3,h4,h5,h6 {
   color: var(--heading-color);
   font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   letter-spacing: var(--heading-letter-spacing);
   margin: var(--heading-margin);
+  padding: var(--heading-padding);
 }
 
 /* Heading Font Size */
@@ -39,10 +45,13 @@ h6 {
   Display Headings
  * * * * * * * * * */
 .t-display, .t-display-s, .t-display-m, .t-display-l {
-  font-family: var(--display-font-family);
   color: var(--display-color);
+  font-family: var(--display-font-family);
   font-weight: var(--display-font-weight);
   letter-spacing: var(--display-letter-spacing);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 /* Display Font Sizes */

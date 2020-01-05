@@ -7,56 +7,49 @@
 --body-color: var(--black);
 --body-font-family: var(--font-family-omni);
 --body-font-size: var(--rem-14);
---body-line-height: 1.3125;
+--body-font-weight: inherit;
 --body-letter-spacing: inherit;
+--body-line-height: 1.3125;
 
 /* Paragraph */
 --paragraph-color: var(--body-color);
 --paragraph-font-size: var(--rem-16);
---paragraph-line-height: 1.44444;
+--paragraph-font-weight: var(--font-weight-normal);
 --paragraph-letter-spacing: inherit;
---paragraph-margin: var(--size-1) 0;
+--paragraph-line-height: 1.44444;
 
 /* Link */
---link-color: var(--black);
---link-font-size: var(--rem-16);
---link-line-height: 1.44444;
---link-letter-spacing: inherit;
+--link-color: var(--primary);
+--link-font-size: inherit;
 --link-font-weight: var(--font-weight-semibold);
-
-/* * * * * * * * *
-  Format Vars
-* * * * * * * * */
-
-/* Small */
---small-color: var(--paragraph-color);
---small-font-size: var(--rem-12);
---small-line-height: 1.5;
---small-letter-spacing: inherit;
-
-/* Caption */
---caption-color: var(--paragraph-color);
---caption-font-size: var(--rem-15);
---caption-line-height: 1.066667;
---caption-letter-spacing: inherit;
+--link-letter-spacing: inherit;
+--link-line-height: inherit;
 
 /* Lists */
 --list-color: var(--paragraph-color);
 --list-font-size: var(--paragraph-font-size);
---list-line-height: var(--paragraph-line-height);
 --list-letter-spacing: inherit;
---list-margin: 0.5rem 0;
---list-padding: 0 0 0 2em;
+--list-line-height: var(--paragraph-line-height);
 
+/* Small */
+--small-color: var(--paragraph-color);
+--small-font-size: var(--rem-12);
+--small-letter-spacing: inherit;
+--small-line-height: 1.5;
+
+/* Caption */
+--caption-color: var(--paragraph-color);
+--caption-font-size: var(--rem-15);
+--caption-letter-spacing: inherit;
+--caption-line-height: 1.066667;
 
 /* * * * * * * * *
   Heading Vars
 * * * * * * * * */
---heading-font-family: var(--font-family-omni);
 --heading-color: var(--black);
+--heading-font-family: var(--font-family-omni);
 --heading-font-weight: var(--font-weight-semibold);
 --heading-letter-spacing: inherit;
---heading-margin: 1.5rem 0;
 
 /* Heading 1 */
 --h1-font-size: var(--rem-38);
@@ -80,7 +73,7 @@
 
 /* Heading 6 */
 --h6-font-size: var(--paragraph-font-size);
---h6-line-height: var(--paragraph-line-height);
+--h6-line-height: .75;
 
 
 /* * * * * * * *
@@ -90,7 +83,6 @@
 --display-font-family: var(--heading-font-family);
 --display-font-weight: var(--font-weight-bold);
 --display-letter-spacing: inherit;
---display-margin: inherit;
 
 /* Display S */
 --display-s-font-size: var(--rem-32);
@@ -104,17 +96,16 @@
 --display-l-font-size: var(--rem-64);
 --display-l-line-height: 1;
 
-
 /* * * * * * * *
   Font Vars
  * * * * * * * */
 
 /* Font Family */
+--font-family-monospace:      Monaco, Menlo, Consolas, 'Courier New', monospace;
 --font-family-omni:           'Inter', sans-serif;
 --font-family-system:         -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 --font-family-sans-serif:     'Helvetica Neue', Helvetica, Arial, sans-serif;
 --font-family-serif:          Georgia, 'Times New Roman', Times, serif;
---font-family-monospace:      Monaco, Menlo, Consolas, 'Courier New', monospace;
 
 /* Font Weights  */
 --font-weight-thin:           100;

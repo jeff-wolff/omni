@@ -3,9 +3,10 @@
   TODO: hover, active, visited, focus, etc
  * * * * * * * * * */
 a {
-  font-size: var(--paragraph-font-size);
-  line-height: var(--paragraph-line-height);
-  letter-spacing: var(--link-letter-spacing);
-  font-weight: var(--link-font-weight);
   color: var(--link-color);
+  font-family: inherit;
+  font-size: var(--link-font-size);
+  font-weight: var(--link-font-weight);
+  letter-spacing: var(--link-letter-spacing);
+  line-height: var(--link-line-height);
 }

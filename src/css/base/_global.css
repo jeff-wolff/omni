@@ -1,3 +1,4 @@
+/* TODO: DELETE */
 .container {
   /* border: var(--rem-6) solid red; */
   max-width: 38.75rem;
@@ -7,6 +8,7 @@
   margin-left: auto;
 }
 .column {
+  width: 100%;
   padding-left: var(--rem-20);
   padding-right: var(--rem-20);
 }

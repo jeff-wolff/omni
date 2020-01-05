@@ -2,8 +2,10 @@
   Base
  * * * * * * * * * */
 body {
+  color: var(--body-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size);
-  line-height: var(--body-line-height);
+  font-weight: var(--body-font-weight);
   letter-spacing: var(--body-letter-spacing);
+  line-height: var(--body-line-height);
 }

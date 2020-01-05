@@ -1,10 +1,14 @@
 /* * * * * * * * * *
   Buttons
  * * * * * * * * * */
-button, .button {
+button,
+.button,
+input[type="submit"],
+input[type="reset"] {
+  display: inline-block;
   border: var(--rem-1) solid #E0E0E0;
   border-radius: var(--rem-6);
   padding: var(--rem-8) var(--rem-16);
   font-size: var(--rem-16);
-  line-height: var(--rem-21);
+  line-height: 1.3125;
 }

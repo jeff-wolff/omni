@@ -4,7 +4,6 @@
 @import './_sizing.css';
 @import './_color.css';
 @import './_type.css';
-@import './_primitives.css';
 @import './_breakpoints.css';
 
 /* Base */
@@ -24,6 +23,7 @@
 @import './primitives/_figure.css';
 
 /* Components */
+@import './components/_forms.css';
 @import './components/_deco-list.css';
 
 /* Patterns */

@@ -1,10 +1,14 @@
 /* * * * * * * * * *
   Paragraph
  * * * * * * * * * */
+:root {
+  --paragraph-margin: var(--rem-16) 0;
+}
 p {
   color: var(--paragraph-color);
   font-size: var(--paragraph-font-size);
-  line-height: var(--paragraph-line-height);
+  font-weight: var(--paragraph-font-weight);
   letter-spacing: var(--paragraph-letter-spacing);
+  line-height: var(--paragraph-line-height);
   margin: var(--paragraph-margin);
 }
