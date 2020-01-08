@@ -10,30 +10,31 @@ blockquote {
   margin: var(--blockquote-margin);
   padding: var(--blockquote-padding);
 }
-blockquote q {
+blockquote > q,
+blockquote > p:first-child {
   font-size: 1.5rem;
-  font-family: var(--font-family-serif);
+  font-family: var(--blockquote-font-family);
   font-weight: var(--font-weight-extralight);
-  font-style: italic;
   line-height: 1.4;
   display: block;
 }
-blockquote q:before {
+blockquote > q {
+  font-style: var(--blockquote-q-font-style);
+}
+blockquote > q:before {
   margin-left: -.6em;
 }
-blockquote cite {
+blockquote > cite {
   display: block;
   font-size: var(--paragraph-font-size);
   font-weight: var(--font-weight-semibold);
   font-style: normal;
   margin: 1em 0 .2em -1.2em;
 }
-blockquote cite:before {
+blockquote > cite:before {
   content: "\2014";
   color: var(--primary);
   margin-right: .4em;
-}
-blockquote p {
 }
 blockquote.pull q {
   font-size: 1.875rem;

@@ -54,6 +54,10 @@
 --caption-letter-spacing: inherit;
 --caption-line-height: 1.066667;
 
+/* Blockquotes */
+--blockquote-font-family: var(--font-family-omni);
+--blockquote-q-font-style: italic;
+
 /* * * * * * * * *
   Heading Vars
 * * * * * * * * */

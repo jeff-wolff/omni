@@ -351,6 +351,10 @@
 --caption-letter-spacing: inherit;
 --caption-line-height: 1.066667;
 
+/* Blockquotes */
+--blockquote-font-family: var(--font-family-omni);
+--blockquote-q-font-style: italic;
+
 /* * * * * * * * *
   Heading Vars
 * * * * * * * * */
@@ -665,21 +669,26 @@ blockquote {
   padding: var(--blockquote-padding);
 }
 
-blockquote q {
+blockquote > q,
+blockquote > p:first-child {
   font-size: 1.5rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-family: var(--font-family-serif);
+  font-family: 'Inter', sans-serif;
+  font-family: var(--blockquote-font-family);
   font-weight: var(--font-weight-extralight);
-  font-style: italic;
   line-height: 1.4;
   display: block;
 }
 
-blockquote q:before {
+blockquote > q {
+  font-style: italic;
+  font-style: var(--blockquote-q-font-style);
+}
+
+blockquote > q:before {
   margin-left: -.6em;
 }
 
-blockquote cite {
+blockquote > cite {
   display: block;
   font-size: 1rem;
   font-size: var(--paragraph-font-size);
@@ -689,14 +698,11 @@ blockquote cite {
   margin: 1em 0 .2em -1.2em;
 }
 
-blockquote cite:before {
+blockquote > cite:before {
   content: "\2014";
   color: hsl(220, 80%, 50%);
   color: var(--primary);
   margin-right: .4em;
-}
-
-blockquote p {
 }
 
 blockquote.pull q {
@@ -724,10 +730,13 @@ mark {
   color: inherit;
 }
 
+pre {
+  overflow: auto;
+}
+
 pre, code {
   font-family: Monaco, Menlo, Consolas, 'Courier New', monospace;
   font-family: var(--font-family-monospace);
-  overflow: auto;
 }
 
 figcaption, caption, .t-caption {
