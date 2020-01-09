@@ -1,19 +1,11 @@
 :root {
 /* * * * * * * *
-  Color Vars
- * * * * * * * */
-
-/* White */
---white-hover: color-mod(var(--white) shade(5%));
---white-active: color-mod(var(--white) shade(10%));
-
-/* Black */
---black-hover: color-mod(var(--black) tint(20%));
---black-active: color-mod(var(--black) tint(10%));
-
-/* * * * * * * *
   Shades
  * * * * * * * */
+
+ /* White */
+ --white-hover: color-mod(var(--white) shade(5%));
+ --white-active: color-mod(var(--white) shade(10%));
 
 /* Light */
 --light-hover: var(--light-400);
@@ -57,8 +49,12 @@
 --dark-800: color-mod(var(--dark-700) shade(15%) saturation(+2.5%));
 --dark-900: color-mod(var(--dark-800) shade(20%) saturation(+2.5%));
 
+/* Black */
+--black-hover: color-mod(var(--black) tint(20%));
+--black-active: color-mod(var(--black) tint(10%));
+
 /* * * * * * * *
-  Palette
+  Theme Palette
  * * * * * * * */
 
 /* Primary */
@@ -104,7 +100,7 @@
 --tertiary-900: color-mod(var(--tertiary-800) shade(30%) saturation(+2.5%));
 
 /* * * * * * * *
-  Indicators
+  Status Indicators
  * * * * * * * */
 
 /* Error */

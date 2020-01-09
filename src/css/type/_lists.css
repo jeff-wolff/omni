@@ -2,7 +2,7 @@
   Lists
  * * * * * * * * * */
 :root {
-  --list-margin: 0 0 1em;
+  --list-margin: var(--paragraph-margin);
   --list-padding: 0 0 0 1.2em;
 }
 ul, 

@@ -1,5 +1,235 @@
 @import url(https://rsms.me/inter/inter.css);
+/* TODO: DELETE */
+
+.container {
+  /* border: var(--rem-6) solid red; */
+  max-width: 38.75rem;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-left: auto;
+}
+
+.column {
+  width: 100%;
+  padding-left: 1.25rem;
+  padding-left: var(--rem-20);
+  padding-right: 1.25rem;
+  padding-right: var(--rem-20);
+}
+
+/* TODO: Delete */
+
 /* Utils */
+
+:root {
+/* * * * * * * *
+  Shades
+ * * * * * * * */
+
+ /* White */
+ --white-hover: rgb(242, 242, 242);
+ --white-active: rgb(230, 230, 230);
+
+/* Light */
+--light-hover: var(--light-400);
+--light-active: var(--light-600);
+--light-50: hsl(219.99999999999497, 2.5%, 97.732%);
+--light-100: hsl(220, 2.5%, 95.464%);
+--light-200: hsl(219.999999999997, 2.5%, 92.44%);
+--light-300: hsl(220, 2.5%, 89.2%);
+--light-400: hsl(220.0000000000002, 11.25%, 86.5%);
+--light-500: var(--light);
+--light-600: hsl(220.0000000000002, 12.4025974026%, 80.75%);
+--light-700: hsl(220, 8.1701738335%, 72.675%);
+--light-800: hsl(220, 8.0379974494%, 61.77375%);
+--light-900: hsl(219.99999999999991, 8.0940528946%, 49.419%);
+
+/* Grey */
+--grey-hover: var(--grey-400);
+--grey-active: var(--grey-600);
+--grey-50: hsl(220.00000000000028, 5%, 80.722%);
+--grey-100: hsl(220, 5%, 72.46%);
+--grey-200: hsl(220, 5%, 63.28%);
+--grey-300: hsl(220.00000000000006, 4.6296296296%, 54.1%);
+--grey-400: hsl(220.00000000000003, 10.3260869565%, 46%);
+--grey-500: var(--grey);
+--grey-600: hsl(220.00000000000003, 12.5%, 38%);
+--grey-700: hsl(220, 5%, 34.2%);
+--grey-800: hsl(220.00000000000009, 5%, 29.07%);
+--grey-900: hsl(219.99999999999994, 5%, 23.256%);
+
+/* Dark */
+--dark-hover: var(--dark-400);
+--dark-active: var(--dark-600);
+--dark-50: hsl(220.00000000000023, 5%, 74.296%);
+--dark-100: hsl(219.9999999999997, 5%, 63.28%);
+--dark-200: hsl(219.9999999999998, 4.0849673203%, 51.04%);
+--dark-300: hsl(220, 4.0335051546%, 38.8%);
+--dark-400: hsl(220.00000000000003, 8.9285714286%, 28%);
+--dark-500: var(--dark);
+--dark-600: hsl(220.00000000000003, 12.5%, 19%);
+--dark-700: hsl(220, 5%, 17.1%);
+--dark-800: hsl(220.00000000000009, 5%, 14.535%);
+--dark-900: hsl(220.0000000000001, 5%, 11.628%);
+
+/* Black */
+--black-hover: rgb(51, 51, 51);
+--black-active: rgb(26, 26, 26);
+
+/* * * * * * * *
+  Theme Palette
+ * * * * * * * */
+
+/* Primary */
+--primary-hover: var(--primary-400);
+--primary-active: var(--primary-600);
+--primary-50: hsl(220.00000000000188, 5%, 93.952%);
+--primary-100: hsl(219.99999999999923, 5%, 84.88%);
+--primary-200: hsl(220, 5%, 74.8%);
+--primary-300: hsl(220, 5%, 64%);
+--primary-400: hsl(220, 82.5%, 55%);
+--primary-500: var(--primary);
+--primary-600: hsl(220, 82.5%, 42.5%);
+--primary-700: hsl(219.99999999999991, 5%, 34%);
+--primary-800: hsl(220, 5%, 25.5%);
+--primary-900: hsl(220.00000000000014, 5%, 17.85%);
+
+/* Secondary */
+--secondary-hover: var(--secondary-400);
+--secondary-active: var(--secondary-600);
+--secondary-50: hsl(270, 5%, 94.96%);
+--secondary-100: hsl(270, 5%, 87.4%);
+--secondary-200: hsl(269.99999999999966, 5%, 74.8%);
+--secondary-300: hsl(269.9999999999999, 5%, 64%);
+--secondary-400: hsl(270, 82.5%, 55%);
+--secondary-500: var(--secondary);
+--secondary-600: hsl(270, 82.5%, 42.5%);
+--secondary-700: hsl(270, 5%, 34%);
+--secondary-800: hsl(270, 5%, 25.5%);
+--secondary-900: hsl(270, 5%, 17.85%);
+
+/* Tertiary */
+--tertiary-hover: var(--tertiary-400);
+--tertiary-active: var(--tertiary-600);
+--tertiary-50: hsl(320, 5%, 94.96%);
+--tertiary-100: hsl(320.0000000000009, 5%, 87.4%);
+--tertiary-200: hsl(320, 5%, 74.8%);
+--tertiary-300: hsl(319.9999999999998, 5%, 64%);
+--tertiary-400: hsl(320, 82.5%, 55%);
+--tertiary-500: var(--tertiary);
+--tertiary-600: hsl(320, 82.5%, 42.5%);
+--tertiary-700: hsl(320.0000000000001, 5%, 34%);
+--tertiary-800: hsl(320, 5%, 25.5%);
+--tertiary-900: hsl(320.0000000000001, 5%, 17.85%);
+
+/* * * * * * * *
+  Status Indicators
+ * * * * * * * */
+
+/* Error */
+--error-hover: var(--error-400);
+--error-active: var(--error-600);
+--error-50: hsl(0, 5%, 93.952%);
+--error-100: hsl(0, 5%, 84.88%);
+--error-200: hsl(0, 5%, 69.76%);
+--error-300: hsl(0, 4.6296296296%, 56.8%);
+--error-400: hsl(0, 80.7608695652%, 46%);
+--error-500: var(--error);
+--error-600: hsl(0, 100%, 34%);
+--error-700: hsl(0, 5%, 27.2%);
+--error-800: hsl(0, 5%, 20.4%);
+--error-900: hsl(0, 5%, 14.28%);
+
+/* Warning */
+--warning-hover: var(--warning-400);
+--warning-active: var(--warning-600);
+--warning-50: hsl(20, 5%, 94.96%);
+--warning-100: hsl(20.000000000000902, 5%, 87.4%);
+--warning-200: hsl(20, 5%, 74.8%);
+--warning-300: hsl(20, 5%, 64%);
+--warning-400: hsl(20, 100%, 55%);
+--warning-500: var(--warning);
+--warning-600: hsl(20.000000000000004, 100%, 42.5%);
+--warning-700: hsl(20.00000000000008, 5%, 34%);
+--warning-800: hsl(20, 5%, 25.5%);
+--warning-900: hsl(19.999999999999844, 5%, 17.85%);
+
+/* Success */
+--success-hover: var(--success-400);
+--success-active: var(--success-600);
+--success-50: hsl(120, 5%, 93.448%);
+--success-100: hsl(120, 5%, 83.62%);
+--success-200: hsl(120, 5%, 67.24%);
+--success-300: hsl(120, 4.2735042735%, 53.2%);
+--success-400: hsl(120, 78.4036144578%, 41.5%);
+--success-500: var(--success);
+--success-600: hsl(120, 100%, 29.75%);
+--success-700: hsl(120, 5%, 23.8%);
+--success-800: hsl(120, 5%, 17.85%);
+--success-900: hsl(120, 5%, 12.495%);
+
+/* Info */
+--info-hover: var(--info-400);
+--info-active: var(--info-600);
+--info-50: hsl(200.00000000000188, 5%, 93.952%);
+--info-100: hsl(199.9999999999996, 5%, 84.88%);
+--info-200: hsl(199.9999999999996, 5%, 69.76%);
+--info-300: hsl(199.99999999999994, 4.6296296296%, 56.8%);
+--info-400: hsl(199.99999999999997, 80.7608695652%, 46%);
+--info-500: var(--info);
+--info-600: hsl(199.99999999999997, 100%, 34%);
+--info-700: hsl(200, 5%, 27.2%);
+--info-800: hsl(200, 5%, 20.4%);
+--info-900: hsl(200.00000000000003, 5%, 14.28%);
+
+}
+
+/**
+  Breakpoints Sizes
+
+  XXS
+    --xxs:            <= 320
+
+  XS
+    --xs:             >= 320
+    --xs-only:        >= 320 and <= 579
+    --xs-down:        <= 579 
+
+  Small
+    --s:              >= 580
+    --s-only:         >= 580 and <= 959
+    --s-down:         <= 959 
+
+  Medium
+    --m:              >= 960
+    --m-only:         >= 960 and <= 1279
+    --m-down:         <= 1279 
+
+  Large
+    --l:              >= 1280
+    --l-only:         >= 1280 and <= 1679
+    --l-down:         <= 1679 
+
+  XL
+    --xl:             >= 1680
+    --xl-only:        >= 1680 and <= 1919
+    --xl-down:        <= 1919 
+
+  XXL
+    --xxl:            >= 1920
+
+  Misc
+    --tablet:         >= 768 - iPad
+    --tablet-only:       768 - iPad
+    --tablet-down:    <= 768 - iPad
+    --tablet-h:       >= 1024 - iPad Horizontal / iPad Pro
+    --tablet-h-only:     1024 - iPad Horizontal / iPad Pro
+    --tablet-h-down:  <= 1024 - iPad Horizontal / iPad Pro
+
+ */
+
+/* Grid */
 
 :root {
 /* * * * * * * * * * *
@@ -107,220 +337,7 @@
 --rem-180:  11.25rem;      /* 180px */
 }
 
-/**
-  Breakpoints Sizes
-
-  XXS
-    --xxs:            <= 320
-
-  XS
-    --xs:             >= 320
-    --xs-only:        >= 320 and <= 579
-    --xs-down:        <= 579 
-
-  Small
-    --s:              >= 580
-    --s-only:         >= 580 and <= 959
-    --s-down:         <= 959 
-
-  Medium
-    --m:              >= 960
-    --m-only:         >= 960 and <= 1279
-    --m-down:         <= 1279 
-
-  Large
-    --l:              >= 1280
-    --l-only:         >= 1280 and <= 1679
-    --l-down:         <= 1679 
-
-  XL
-    --xl:             >= 1680
-    --xl-only:        >= 1680 and <= 1919
-    --xl-down:        <= 1919 
-
-  XXL
-    --xxl:            >= 1920
-
-  Misc
-    --tablet:         >= 768 - iPad
-    --tablet-only:       768 - iPad
-    --tablet-down:    <= 768 - iPad
-    --tablet-h:       >= 1024 - iPad Horizontal / iPad Pro
-    --tablet-h-only:     1024 - iPad Horizontal / iPad Pro
-    --tablet-h-down:  <= 1024 - iPad Horizontal / iPad Pro
-
- */
-
-/* Grid */
-
 /* Theme */
-
-:root {
-/* * * * * * * *
-  Color Vars
- * * * * * * * */
-
-/* White */
---white-hover: rgb(242, 242, 242);
---white-active: rgb(230, 230, 230);
-
-/* Black */
---black-hover: rgb(51, 51, 51);
---black-active: rgb(26, 26, 26);
-
-/* * * * * * * *
-  Shades
- * * * * * * * */
-
-/* Light */
---light-hover: var(--light-400);
---light-active: var(--light-600);
---light-50: hsl(219.99999999999497, 2.5%, 97.732%);
---light-100: hsl(220, 2.5%, 95.464%);
---light-200: hsl(219.999999999997, 2.5%, 92.44%);
---light-300: hsl(220, 2.5%, 89.2%);
---light-400: hsl(220.0000000000002, 11.25%, 86.5%);
---light-500: var(--light);
---light-600: hsl(220.0000000000002, 12.4025974026%, 80.75%);
---light-700: hsl(220, 8.1701738335%, 72.675%);
---light-800: hsl(220, 8.0379974494%, 61.77375%);
---light-900: hsl(219.99999999999991, 8.0940528946%, 49.419%);
-
-/* Grey */
---grey-hover: var(--grey-400);
---grey-active: var(--grey-600);
---grey-50: hsl(220.00000000000028, 5%, 80.722%);
---grey-100: hsl(220, 5%, 72.46%);
---grey-200: hsl(220, 5%, 63.28%);
---grey-300: hsl(220.00000000000006, 4.6296296296%, 54.1%);
---grey-400: hsl(220.00000000000003, 10.3260869565%, 46%);
---grey-500: var(--grey);
---grey-600: hsl(220.00000000000003, 12.5%, 38%);
---grey-700: hsl(220, 5%, 34.2%);
---grey-800: hsl(220.00000000000009, 5%, 29.07%);
---grey-900: hsl(219.99999999999994, 5%, 23.256%);
-
-/* Dark */
---dark-hover: var(--dark-400);
---dark-active: var(--dark-600);
---dark-50: hsl(220.00000000000023, 5%, 74.296%);
---dark-100: hsl(219.9999999999997, 5%, 63.28%);
---dark-200: hsl(219.9999999999998, 4.0849673203%, 51.04%);
---dark-300: hsl(220, 4.0335051546%, 38.8%);
---dark-400: hsl(220.00000000000003, 8.9285714286%, 28%);
---dark-500: var(--dark);
---dark-600: hsl(220.00000000000003, 12.5%, 19%);
---dark-700: hsl(220, 5%, 17.1%);
---dark-800: hsl(220.00000000000009, 5%, 14.535%);
---dark-900: hsl(220.0000000000001, 5%, 11.628%);
-
-/* * * * * * * *
-  Palette
- * * * * * * * */
-
-/* Primary */
---primary-hover: var(--primary-400);
---primary-active: var(--primary-600);
---primary-50: hsl(220.00000000000188, 5%, 93.952%);
---primary-100: hsl(219.99999999999923, 5%, 84.88%);
---primary-200: hsl(220, 5%, 74.8%);
---primary-300: hsl(220, 5%, 64%);
---primary-400: hsl(220, 82.5%, 55%);
---primary-500: var(--primary);
---primary-600: hsl(220, 82.5%, 42.5%);
---primary-700: hsl(219.99999999999991, 5%, 34%);
---primary-800: hsl(220, 5%, 25.5%);
---primary-900: hsl(220.00000000000014, 5%, 17.85%);
-
-/* Secondary */
---secondary-hover: var(--secondary-400);
---secondary-active: var(--secondary-600);
---secondary-50: hsl(270, 5%, 94.96%);
---secondary-100: hsl(270, 5%, 87.4%);
---secondary-200: hsl(269.99999999999966, 5%, 74.8%);
---secondary-300: hsl(269.9999999999999, 5%, 64%);
---secondary-400: hsl(270, 82.5%, 55%);
---secondary-500: var(--secondary);
---secondary-600: hsl(270, 82.5%, 42.5%);
---secondary-700: hsl(270, 5%, 34%);
---secondary-800: hsl(270, 5%, 25.5%);
---secondary-900: hsl(270, 5%, 17.85%);
-
-/* Tertiary */
---tertiary-hover: var(--tertiary-400);
---tertiary-active: var(--tertiary-600);
---tertiary-50: hsl(320, 5%, 94.96%);
---tertiary-100: hsl(320.0000000000009, 5%, 87.4%);
---tertiary-200: hsl(320, 5%, 74.8%);
---tertiary-300: hsl(319.9999999999998, 5%, 64%);
---tertiary-400: hsl(320, 82.5%, 55%);
---tertiary-500: var(--tertiary);
---tertiary-600: hsl(320, 82.5%, 42.5%);
---tertiary-700: hsl(320.0000000000001, 5%, 34%);
---tertiary-800: hsl(320, 5%, 25.5%);
---tertiary-900: hsl(320.0000000000001, 5%, 17.85%);
-
-/* * * * * * * *
-  Indicators
- * * * * * * * */
-
-/* Error */
---error-hover: var(--error-400);
---error-active: var(--error-600);
---error-50: hsl(0, 5%, 93.952%);
---error-100: hsl(0, 5%, 84.88%);
---error-200: hsl(0, 5%, 69.76%);
---error-300: hsl(0, 4.6296296296%, 56.8%);
---error-400: hsl(0, 80.7608695652%, 46%);
---error-500: var(--error);
---error-600: hsl(0, 100%, 34%);
---error-700: hsl(0, 5%, 27.2%);
---error-800: hsl(0, 5%, 20.4%);
---error-900: hsl(0, 5%, 14.28%);
-
-/* Warning */
---warning-hover: var(--warning-400);
---warning-active: var(--warning-600);
---warning-50: hsl(20, 5%, 94.96%);
---warning-100: hsl(20.000000000000902, 5%, 87.4%);
---warning-200: hsl(20, 5%, 74.8%);
---warning-300: hsl(20, 5%, 64%);
---warning-400: hsl(20, 100%, 55%);
---warning-500: var(--warning);
---warning-600: hsl(20.000000000000004, 100%, 42.5%);
---warning-700: hsl(20.00000000000008, 5%, 34%);
---warning-800: hsl(20, 5%, 25.5%);
---warning-900: hsl(19.999999999999844, 5%, 17.85%);
-
-/* Success */
---success-hover: var(--success-400);
---success-active: var(--success-600);
---success-50: hsl(120, 5%, 93.448%);
---success-100: hsl(120, 5%, 83.62%);
---success-200: hsl(120, 5%, 67.24%);
---success-300: hsl(120, 4.2735042735%, 53.2%);
---success-400: hsl(120, 78.4036144578%, 41.5%);
---success-500: var(--success);
---success-600: hsl(120, 100%, 29.75%);
---success-700: hsl(120, 5%, 23.8%);
---success-800: hsl(120, 5%, 17.85%);
---success-900: hsl(120, 5%, 12.495%);
-
-/* Info */
---info-hover: var(--info-400);
---info-active: var(--info-600);
---info-50: hsl(200.00000000000188, 5%, 93.952%);
---info-100: hsl(199.9999999999996, 5%, 84.88%);
---info-200: hsl(199.9999999999996, 5%, 69.76%);
---info-300: hsl(199.99999999999994, 4.6296296296%, 56.8%);
---info-400: hsl(199.99999999999997, 80.7608695652%, 46%);
---info-500: var(--info);
---info-600: hsl(199.99999999999997, 100%, 34%);
---info-700: hsl(200, 5%, 27.2%);
---info-800: hsl(200, 5%, 20.4%);
---info-900: hsl(200.00000000000003, 5%, 14.28%);
-
-}
 
 :root {
   /* * * * * * * * * *
@@ -328,7 +345,7 @@
   * * * * * * * * * */
 
   /*
-    Colors
+    Color
   */
 
   /* Greys */
@@ -350,27 +367,8 @@
   --info: hsl(200, 100%, 40%);
 
   /*
-    Font Families
+    Type
   */
-  --font-family:                'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-family-sans-serif:     'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-family-serif:          Georgia, 'Times New Roman', Times, serif;
-  --font-family-monospace:      Monaco, Menlo, Consolas, 'Courier New', monospace;
-  --font-family-system:         -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-
-  /*
-    Font Weights
-  */
-  --font-weight: normal;
-  --font-weight-thin: 100;
-  --font-weight-extra-light: 200;
-  --font-weight-light: 300;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  --font-weight-extra-bold: 800;
-  --font-weight-black: 900;
 
   /* Body */
   --body-color: var(--black);
@@ -404,17 +402,25 @@
   --list-line-height: var(--paragraph-line-height);
   --list-letter-spacing: inherit;
 
+  /* Formats */
   /* Caption */
   --caption-color: var(--paragraph-color);
   --caption-font-size: var(--rem-15);
   --caption-line-height: 1.066667;
   --caption-letter-spacing: inherit;
-
+  
   /* Small */
   --small-color: var(--paragraph-color);
   --small-font-size: var(--rem-12);
   --small-line-height: 1.5;
   --small-letter-spacing: inherit;
+
+  /* Blockquotes */
+  --blockquote-font-family: var(--font-family);
+  --blockquote-font-size: 1.5rem;
+  --blockquote-line-height: 1.4;
+  --blockquote-font-style: italic;
+  --blockquote-font-weight: var(--font-weight-light);
 
   /* Heading/Display */
   --display-color: var(--heading-color);
@@ -455,9 +461,28 @@
   --h6-font-size: var(--paragraph-font-size);
   --h6-line-height: 1;
 
-  /* Blockquotes */
-  --blockquote-font-family: var(--font-family);
-  --blockquote-q-font-style: italic;
+  /*
+    Font Families
+  */
+  --font-family:                'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-sans-serif:     'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-serif:          Georgia, 'Times New Roman', Times, serif;
+  --font-family-monospace:      Monaco, Menlo, Consolas, 'Courier New', monospace;
+  --font-family-system:         -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /*
+    Font Weights
+  */
+  --font-weight: normal;
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
 
 }
 
@@ -590,27 +615,6 @@ body {
   line-height: var(--body-line-height);
 }
 
-/* TODO: DELETE */
-
-.container {
-  /* border: var(--rem-6) solid red; */
-  max-width: 38.75rem;
-  margin-top: 1rem;
-  margin-right: auto;
-  margin-bottom: 1rem;
-  margin-left: auto;
-}
-
-.column {
-  width: 100%;
-  padding-left: 1.25rem;
-  padding-left: var(--rem-20);
-  padding-right: 1.25rem;
-  padding-right: var(--rem-20);
-}
-
-/* TODO: Delete */
-
 /* Type */
 
 /* * * * * * * * * *
@@ -618,7 +622,7 @@ body {
  * * * * * * * * * */
 
 :root {
-  --paragraph-margin: 0 0 1em;
+  --paragraph-margin: 0 0 1rem;
 }
 
 p {
@@ -632,54 +636,120 @@ p {
   letter-spacing: var(--paragraph-letter-spacing);
   line-height: 1.44444;
   line-height: var(--paragraph-line-height);
-  margin: 0 0 1em;
+  margin: 0 0 1rem;
   margin: var(--paragraph-margin);
+}
+
+/* * * * * * * * * *
+  Link
+  TODO: hover, active, visited, focus, etc
+ * * * * * * * * * */
+
+a {
+  color: hsl(220, 80%, 50%);
+  color: var(--link-color);
+  font-family: inherit;
+  font-size: inherit;
+  font-size: var(--link-font-size);
+  font-weight: 600;
+  font-weight: var(--link-font-weight);
+  letter-spacing: inherit;
+  letter-spacing: var(--link-letter-spacing);
+  line-height: inherit;
+  line-height: var(--link-line-height);
+}
+
+/* * * * * * * * * *
+  Lists
+ * * * * * * * * * */
+
+:root {
+  --list-margin: var(--paragraph-margin);
+  --list-padding: 0 0 0 1.2em;
+}
+
+ul, 
+ol,
+dl {
+  color: hsl(220, 10%, 0%);
+  color: var(--list-color);
+  font-size: 1rem;
+  font-size: var(--list-font-size);
+  letter-spacing: inherit;
+  letter-spacing: var(--list-letter-spacing);
+  line-height: 1.44444;
+  line-height: var(--list-line-height);
+  list-style-position: outside;
+  margin: 0 0 1rem;
+  margin: var(--list-margin);
+  padding: 0 0 0 2em;
+  padding: var(--list-padding);
+}
+
+li {
+  margin: 0 0 0.5em;
+  position: relative;
+}
+
+dl {
+  padding: 0;
+}
+
+dt {
+  font-weight: 600;
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: .1em;
+}
+
+dd {
+  margin-bottom: 1em;
 }
 
 /* * * * * * * *
   Formats
+  TODO: Add sup, sub, improve code/pre, figure out caption
  * * * * * * * */
 
 :root {
-/* Blockquote */
---blockquote-margin: 0 0 1em;
---blockquote-padding: 0;
+  --blockquote-margin: var(--paragraph-margin);
+  --blockquote-padding: 0;
 }
 
 blockquote {
-  margin: 0 0 1em;
+  margin: 0 0 1rem;
   margin: var(--blockquote-margin);
   padding: 0;
   padding: var(--blockquote-padding);
 }
 
-blockquote > q,
-blockquote > p:first-child {
-  font-size: 1.5rem;
+blockquote > p {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-family: var(--blockquote-font-family);
-  font-weight: var(--font-weight-extralight);
+  font-size: 1.5rem;
+  font-size: var(--blockquote-font-size);
   line-height: 1.4;
+  line-height: var(--blockquote-line-height);
+  font-style: italic;
+  font-style: var(--blockquote-font-style);
+  font-weight: 300;
+  font-weight: var(--blockquote-font-weight);
   display: block;
 }
 
-blockquote > q {
-  font-style: italic;
-  font-style: var(--blockquote-q-font-style);
+blockquote.pull > p {
+  font-size: 1.875rem;
+  line-height: 1.25;
 }
 
-blockquote > q:before {
-  margin-left: -.6em;
-}
-
-blockquote > cite {
+blockquote > cite,
+blockquote > cite ~ p {
   display: block;
   font-size: 1rem;
   font-size: var(--paragraph-font-size);
   font-weight: 600;
   font-weight: var(--font-weight-semibold);
   font-style: normal;
-  margin: 1em 0 .2em -1.2em;
+  margin: 0 0 .25rem -1.4em;
 }
 
 blockquote > cite:before {
@@ -689,9 +759,8 @@ blockquote > cite:before {
   margin-right: .4em;
 }
 
-blockquote.pull q {
-  font-size: 1.875rem;
-  line-height: 1.25;
+blockquote > cite ~ p {
+  margin-left: 0;
 }
 
 small {
@@ -739,9 +808,9 @@ figcaption, caption, .t-caption {
  * * * * * * * */
 
 :root {
-  --display-margin: inherit;
   --heading-margin: 0 0 1rem;
   --heading-padding: 0;
+  --display-margin: inherit;
 }
 
 h1,
@@ -824,11 +893,14 @@ h6 {
   font-weight: var(--display-font-weight);
   letter-spacing: inherit;
   letter-spacing: var(--display-letter-spacing);
+  /* Show Hyphens */
   word-wrap: break-word;
   word-wrap: break-word;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
+  margin: inherit;
+  margin: var(--display-margin);
 }
 
 /* Display Font Sizes */
@@ -840,7 +912,8 @@ h6 {
   line-height: var(--display-s-line-height);
 }
 
-.t-display-m, .t-display {
+.t-display,
+.t-display-m {
   font-size: 3rem;
   font-size: var(--display-m-font-size);
   line-height: 1;
@@ -852,71 +925,6 @@ h6 {
   font-size: var(--display-l-font-size);
   line-height: 1;
   line-height: var(--display-l-line-height);
-}
-
-/* * * * * * * * * *
-  Lists
- * * * * * * * * * */
-
-:root {
-  --list-margin: 0 0 1em;
-  --list-padding: 0 0 0 1.2em;
-}
-
-ul, 
-ol,
-dl {
-  color: hsl(220, 10%, 0%);
-  color: var(--list-color);
-  font-size: 1rem;
-  font-size: var(--list-font-size);
-  letter-spacing: inherit;
-  letter-spacing: var(--list-letter-spacing);
-  line-height: 1.44444;
-  line-height: var(--list-line-height);
-  list-style-position: outside;
-  margin: 0 0 1em;
-  margin: var(--list-margin);
-  padding: 0 0 0 1.2em;
-  padding: var(--list-padding);
-}
-
-li {
-  margin: 0 0 0.5em;
-  position: relative;
-}
-
-dl {
-  padding: 0;
-}
-
-dt {
-  font-weight: 600;
-  font-weight: var(--font-weight-semibold);
-  margin-bottom: .1em;
-}
-
-dd {
-  margin-bottom: 1em;
-}
-
-/* * * * * * * * * *
-  Link
-  TODO: hover, active, visited, focus, etc
- * * * * * * * * * */
-
-a {
-  color: hsl(220, 80%, 50%);
-  color: var(--link-color);
-  font-family: inherit;
-  font-size: inherit;
-  font-size: var(--link-font-size);
-  font-weight: 600;
-  font-weight: var(--link-font-weight);
-  letter-spacing: inherit;
-  letter-spacing: var(--link-letter-spacing);
-  line-height: inherit;
-  line-height: var(--link-line-height);
 }
 
 /* Primitives */
@@ -950,7 +958,7 @@ input[type="reset"] {
   --figure-margin: var(--paragraph-margin);
   --figure-padding: 0;
   /* Figure Caption */
-  --figure-caption-margin: 1em 0;
+  --figure-caption-margin: 1rem 0;
   --figure-caption-font-family: inherit;
   --figure-caption-font-weight: inherit;
   --figure-caption-font-size: var(--caption-font-size);
@@ -961,14 +969,14 @@ input[type="reset"] {
 figure {
   display: block;
   display: var(--figure-display);
-  margin: 0 0 1em;
+  margin: 0 0 1rem;
   margin: var(--figure-margin);
   padding: 0;
   padding: var(--figure-padding);
 }
 
 figcaption {
-  margin: 1em 0;
+  margin: 1rem 0;
   margin: var(--figure-caption-margin);
   font-family: inherit;
   font-family: var(--figure-caption-font-family);
@@ -1027,10 +1035,13 @@ figcaption {
   Deco List
  * * * * * * * * * */
 
+:root {
+  --list-padding: 0 0 0 2em;
+}
+
 ul.deco-list,
 ol.deco-list {
-  --list-padding: 0 0 0 2em;
-  padding: 0 0 0 1.2em;
+  padding: 0 0 0 2em;
   padding: var(--list-padding);
 }
 
@@ -1076,5 +1087,6 @@ ol.deco-list li::before {
 /* Templates */
 
 /* Pages */
+
 
 

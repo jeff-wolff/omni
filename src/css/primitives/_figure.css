@@ -6,7 +6,7 @@
   --figure-margin: var(--paragraph-margin);
   --figure-padding: 0;
   /* Figure Caption */
-  --figure-caption-margin: 1em 0;
+  --figure-caption-margin: 1rem 0;
   --figure-caption-font-family: inherit;
   --figure-caption-font-weight: inherit;
   --figure-caption-font-size: var(--caption-font-size);

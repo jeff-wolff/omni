@@ -1,9 +1,11 @@
 /* * * * * * * * * *
   Deco List
  * * * * * * * * * */
+:root {
+  --list-padding: 0 0 0 2em;
+}
 ul.deco-list,
 ol.deco-list {
-  --list-padding: 0 0 0 2em;
   padding: var(--list-padding);
 }
 ol.deco-list {

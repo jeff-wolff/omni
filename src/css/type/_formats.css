@@ -1,44 +1,42 @@
 /* * * * * * * *
   Formats
+  TODO: Add sup, sub, improve code/pre, figure out caption
  * * * * * * * */
 :root {
-/* Blockquote */
---blockquote-margin: 0 0 1em;
---blockquote-padding: 0;
+  --blockquote-margin: var(--paragraph-margin);
+  --blockquote-padding: 0;
 }
 blockquote {
   margin: var(--blockquote-margin);
   padding: var(--blockquote-padding);
 }
-blockquote > q,
-blockquote > p:first-child {
-  font-size: 1.5rem;
+blockquote > p {
   font-family: var(--blockquote-font-family);
-  font-weight: var(--font-weight-extralight);
-  line-height: 1.4;
+  font-size: var(--blockquote-font-size);
+  line-height: var(--blockquote-line-height);
+  font-style: var(--blockquote-font-style);
+  font-weight: var(--blockquote-font-weight);
   display: block;
 }
-blockquote > q {
-  font-style: var(--blockquote-q-font-style);
+blockquote.pull > p {
+  font-size: 1.875rem;
+  line-height: 1.25;
 }
-blockquote > q:before {
-  margin-left: -.6em;
-}
-blockquote > cite {
+blockquote > cite,
+blockquote > cite ~ p {
   display: block;
   font-size: var(--paragraph-font-size);
   font-weight: var(--font-weight-semibold);
   font-style: normal;
-  margin: 1em 0 .2em -1.2em;
+  margin: 0 0 .25rem -1.4em;
 }
 blockquote > cite:before {
   content: "\2014";
   color: var(--primary);
   margin-right: .4em;
 }
-blockquote.pull q {
-  font-size: 1.875rem;
-  line-height: 1.25;
+blockquote > cite ~ p {
+  margin-left: 0;
 }
 small {
   color: var(--small-color);

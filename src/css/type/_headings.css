@@ -2,9 +2,9 @@
   Headings
  * * * * * * * */
 :root {
-  --display-margin: inherit;
   --heading-margin: 0 0 1rem;
   --heading-padding: 0;
+  --display-margin: inherit;
 }
 
 h1,
@@ -58,9 +58,11 @@ h6 {
   font-family: var(--display-font-family);
   font-weight: var(--display-font-weight);
   letter-spacing: var(--display-letter-spacing);
+  /* Show Hyphens */
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
+  margin: var(--display-margin);
 }
 
 /* Display Font Sizes */
@@ -68,7 +70,8 @@ h6 {
   font-size: var(--display-s-font-size);
   line-height: var(--display-s-line-height);
 }
-.t-display-m, .t-display {
+.t-display,
+.t-display-m {
   font-size: var(--display-m-font-size);
   line-height: var(--display-m-line-height);
 }

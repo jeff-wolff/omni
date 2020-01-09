@@ -1,25 +1,26 @@
 @import url('https://rsms.me/inter/inter.css');
 
+@import './_global.css'; /* TODO: Delete */
+
 /* Utils */
-@import './utils/_sizing.css';
+@import './utils/_color.css';
 @import './utils/_breakpoints.css';
 @import './utils/_grid.css';
+@import './utils/_sizing.css';
 
 /* Theme */
-@import './_color.css';
 @import './_theme.css';
 
 /* Base */
 @import './base/_reset.css';
 @import './base/_base.css';
-@import './base/_global.css'; /* TODO: Delete */
 
 /* Type */
 @import './type/_paragraph.css';
+@import './type/_link.css';
+@import './type/_lists.css';
 @import './type/_formats.css';
 @import './type/_headings.css';
-@import './type/_lists.css';
-@import './type/_link.css';
 
 /* Primitives */
 @import './primitives/_buttons.css';
@@ -34,4 +35,5 @@
 /* Templates */
 
 /* Pages */
+
 
