@@ -1,7 +1,8 @@
 /* * * * * * * * * *
   Base
  * * * * * * * * * */
-html, body {
+html, 
+body {
   color: var(--body-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size);

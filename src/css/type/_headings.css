@@ -7,7 +7,12 @@
   --heading-padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--heading-color);
   font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
@@ -45,7 +50,10 @@ h6 {
 /* * * * * * * * * *
   Display Headings
  * * * * * * * * * */
-.t-display, .t-display-s, .t-display-m, .t-display-l {
+.t-display, 
+.t-display-s, 
+.t-display-m, 
+.t-display-l {
   color: var(--display-color);
   font-family: var(--display-font-family);
   font-weight: var(--display-font-weight);

@@ -1,10 +1,13 @@
 @import url('https://rsms.me/inter/inter.css');
 
-/* Vars */
-@import './_sizing.css';
+/* Utils */
+@import './utils/_sizing.css';
+@import './utils/_breakpoints.css';
+@import './utils/_grid.css';
+
+/* Theme */
 @import './_color.css';
-@import './_type.css';
-@import './_breakpoints.css';
+@import './_theme.css';
 
 /* Base */
 @import './base/_reset.css';

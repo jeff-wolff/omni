@@ -1,0 +1,137 @@
+:root {
+  /* * * * * * * * * *
+    Theme Settings
+  * * * * * * * * * */
+
+  /*
+    Colors
+  */
+
+  /* Greys */
+  --white: hsl(220, 10%, 100%);
+  --light: hsl(220, 10%, 85%);
+  --grey: hsl(220, 10%, 40%);
+  --dark: hsl(220, 10%, 20%);
+  --black: hsl(220, 10%, 0%);
+
+  /* Palette */
+  --primary: hsl(220, 80%, 50%);
+  --secondary: hsl(270, 80%, 50%);
+  --tertiary: hsl(320, 80%, 50%);
+
+  /* Status */
+  --error: hsl(0, 100%, 40%);
+  --warning: hsl(20, 100%, 50%);
+  --success: hsl(120, 100%, 35%);
+  --info: hsl(200, 100%, 40%);
+
+  /*
+    Font Families
+  */
+  --font-family-sans-serif:     'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-serif:          Georgia, 'Times New Roman', Times, serif;
+  --font-family-monospace:      Monaco, Menlo, Consolas, 'Courier New', monospace;
+  --font-family-system:         -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /*
+    Font Weights
+  */
+  --font-weight: normal;
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+
+  /* Body */
+  --body-color: var(--black);
+  --body-font-family: var(--font-family-sans-serif);
+  --body-font-size: 100%; /* 16px */
+  --body-line-height: 1.3125;
+  /* Type Scale (>= 1680, 20px base) */
+  /* @media (--xxl) {
+    --body-font-size: 125%;
+    }
+  */
+  --body-font-weight: var(--font-weight);
+
+  /* Paragraph */
+  --paragraph-color: var(--body-color);
+  --paragraph-font-size: var(--rem-16); /* 1rem */
+  --paragraph-line-height: 1.44444;
+  --paragraph-font-weight: var(--body-font-weight);
+  --paragraph-letter-spacing: inherit;
+
+  /* Link */
+  --link-color: var(--primary);
+  --link-font-size: inherit;
+  --link-line-height: inherit;
+  --link-font-weight: var(--font-weight-semibold);
+  --link-letter-spacing: inherit;
+
+  /* List */
+  --list-color: var(--paragraph-color);
+  --list-font-size: var(--paragraph-font-size);
+  --list-line-height: var(--paragraph-line-height);
+  --list-letter-spacing: inherit;
+
+  /* Caption */
+  --caption-color: var(--paragraph-color);
+  --caption-font-size: var(--rem-15);
+  --caption-line-height: 1.066667;
+  --caption-letter-spacing: inherit;
+
+  /* Small */
+  --small-color: var(--paragraph-color);
+  --small-font-size: var(--rem-12);
+  --small-line-height: 1.5;
+  --small-letter-spacing: inherit;
+
+  /* Heading/Display */
+  --display-color: var(--heading-color);
+  --display-font-family: var(--heading-font-family);
+  --display-font-weight: var(--font-weight-bold);
+  --display-letter-spacing: inherit;
+
+  --heading-color: var(--black);
+  --heading-font-family: var(--font-family-sans-serif);
+  --heading-font-weight: var(--font-weight-semibold);
+  --heading-letter-spacing: inherit;
+
+  /* Heading/Display - Font Size & Line Heights */
+  --display-l-font-size: var(--rem-64);
+  --display-l-line-height: 1;
+
+  --display-m-font-size: var(--rem-48);
+  --display-m-line-height: 1;
+
+  --display-s-font-size: var(--rem-32);
+  --display-s-line-height: 1.125;
+
+  --h1-font-size: var(--rem-38);
+  --h1-line-height: 1.13157895;
+
+  --h2-font-size: var(--rem-28);
+  --h2-line-height: 1.14285714;
+
+  --h3-font-size: var(--rem-22);
+  --h3-line-height: 1.13636364;
+
+  --h4-font-size: var(--rem-22);
+  --h4-line-height: 1.12636364;
+
+  --h5-font-size: var(--rem-22);
+  --h5-line-height: 1.11636364;
+
+  --h6-font-size: var(--paragraph-font-size);
+  --h6-line-height: 1;
+
+  /* Blockquotes */
+  --blockquote-font-family: var(--font-family-sans-serif);
+  --blockquote-q-font-style: italic;
+
+}
