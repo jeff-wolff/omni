@@ -4,7 +4,7 @@
 :root {
   --heading-margin: 0 0 1rem;
   --heading-padding: 0;
-  --display-margin: inherit;
+  --display-margin: 0 0 1rem;
 }
 
 h1,
