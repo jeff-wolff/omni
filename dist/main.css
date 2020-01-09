@@ -1,5 +1,5 @@
 @import url(https://rsms.me/inter/inter.css);
-/* Vars */
+/* Utils */
 
 :root {
 /* * * * * * * * * * *
@@ -107,332 +107,6 @@
 --rem-180:  11.25rem;      /* 180px */
 }
 
-:root {
-/* * * * * * * *
-  Color Vars
- * * * * * * * */
-
-/* White */
---white: hsl(220, 10%, 100%);
---white-hover: rgb(242, 242, 242);
---white-active: rgb(230, 230, 230);
-
-/* Black */
---black: hsl(220, 10%, 0%);
---black-hover: rgb(51, 51, 51);
---black-active: rgb(26, 26, 26);
-
-/* * * * * * * *
-  Shades
- * * * * * * * */
-
-/* Light */
---light: hsl(220, 10%, 85%);
---light-hover: var(--light-400);
---light-active: var(--light-600);
---light-50: hsl(219.99999999999497, 2.5%, 97.732%);
---light-100: hsl(220, 2.5%, 95.464%);
---light-200: hsl(219.999999999997, 2.5%, 92.44%);
---light-300: hsl(220, 2.5%, 89.2%);
---light-400: hsl(220.0000000000002, 11.25%, 86.5%);
---light-500: var(--light);
---light-600: hsl(220.0000000000002, 12.4025974026%, 80.75%);
---light-700: hsl(220, 8.1701738335%, 72.675%);
---light-800: hsl(220, 8.0379974494%, 61.77375%);
---light-900: hsl(219.99999999999991, 8.0940528946%, 49.419%);
-
-/* Grey */
---grey: hsl(220, 10%, 40%);
---grey-hover: var(--grey-400);
---grey-active: var(--grey-600);
---grey-50: hsl(220.00000000000028, 5%, 80.722%);
---grey-100: hsl(220, 5%, 72.46%);
---grey-200: hsl(220, 5%, 63.28%);
---grey-300: hsl(220.00000000000006, 4.6296296296%, 54.1%);
---grey-400: hsl(220.00000000000003, 10.3260869565%, 46%);
---grey-500: var(--grey);
---grey-600: hsl(220.00000000000003, 12.5%, 38%);
---grey-700: hsl(220, 5%, 34.2%);
---grey-800: hsl(220.00000000000009, 5%, 29.07%);
---grey-900: hsl(219.99999999999994, 5%, 23.256%);
-
-/* Dark */
---dark: hsl(220, 10%, 20%);
---dark-hover: var(--dark-400);
---dark-active: var(--dark-600);
---dark-50: hsl(220.00000000000023, 5%, 74.296%);
---dark-100: hsl(219.9999999999997, 5%, 63.28%);
---dark-200: hsl(219.9999999999998, 4.0849673203%, 51.04%);
---dark-300: hsl(220, 4.0335051546%, 38.8%);
---dark-400: hsl(220.00000000000003, 8.9285714286%, 28%);
---dark-500: var(--dark);
---dark-600: hsl(220.00000000000003, 12.5%, 19%);
---dark-700: hsl(220, 5%, 17.1%);
---dark-800: hsl(220.00000000000009, 5%, 14.535%);
---dark-900: hsl(220.0000000000001, 5%, 11.628%);
-
-/* * * * * * * *
-  Palette
- * * * * * * * */
-
-/* Primary */
---primary: hsl(220, 80%, 50%);
---primary-hover: var(--primary-400);
---primary-active: var(--primary-600);
---primary-50: hsl(220.00000000000188, 5%, 93.952%);
---primary-100: hsl(219.99999999999923, 5%, 84.88%);
---primary-200: hsl(220, 5%, 74.8%);
---primary-300: hsl(220, 5%, 64%);
---primary-400: hsl(220, 82.5%, 55%);
---primary-500: var(--primary);
---primary-600: hsl(220, 82.5%, 42.5%);
---primary-700: hsl(219.99999999999991, 5%, 34%);
---primary-800: hsl(220, 5%, 25.5%);
---primary-900: hsl(220.00000000000014, 5%, 17.85%);
-
-/* Secondary */
---secondary: hsl(270, 80%, 50%);
---secondary-hover: var(--secondary-400);
---secondary-active: var(--secondary-600);
---secondary-50: hsl(270, 5%, 94.96%);
---secondary-100: hsl(270, 5%, 87.4%);
---secondary-200: hsl(269.99999999999966, 5%, 74.8%);
---secondary-300: hsl(269.9999999999999, 5%, 64%);
---secondary-400: hsl(270, 82.5%, 55%);
---secondary-500: var(--secondary);
---secondary-600: hsl(270, 82.5%, 42.5%);
---secondary-700: hsl(270, 5%, 34%);
---secondary-800: hsl(270, 5%, 25.5%);
---secondary-900: hsl(270, 5%, 17.85%);
-
-/* Tertiary */
---tertiary: hsl(320, 80%, 50%);
---tertiary-hover: var(--tertiary-400);
---tertiary-active: var(--tertiary-600);
---tertiary-50: hsl(320, 5%, 94.96%);
---tertiary-100: hsl(320.0000000000009, 5%, 87.4%);
---tertiary-200: hsl(320, 5%, 74.8%);
---tertiary-300: hsl(319.9999999999998, 5%, 64%);
---tertiary-400: hsl(320, 82.5%, 55%);
---tertiary-500: var(--tertiary);
---tertiary-600: hsl(320, 82.5%, 42.5%);
---tertiary-700: hsl(320.0000000000001, 5%, 34%);
---tertiary-800: hsl(320, 5%, 25.5%);
---tertiary-900: hsl(320.0000000000001, 5%, 17.85%);
-
-/* * * * * * * *
-  Indicators
- * * * * * * * */
-
-/* Error */
---error: hsl(0, 100%, 40%);
---error-hover: var(--error-400);
---error-active: var(--error-600);
---error-50: hsl(0, 5%, 93.952%);
---error-100: hsl(0, 5%, 84.88%);
---error-200: hsl(0, 5%, 69.76%);
---error-300: hsl(0, 4.6296296296%, 56.8%);
---error-400: hsl(0, 80.7608695652%, 46%);
---error-500: var(--error);
---error-600: hsl(0, 100%, 34%);
---error-700: hsl(0, 5%, 27.2%);
---error-800: hsl(0, 5%, 20.4%);
---error-900: hsl(0, 5%, 14.28%);
-
-/* Warning */
---warning: hsl(20, 100%, 50%);
---warning-hover: var(--warning-400);
---warning-active: var(--warning-600);
---warning-50: hsl(20, 5%, 94.96%);
---warning-100: hsl(20.000000000000902, 5%, 87.4%);
---warning-200: hsl(20, 5%, 74.8%);
---warning-300: hsl(20, 5%, 64%);
---warning-400: hsl(20, 100%, 55%);
---warning-500: var(--warning);
---warning-600: hsl(20.000000000000004, 100%, 42.5%);
---warning-700: hsl(20.00000000000008, 5%, 34%);
---warning-800: hsl(20, 5%, 25.5%);
---warning-900: hsl(19.999999999999844, 5%, 17.85%);
-
-/* Success */
---success: hsl(120, 100%, 35%);
---success-hover: var(--success-400);
---success-active: var(--success-600);
---success-50: hsl(120, 5%, 93.448%);
---success-100: hsl(120, 5%, 83.62%);
---success-200: hsl(120, 5%, 67.24%);
---success-300: hsl(120, 4.2735042735%, 53.2%);
---success-400: hsl(120, 78.4036144578%, 41.5%);
---success-500: var(--success);
---success-600: hsl(120, 100%, 29.75%);
---success-700: hsl(120, 5%, 23.8%);
---success-800: hsl(120, 5%, 17.85%);
---success-900: hsl(120, 5%, 12.495%);
-
-/* Info */
---info: hsl(200, 100%, 40%);
---info-hover: var(--info-400);
---info-active: var(--info-600);
---info-50: hsl(200.00000000000188, 5%, 93.952%);
---info-100: hsl(199.9999999999996, 5%, 84.88%);
---info-200: hsl(199.9999999999996, 5%, 69.76%);
---info-300: hsl(199.99999999999994, 4.6296296296%, 56.8%);
---info-400: hsl(199.99999999999997, 80.7608695652%, 46%);
---info-500: var(--info);
---info-600: hsl(199.99999999999997, 100%, 34%);
---info-700: hsl(200, 5%, 27.2%);
---info-800: hsl(200, 5%, 20.4%);
---info-900: hsl(200.00000000000003, 5%, 14.28%);
-
-}
-
-:root {
-/* * * * * * * *
-  Text Vars
- * * * * * * * */
-
-/* Body */
---body-color: var(--black);
---body-font-family: var(--font-family-omni);
---body-font-size: 100%;
-
-/* Type Scale */
-
-}
-
-@media (min-width: 120rem) {
-
-:root {
---body-font-size: 125%;
-
-}
-}
-
-:root {
-/* 
-@media (--xxl) {
---body-font-size: 150%;
-} */
-
-
---body-font-weight: inherit;
---body-letter-spacing: inherit;
---body-line-height: 1.3125;
-
-/* Paragraph */
---paragraph-color: var(--body-color);
---paragraph-font-size: var(--rem-16);
---paragraph-font-weight: var(--font-weight-normal);
---paragraph-letter-spacing: inherit;
---paragraph-line-height: 1.44444;
-
-/* Link */
---link-color: var(--primary);
---link-font-size: inherit;
---link-font-weight: var(--font-weight-semibold);
---link-letter-spacing: inherit;
---link-line-height: inherit;
-
-/* Lists */
---list-color: var(--paragraph-color);
---list-font-size: var(--paragraph-font-size);
---list-letter-spacing: inherit;
---list-line-height: var(--paragraph-line-height);
-
-/* Small */
---small-color: var(--paragraph-color);
---small-font-size: var(--rem-12);
---small-letter-spacing: inherit;
---small-line-height: 1.5;
-
-/* Caption */
---caption-color: var(--paragraph-color);
---caption-font-size: var(--rem-15);
---caption-letter-spacing: inherit;
---caption-line-height: 1.066667;
-
-/* Blockquotes */
---blockquote-font-family: var(--font-family-omni);
---blockquote-q-font-style: italic;
-
-/* * * * * * * * *
-  Heading Vars
-* * * * * * * * */
---heading-color: var(--black);
---heading-font-family: var(--font-family-omni);
---heading-font-weight: var(--font-weight-semibold);
---heading-letter-spacing: inherit;
-
-/* Heading 1 */
---h1-font-size: var(--rem-38);
---h1-line-height: 1.13157895; 
-
-/* Heading 2 */
---h2-font-size: var(--rem-28);
---h2-line-height: 1.14285714;
-
-/* Heading 3 */
---h3-font-size: var(--rem-22);
---h3-line-height: 1.13636364;
-
-/* Heading 4 */
---h4-font-size: var(--rem-22);
---h4-line-height: 1.12636364;
-
-/* Heading 5 */
---h5-font-size: var(--rem-22);
---h5-line-height: 1.11636364;
-
-/* Heading 6 */
---h6-font-size: var(--paragraph-font-size);
---h6-line-height: 1;
-
-
-/* * * * * * * *
-  Display Vars
- * * * * * * * */
---display-color: var(--heading-color);
---display-font-family: var(--heading-font-family);
---display-font-weight: var(--font-weight-bold);
---display-letter-spacing: inherit;
-
-/* Display S */
---display-s-font-size: var(--rem-32);
---display-s-line-height: 1.125;
-
-/* Display M */
---display-m-font-size: var(--rem-48);
---display-m-line-height: 1;
-
-/* Display L */
---display-l-font-size: var(--rem-64);
---display-l-line-height: 1;
-
-/* * * * * * * *
-  Font Vars
- * * * * * * * */
-
-/* Font Family */
---font-family-monospace:      Monaco, Menlo, Consolas, 'Courier New', monospace;
---font-family-omni:           'Inter', sans-serif;
---font-family-system:         -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
---font-family-sans-serif:     'Helvetica Neue', Helvetica, Arial, sans-serif;
---font-family-serif:          Georgia, 'Times New Roman', Times, serif;
-
-/* Font Weights  */
---font-weight-thin:           100;
---font-weight-extra-light:    200;
---font-weight-light:          300;
---font-weight-regular:        400;
---font-weight-medium:         500;
---font-weight-semibold:       600;
---font-weight-bold:           700;
---font-weight-extra-bold:     800;
---font-weight-black:          900;
---font-weight:                normal;
-
-}
-
 /**
   Breakpoints Sizes
 
@@ -476,6 +150,316 @@
     --tablet-h-down:  <= 1024 - iPad Horizontal / iPad Pro
 
  */
+
+/* Grid */
+
+/* Theme */
+
+:root {
+/* * * * * * * *
+  Color Vars
+ * * * * * * * */
+
+/* White */
+--white-hover: rgb(242, 242, 242);
+--white-active: rgb(230, 230, 230);
+
+/* Black */
+--black-hover: rgb(51, 51, 51);
+--black-active: rgb(26, 26, 26);
+
+/* * * * * * * *
+  Shades
+ * * * * * * * */
+
+/* Light */
+--light-hover: var(--light-400);
+--light-active: var(--light-600);
+--light-50: hsl(219.99999999999497, 2.5%, 97.732%);
+--light-100: hsl(220, 2.5%, 95.464%);
+--light-200: hsl(219.999999999997, 2.5%, 92.44%);
+--light-300: hsl(220, 2.5%, 89.2%);
+--light-400: hsl(220.0000000000002, 11.25%, 86.5%);
+--light-500: var(--light);
+--light-600: hsl(220.0000000000002, 12.4025974026%, 80.75%);
+--light-700: hsl(220, 8.1701738335%, 72.675%);
+--light-800: hsl(220, 8.0379974494%, 61.77375%);
+--light-900: hsl(219.99999999999991, 8.0940528946%, 49.419%);
+
+/* Grey */
+--grey-hover: var(--grey-400);
+--grey-active: var(--grey-600);
+--grey-50: hsl(220.00000000000028, 5%, 80.722%);
+--grey-100: hsl(220, 5%, 72.46%);
+--grey-200: hsl(220, 5%, 63.28%);
+--grey-300: hsl(220.00000000000006, 4.6296296296%, 54.1%);
+--grey-400: hsl(220.00000000000003, 10.3260869565%, 46%);
+--grey-500: var(--grey);
+--grey-600: hsl(220.00000000000003, 12.5%, 38%);
+--grey-700: hsl(220, 5%, 34.2%);
+--grey-800: hsl(220.00000000000009, 5%, 29.07%);
+--grey-900: hsl(219.99999999999994, 5%, 23.256%);
+
+/* Dark */
+--dark-hover: var(--dark-400);
+--dark-active: var(--dark-600);
+--dark-50: hsl(220.00000000000023, 5%, 74.296%);
+--dark-100: hsl(219.9999999999997, 5%, 63.28%);
+--dark-200: hsl(219.9999999999998, 4.0849673203%, 51.04%);
+--dark-300: hsl(220, 4.0335051546%, 38.8%);
+--dark-400: hsl(220.00000000000003, 8.9285714286%, 28%);
+--dark-500: var(--dark);
+--dark-600: hsl(220.00000000000003, 12.5%, 19%);
+--dark-700: hsl(220, 5%, 17.1%);
+--dark-800: hsl(220.00000000000009, 5%, 14.535%);
+--dark-900: hsl(220.0000000000001, 5%, 11.628%);
+
+/* * * * * * * *
+  Palette
+ * * * * * * * */
+
+/* Primary */
+--primary-hover: var(--primary-400);
+--primary-active: var(--primary-600);
+--primary-50: hsl(220.00000000000188, 5%, 93.952%);
+--primary-100: hsl(219.99999999999923, 5%, 84.88%);
+--primary-200: hsl(220, 5%, 74.8%);
+--primary-300: hsl(220, 5%, 64%);
+--primary-400: hsl(220, 82.5%, 55%);
+--primary-500: var(--primary);
+--primary-600: hsl(220, 82.5%, 42.5%);
+--primary-700: hsl(219.99999999999991, 5%, 34%);
+--primary-800: hsl(220, 5%, 25.5%);
+--primary-900: hsl(220.00000000000014, 5%, 17.85%);
+
+/* Secondary */
+--secondary-hover: var(--secondary-400);
+--secondary-active: var(--secondary-600);
+--secondary-50: hsl(270, 5%, 94.96%);
+--secondary-100: hsl(270, 5%, 87.4%);
+--secondary-200: hsl(269.99999999999966, 5%, 74.8%);
+--secondary-300: hsl(269.9999999999999, 5%, 64%);
+--secondary-400: hsl(270, 82.5%, 55%);
+--secondary-500: var(--secondary);
+--secondary-600: hsl(270, 82.5%, 42.5%);
+--secondary-700: hsl(270, 5%, 34%);
+--secondary-800: hsl(270, 5%, 25.5%);
+--secondary-900: hsl(270, 5%, 17.85%);
+
+/* Tertiary */
+--tertiary-hover: var(--tertiary-400);
+--tertiary-active: var(--tertiary-600);
+--tertiary-50: hsl(320, 5%, 94.96%);
+--tertiary-100: hsl(320.0000000000009, 5%, 87.4%);
+--tertiary-200: hsl(320, 5%, 74.8%);
+--tertiary-300: hsl(319.9999999999998, 5%, 64%);
+--tertiary-400: hsl(320, 82.5%, 55%);
+--tertiary-500: var(--tertiary);
+--tertiary-600: hsl(320, 82.5%, 42.5%);
+--tertiary-700: hsl(320.0000000000001, 5%, 34%);
+--tertiary-800: hsl(320, 5%, 25.5%);
+--tertiary-900: hsl(320.0000000000001, 5%, 17.85%);
+
+/* * * * * * * *
+  Indicators
+ * * * * * * * */
+
+/* Error */
+--error-hover: var(--error-400);
+--error-active: var(--error-600);
+--error-50: hsl(0, 5%, 93.952%);
+--error-100: hsl(0, 5%, 84.88%);
+--error-200: hsl(0, 5%, 69.76%);
+--error-300: hsl(0, 4.6296296296%, 56.8%);
+--error-400: hsl(0, 80.7608695652%, 46%);
+--error-500: var(--error);
+--error-600: hsl(0, 100%, 34%);
+--error-700: hsl(0, 5%, 27.2%);
+--error-800: hsl(0, 5%, 20.4%);
+--error-900: hsl(0, 5%, 14.28%);
+
+/* Warning */
+--warning-hover: var(--warning-400);
+--warning-active: var(--warning-600);
+--warning-50: hsl(20, 5%, 94.96%);
+--warning-100: hsl(20.000000000000902, 5%, 87.4%);
+--warning-200: hsl(20, 5%, 74.8%);
+--warning-300: hsl(20, 5%, 64%);
+--warning-400: hsl(20, 100%, 55%);
+--warning-500: var(--warning);
+--warning-600: hsl(20.000000000000004, 100%, 42.5%);
+--warning-700: hsl(20.00000000000008, 5%, 34%);
+--warning-800: hsl(20, 5%, 25.5%);
+--warning-900: hsl(19.999999999999844, 5%, 17.85%);
+
+/* Success */
+--success-hover: var(--success-400);
+--success-active: var(--success-600);
+--success-50: hsl(120, 5%, 93.448%);
+--success-100: hsl(120, 5%, 83.62%);
+--success-200: hsl(120, 5%, 67.24%);
+--success-300: hsl(120, 4.2735042735%, 53.2%);
+--success-400: hsl(120, 78.4036144578%, 41.5%);
+--success-500: var(--success);
+--success-600: hsl(120, 100%, 29.75%);
+--success-700: hsl(120, 5%, 23.8%);
+--success-800: hsl(120, 5%, 17.85%);
+--success-900: hsl(120, 5%, 12.495%);
+
+/* Info */
+--info-hover: var(--info-400);
+--info-active: var(--info-600);
+--info-50: hsl(200.00000000000188, 5%, 93.952%);
+--info-100: hsl(199.9999999999996, 5%, 84.88%);
+--info-200: hsl(199.9999999999996, 5%, 69.76%);
+--info-300: hsl(199.99999999999994, 4.6296296296%, 56.8%);
+--info-400: hsl(199.99999999999997, 80.7608695652%, 46%);
+--info-500: var(--info);
+--info-600: hsl(199.99999999999997, 100%, 34%);
+--info-700: hsl(200, 5%, 27.2%);
+--info-800: hsl(200, 5%, 20.4%);
+--info-900: hsl(200.00000000000003, 5%, 14.28%);
+
+}
+
+:root {
+  /* * * * * * * * * *
+    Theme Settings
+  * * * * * * * * * */
+
+  /*
+    Colors
+  */
+
+  /* Greys */
+  --white: hsl(220, 10%, 100%);
+  --light: hsl(220, 10%, 85%);
+  --grey: hsl(220, 10%, 40%);
+  --dark: hsl(220, 10%, 20%);
+  --black: hsl(220, 10%, 0%);
+
+  /* Palette */
+  --primary: hsl(220, 80%, 50%);
+  --secondary: hsl(270, 80%, 50%);
+  --tertiary: hsl(320, 80%, 50%);
+
+  /* Status */
+  --error: hsl(0, 100%, 40%);
+  --warning: hsl(20, 100%, 50%);
+  --success: hsl(120, 100%, 35%);
+  --info: hsl(200, 100%, 40%);
+
+  /*
+    Font Families
+  */
+  --font-family:                'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-sans-serif:     'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-serif:          Georgia, 'Times New Roman', Times, serif;
+  --font-family-monospace:      Monaco, Menlo, Consolas, 'Courier New', monospace;
+  --font-family-system:         -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /*
+    Font Weights
+  */
+  --font-weight: normal;
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+
+  /* Body */
+  --body-color: var(--black);
+  --body-font-family: var(--font-family);
+  --body-font-size: 100%; /* 16px */
+  --body-line-height: 1.3125;
+  /* Type Scale (>= 1680, 20px base) */
+  /* @media (--xxl) {
+    --body-font-size: 125%;
+    }
+  */
+  --body-font-weight: var(--font-weight);
+
+  /* Paragraph */
+  --paragraph-color: var(--body-color);
+  --paragraph-font-size: var(--rem-16); /* 1rem */
+  --paragraph-line-height: 1.44444;
+  --paragraph-font-weight: var(--body-font-weight);
+  --paragraph-letter-spacing: inherit;
+
+  /* Link */
+  --link-color: var(--primary);
+  --link-font-size: inherit;
+  --link-line-height: inherit;
+  --link-font-weight: var(--font-weight-semibold);
+  --link-letter-spacing: inherit;
+
+  /* List */
+  --list-color: var(--paragraph-color);
+  --list-font-size: var(--paragraph-font-size);
+  --list-line-height: var(--paragraph-line-height);
+  --list-letter-spacing: inherit;
+
+  /* Caption */
+  --caption-color: var(--paragraph-color);
+  --caption-font-size: var(--rem-15);
+  --caption-line-height: 1.066667;
+  --caption-letter-spacing: inherit;
+
+  /* Small */
+  --small-color: var(--paragraph-color);
+  --small-font-size: var(--rem-12);
+  --small-line-height: 1.5;
+  --small-letter-spacing: inherit;
+
+  /* Heading/Display */
+  --display-color: var(--heading-color);
+  --display-font-family: var(--heading-font-family);
+  --display-font-weight: var(--font-weight-bold);
+  --display-letter-spacing: inherit;
+
+  --heading-color: var(--black);
+  --heading-font-family: var(--font-family);
+  --heading-font-weight: var(--font-weight-semibold);
+  --heading-letter-spacing: inherit;
+
+  /* Heading/Display - Font Size & Line Heights */
+  --display-l-font-size: var(--rem-64);
+  --display-l-line-height: 1;
+
+  --display-m-font-size: var(--rem-48);
+  --display-m-line-height: 1;
+
+  --display-s-font-size: var(--rem-32);
+  --display-s-line-height: 1.125;
+
+  --h1-font-size: var(--rem-38);
+  --h1-line-height: 1.13157895;
+
+  --h2-font-size: var(--rem-28);
+  --h2-line-height: 1.14285714;
+
+  --h3-font-size: var(--rem-22);
+  --h3-line-height: 1.13636364;
+
+  --h4-font-size: var(--rem-22);
+  --h4-line-height: 1.12636364;
+
+  --h5-font-size: var(--rem-22);
+  --h5-line-height: 1.11636364;
+
+  --h6-font-size: var(--paragraph-font-size);
+  --h6-line-height: 1;
+
+  /* Blockquotes */
+  --blockquote-font-family: var(--font-family);
+  --blockquote-q-font-style: italic;
+
+}
 
 /* Base */
 
@@ -591,16 +575,16 @@ select {
   Base
  * * * * * * * * * */
 
-html, body {
+html, 
+body {
   color: hsl(220, 10%, 0%);
   color: var(--body-color);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-family: var(--body-font-family);
   font-size: 100%;
   font-size: var(--body-font-size);
-  font-weight: inherit;
+  font-weight: normal;
   font-weight: var(--body-font-weight);
-  letter-spacing: inherit;
   letter-spacing: var(--body-letter-spacing);
   line-height: 1.3125;
   line-height: var(--body-line-height);
@@ -642,7 +626,7 @@ p {
   color: var(--paragraph-color);
   font-size: 1rem;
   font-size: var(--paragraph-font-size);
-  font-weight: var(--font-weight-normal);
+  font-weight: normal;
   font-weight: var(--paragraph-font-weight);
   letter-spacing: inherit;
   letter-spacing: var(--paragraph-letter-spacing);
@@ -672,7 +656,7 @@ blockquote {
 blockquote > q,
 blockquote > p:first-child {
   font-size: 1.5rem;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-family: var(--blockquote-font-family);
   font-weight: var(--font-weight-extralight);
   line-height: 1.4;
@@ -760,10 +744,15 @@ figcaption, caption, .t-caption {
   --heading-padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: hsl(220, 10%, 0%);
   color: var(--heading-color);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-family: var(--heading-font-family);
   font-weight: 600;
   font-weight: var(--heading-font-weight);
@@ -823,10 +812,13 @@ h6 {
   Display Headings
  * * * * * * * * * */
 
-.t-display, .t-display-s, .t-display-m, .t-display-l {
+.t-display, 
+.t-display-s, 
+.t-display-m, 
+.t-display-l {
   color: hsl(220, 10%, 0%);
   color: var(--display-color);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-family: var(--display-font-family);
   font-weight: 700;
   font-weight: var(--display-font-weight);
@@ -871,7 +863,9 @@ h6 {
   --list-padding: 0 0 0 1.2em;
 }
 
-ul, ol, dl {
+ul, 
+ol,
+dl {
   color: hsl(220, 10%, 0%);
   color: var(--list-color);
   font-size: 1rem;
@@ -952,16 +946,16 @@ input[type="reset"] {
  * * * * * * * * * */
 
 :root {
- --figure-display: block;
- --figure-margin: var(--paragraph-margin);
- --figure-padding: 0;
- /* Figure Caption */
- --figure-caption-margin: 1em 0;
- --figure-caption-font-family: inherit;
- --figure-caption-font-weight: inherit;
- --figure-caption-font-size: var(--caption-font-size);
- --figure-caption-color: var(--caption-color);
- --figure-caption-text-align: left;
+  --figure-display: block;
+  --figure-margin: var(--paragraph-margin);
+  --figure-padding: 0;
+  /* Figure Caption */
+  --figure-caption-margin: 1em 0;
+  --figure-caption-font-family: inherit;
+  --figure-caption-font-weight: inherit;
+  --figure-caption-font-size: var(--caption-font-size);
+  --figure-caption-color: var(--caption-color);
+  --figure-caption-text-align: left;
 }
 
 figure {
