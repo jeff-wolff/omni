@@ -78,7 +78,7 @@
 
   /* Blockquotes */
   --blockquote-font-family: var(--font-family);
-  --blockquote-font-size: 1.5rem;
+  --blockquote-font-size: var(--h3-font-size);
   --blockquote-line-height: 1.4;
   --blockquote-font-style: italic;
   --blockquote-font-weight: var(--font-weight-light);

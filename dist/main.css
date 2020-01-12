@@ -4,6 +4,7 @@
 .container {
   /* border: var(--rem-6) solid red; */
   max-width: 38.75rem;
+  max-width: 54ch;
   margin-top: 1rem;
   margin-right: auto;
   margin-bottom: 1rem;
@@ -419,7 +420,7 @@
 
   /* Blockquotes */
   --blockquote-font-family: var(--font-family);
-  --blockquote-font-size: 1.5rem;
+  --blockquote-font-size: var(--h3-font-size);
   --blockquote-line-height: 1.4;
   --blockquote-font-style: italic;
   --blockquote-font-weight: var(--font-weight-light);
@@ -727,7 +728,7 @@ blockquote {
 blockquote > p {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-family: var(--blockquote-font-family);
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   font-size: var(--blockquote-font-size);
   line-height: 1.4;
   line-height: var(--blockquote-line-height);
@@ -966,8 +967,9 @@ input[type="reset"] {
   /* Figure Caption */
   --figure-caption-margin: 1rem 0;
   --figure-caption-font-family: inherit;
-  --figure-caption-font-weight: var(--caption-font-weight);
+  --figure-caption-font-weight: var(--font-weight);
   --figure-caption-font-size: var(--caption-font-size);
+  --figure-caption-line-height: var(--caption-line-height);
   --figure-caption-color: var(--caption-color);
   --figure-caption-text-align: left;
 }
@@ -986,10 +988,12 @@ figcaption {
   margin: var(--figure-caption-margin);
   font-family: inherit;
   font-family: var(--figure-caption-font-family);
-  font-weight: 700;
+  font-weight: normal;
   font-weight: var(--figure-caption-font-weight);
   font-size: 1.125rem;
   font-size: var(--figure-caption-font-size);
+  line-height: 1.055556;
+  line-height: var(--figure-caption-line-height);
   color: hsl(220, 10%, 0%);
   color: var(--figure-caption-color);
   text-align: left;

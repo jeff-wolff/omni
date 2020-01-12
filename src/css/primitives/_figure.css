@@ -8,8 +8,9 @@
   /* Figure Caption */
   --figure-caption-margin: 1rem 0;
   --figure-caption-font-family: inherit;
-  --figure-caption-font-weight: var(--caption-font-weight);
+  --figure-caption-font-weight: var(--font-weight);
   --figure-caption-font-size: var(--caption-font-size);
+  --figure-caption-line-height: var(--caption-line-height);
   --figure-caption-color: var(--caption-color);
   --figure-caption-text-align: left;
 }
@@ -25,6 +26,7 @@ figcaption {
   font-family: var(--figure-caption-font-family);
   font-weight: var(--figure-caption-font-weight);
   font-size: var(--figure-caption-font-size);
+  line-height: var(--figure-caption-line-height);
   color: var(--figure-caption-color);
   text-align: var(--figure-caption-text-align);
 }
