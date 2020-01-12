@@ -374,7 +374,7 @@
   --body-color: var(--black);
   --body-font-family: var(--font-family);
   --body-font-size: 100%; /* 16px */
-  --body-line-height: 1.3125;
+  --body-line-height: 1.5;
   /* Type Scale (>= 1680, 20px base) */
   /* @media (--xxl) {
     --body-font-size: 125%;
@@ -385,7 +385,7 @@
   /* Paragraph */
   --paragraph-color: var(--body-color);
   --paragraph-font-size: var(--rem-16); /* 1rem */
-  --paragraph-line-height: 1.44444;
+  --paragraph-line-height: 1.625;
   --paragraph-font-weight: var(--body-font-weight);
   --paragraph-letter-spacing: inherit;
 
@@ -405,8 +405,8 @@
   /* Formats */
   /* Caption */
   --caption-color: var(--paragraph-color);
-  --caption-font-size: var(--rem-15);
-  --caption-line-height: 1.066667;
+  --caption-font-size: var(--rem-18);
+  --caption-line-height: 1.055556;
   --caption-letter-spacing: inherit;
   
   /* Small */
@@ -611,7 +611,7 @@ body {
   font-weight: normal;
   font-weight: var(--body-font-weight);
   letter-spacing: var(--body-letter-spacing);
-  line-height: 1.3125;
+  line-height: 1.5;
   line-height: var(--body-line-height);
 }
 
@@ -634,7 +634,7 @@ p {
   font-weight: var(--paragraph-font-weight);
   letter-spacing: inherit;
   letter-spacing: var(--paragraph-letter-spacing);
-  line-height: 1.44444;
+  line-height: 1.625;
   line-height: var(--paragraph-line-height);
   margin: 0 0 1rem;
   margin: var(--paragraph-margin);
@@ -677,7 +677,7 @@ dl {
   font-size: var(--list-font-size);
   letter-spacing: inherit;
   letter-spacing: var(--list-letter-spacing);
-  line-height: 1.44444;
+  line-height: 1.625;
   line-height: var(--list-line-height);
   list-style-position: outside;
   margin: 0 0 1rem;
@@ -795,9 +795,9 @@ pre, code {
 figcaption, caption, .t-caption {
   color: hsl(220, 10%, 0%);
   color: var(--caption-color);
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
   font-size: var(--caption-font-size);
-  line-height: 1.066667;
+  line-height: 1.055556;
   line-height: var(--caption-line-height);
   letter-spacing: inherit;
   letter-spacing: var(--caption-letter-spacing);
@@ -810,7 +810,7 @@ figcaption, caption, .t-caption {
 :root {
   --heading-margin: 0 0 1rem;
   --heading-padding: 0;
-  --display-margin: inherit;
+  --display-margin: 0 0 1rem;
 }
 
 h1,
@@ -899,7 +899,7 @@ h6 {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
-  margin: inherit;
+  margin: 0 0 1rem;
   margin: var(--display-margin);
 }
 
@@ -982,7 +982,7 @@ figcaption {
   font-family: var(--figure-caption-font-family);
   font-weight: inherit;
   font-weight: var(--figure-caption-font-weight);
-  font-size: 0.9375rem;
+  font-size: 1.125rem;
   font-size: var(--figure-caption-font-size);
   color: hsl(220, 10%, 0%);
   color: var(--figure-caption-color);
