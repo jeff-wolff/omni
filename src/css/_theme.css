@@ -66,8 +66,10 @@
   --caption-color: var(--paragraph-color);
   --caption-font-size: var(--rem-18);
   --caption-line-height: 1.055556;
+  --caption-font-weight: var(--font-weight-bold);
   --caption-letter-spacing: inherit;
-  
+  --caption-text-transform: uppercase;
+
   /* Small */
   --small-color: var(--paragraph-color);
   --small-font-size: var(--rem-12);

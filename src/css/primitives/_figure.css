@@ -8,7 +8,7 @@
   /* Figure Caption */
   --figure-caption-margin: 1rem 0;
   --figure-caption-font-family: inherit;
-  --figure-caption-font-weight: inherit;
+  --figure-caption-font-weight: var(--caption-font-weight);
   --figure-caption-font-size: var(--caption-font-size);
   --figure-caption-color: var(--caption-color);
   --figure-caption-text-align: left;
