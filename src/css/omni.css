@@ -1,7 +1,5 @@
 @import url('https://rsms.me/inter/inter.css');
 
-@import './_global.css'; /* TODO: Delete */
-
 /* Utils */
 @import './utils/_color.css';
 @import './utils/_breakpoints.css';

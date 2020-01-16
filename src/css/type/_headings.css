@@ -2,9 +2,7 @@
   Headings
  * * * * * * * */
 :root {
-  --heading-margin: 0 0 1rem;
-  --heading-padding: 0;
-  --display-margin: 0 0 1rem;
+
 }
 
 h1,
@@ -17,8 +15,36 @@ h6 {
   font-family: var(--heading-font-family);
   font-weight: var(--heading-font-weight);
   letter-spacing: var(--heading-letter-spacing);
-  margin: var(--heading-margin);
-  padding: var(--heading-padding);
+  text-transform: var(--heading-text-transform);
+}
+
+.o__display, 
+.o__display-s, 
+.o__display-m, 
+.o__display-l {
+  color: var(--display-color);
+  font-family: var(--display-font-family);
+  font-weight: var(--display-font-weight);
+  letter-spacing: var(--display-letter-spacing);
+  /* Show Hyphens */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Display Font Sizes */
+.o__display-l {
+  font-size: var(--display-l-font-size);
+  line-height: var(--display-l-line-height);
+}
+.o__display,
+.o__display-m {
+  font-size: var(--display-m-font-size);
+  line-height: var(--display-m-line-height);
+}
+.o__display-s {
+  font-size: var(--display-s-font-size);
+  line-height: var(--display-s-line-height);
 }
 
 /* Heading Font Size */
@@ -45,37 +71,4 @@ h5 {
 h6 {
   font-size: var(--h6-font-size);
   line-height: var(--h6-line-height);
-}
-
-/* * * * * * * * * *
-  Display Headings
- * * * * * * * * * */
-.t-display, 
-.t-display-s, 
-.t-display-m, 
-.t-display-l {
-  color: var(--display-color);
-  font-family: var(--display-font-family);
-  font-weight: var(--display-font-weight);
-  letter-spacing: var(--display-letter-spacing);
-  /* Show Hyphens */
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
-  margin: var(--display-margin);
-}
-
-/* Display Font Sizes */
-.t-display-s {
-  font-size: var(--display-s-font-size);
-  line-height: var(--display-s-line-height);
-}
-.t-display,
-.t-display-m {
-  font-size: var(--display-m-font-size);
-  line-height: var(--display-m-line-height);
-}
-.t-display-l {
-  font-size: var(--display-l-font-size);
-  line-height: var(--display-l-line-height);
 }

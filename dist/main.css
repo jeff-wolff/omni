@@ -1,26 +1,4 @@
 @import url(https://rsms.me/inter/inter.css);
-/* TODO: DELETE */
-
-.container {
-  /* border: var(--rem-6) solid red; */
-  max-width: 38.75rem;
-  max-width: 54ch;
-  margin-top: 1rem;
-  margin-right: auto;
-  margin-bottom: 1rem;
-  margin-left: auto;
-}
-
-.column {
-  width: 100%;
-  padding-left: 1.25rem;
-  padding-left: var(--rem-20);
-  padding-right: 1.25rem;
-  padding-right: var(--rem-20);
-}
-
-/* TODO: Delete */
-
 /* Utils */
 
 :root {
@@ -371,99 +349,6 @@
     Type
   */
 
-  /* Body */
-  --body-color: var(--black);
-  --body-font-family: var(--font-family);
-  --body-font-size: 100%; /* 16px */
-  --body-line-height: 1.5;
-  /* Type Scale (>= 1680, 20px base) */
-  /* @media (--xxl) {
-    --body-font-size: 125%;
-    }
-  */
-  --body-font-weight: var(--font-weight);
-
-  /* Paragraph */
-  --paragraph-color: var(--body-color);
-  --paragraph-font-size: var(--rem-16); /* 1rem */
-  --paragraph-line-height: 1.625;
-  --paragraph-font-weight: var(--body-font-weight);
-  --paragraph-letter-spacing: inherit;
-
-  /* Link */
-  --link-color: var(--primary);
-  --link-font-size: inherit;
-  --link-line-height: inherit;
-  --link-font-weight: var(--font-weight-semibold);
-  --link-letter-spacing: inherit;
-
-  /* List */
-  --list-color: var(--paragraph-color);
-  --list-font-size: var(--paragraph-font-size);
-  --list-line-height: var(--paragraph-line-height);
-  --list-letter-spacing: inherit;
-
-  /* Formats */
-  /* Caption */
-  --caption-color: var(--paragraph-color);
-  --caption-font-size: var(--rem-18);
-  --caption-line-height: 1.055556;
-  --caption-font-weight: var(--font-weight-bold);
-  --caption-letter-spacing: inherit;
-  --caption-text-transform: uppercase;
-
-  /* Small */
-  --small-color: var(--paragraph-color);
-  --small-font-size: var(--rem-12);
-  --small-line-height: 1.5;
-  --small-letter-spacing: inherit;
-
-  /* Blockquotes */
-  --blockquote-font-family: var(--font-family);
-  --blockquote-font-size: var(--h3-font-size);
-  --blockquote-line-height: 1.4;
-  --blockquote-font-style: italic;
-  --blockquote-font-weight: var(--font-weight-light);
-
-  /* Heading/Display */
-  --display-color: var(--heading-color);
-  --display-font-family: var(--heading-font-family);
-  --display-font-weight: var(--font-weight-bold);
-  --display-letter-spacing: inherit;
-
-  --heading-color: var(--black);
-  --heading-font-family: var(--font-family);
-  --heading-font-weight: var(--font-weight-semibold);
-  --heading-letter-spacing: inherit;
-
-  /* Heading/Display - Font Size & Line Heights */
-  --display-l-font-size: var(--rem-64);
-  --display-l-line-height: 1;
-
-  --display-m-font-size: var(--rem-48);
-  --display-m-line-height: 1;
-
-  --display-s-font-size: var(--rem-32);
-  --display-s-line-height: 1.125;
-
-  --h1-font-size: var(--rem-38);
-  --h1-line-height: 1.13157895;
-
-  --h2-font-size: var(--rem-28);
-  --h2-line-height: 1.14285714;
-
-  --h3-font-size: var(--rem-22);
-  --h3-line-height: 1.13636364;
-
-  --h4-font-size: var(--rem-22);
-  --h4-line-height: 1.12636364;
-
-  --h5-font-size: var(--rem-22);
-  --h5-line-height: 1.11636364;
-
-  --h6-font-size: var(--paragraph-font-size);
-  --h6-line-height: 1;
-
   /*
     Font Families
   */
@@ -487,6 +372,104 @@
   --font-weight-extra-bold: 800;
   --font-weight-black: 900;
 
+  /* Body */
+  --body-color: var(--black);
+  --body-font-family: var(--font-family);
+  --body-font-size: 100%; /* 100% = 16px on most browsers */
+  --body-line-height: 1.5;
+  --body-font-weight: var(--font-weight);
+  /* Type Scale (>= 1680, 20px base) */
+  /* @media (--xxl) {
+    --body-font-size: 125%;
+    }
+  */
+
+  /* Paragraph */
+  --paragraph-color: var(--body-color);
+  --paragraph-font-size: var(--rem-16); /* 1rem */
+  --paragraph-line-height: 1.625;
+  --paragraph-font-weight: var(--body-font-weight);
+  --paragraph-letter-spacing: inherit;
+
+  /* Link */
+  --link-color: var(--primary);
+  --link-font-size: inherit;
+  --link-line-height: inherit;
+  --link-font-weight: var(--font-weight-semibold);
+  --link-letter-spacing: inherit;
+
+  /* List */
+  --list-color: var(--paragraph-color);
+  --list-font-size: var(--paragraph-font-size);
+  --list-line-height: var(--paragraph-line-height);
+  --list-letter-spacing: inherit;
+
+  /* Heading/Display */
+  --heading-color: var(--black);
+  --display-color: var(--heading-color);
+
+  --heading-font-family: var(--font-family);
+  --display-font-family: var(--heading-font-family);
+
+  --heading-font-weight: var(--font-weight-semibold);
+  --display-font-weight: var(--font-weight-bold);
+
+  --heading-letter-spacing: inherit;
+  --display-letter-spacing: inherit;
+
+  --heading-text-transform: none;
+  --display-text-transform: var(--heading-text-transform);
+
+  /* Display - Font Size & Line Heights */
+  --display-l-font-size: var(--rem-64);
+  --display-l-line-height: 1;
+
+  --display-m-font-size: var(--rem-48);
+  --display-m-line-height: 1;
+
+  --display-s-font-size: var(--rem-32);
+  --display-s-line-height: 1.125;
+
+  /* Heading - Font Size & Line Heights */
+  --h1-font-size: var(--rem-38);
+  --h1-line-height: 1.132;
+
+  --h2-font-size: var(--rem-28);
+  --h2-line-height: 1.143;
+
+  --h3-font-size: var(--rem-22);
+  --h3-line-height: 1.136;
+
+  --h4-font-size: var(--rem-22);
+  --h4-line-height: 1.136;
+
+  --h5-font-size: var(--rem-22);
+  --h5-line-height: 1.136;
+
+  --h6-font-size: var(--paragraph-font-size);
+  --h6-line-height: 1;
+
+  /* Formats */
+  /* Small */
+  --small-color: var(--paragraph-color);
+  --small-font-size: var(--rem-12);
+  --small-line-height: 1.5;
+  --small-letter-spacing: inherit;
+
+  /* Blockquotes */
+  --blockquote-font-family: var(--font-family);
+  --blockquote-font-size: var(--h3-font-size);
+  --blockquote-line-height: 1.4;
+  --blockquote-font-style: italic;
+  --blockquote-font-weight: var(--font-weight-light);
+
+  /* Caption */
+  --caption-color: var(--paragraph-color);
+  --caption-font-size: var(--rem-18);
+  --caption-line-height: 1.055556;
+  --caption-font-weight: var(--font-weight-bold);
+  --caption-letter-spacing: inherit;
+  --caption-text-transform: uppercase;
 }
 
 /* Base */
@@ -815,9 +798,7 @@ figcaption, caption, .t-caption {
  * * * * * * * */
 
 :root {
-  --heading-margin: 0 0 1rem;
-  --heading-padding: 0;
-  --display-margin: 0 0 1rem;
+
 }
 
 h1,
@@ -834,64 +815,14 @@ h6 {
   font-weight: var(--heading-font-weight);
   letter-spacing: inherit;
   letter-spacing: var(--heading-letter-spacing);
-  margin: 0 0 1rem;
-  margin: var(--heading-margin);
-  padding: 0;
-  padding: var(--heading-padding);
+  text-transform: none;
+  text-transform: var(--heading-text-transform);
 }
 
-/* Heading Font Size */
-
-h1 {
-  font-size: 2.375rem;
-  font-size: var(--h1-font-size);
-  line-height: 1.13157895;
-  line-height: var(--h1-line-height);
-}
-
-h2 {
-  font-size: 1.75rem;
-  font-size: var(--h2-font-size);
-  line-height: 1.14285714;
-  line-height: var(--h2-line-height);
-}
-
-h3 {
-  font-size: 1.375rem;
-  font-size: var(--h3-font-size);
-  line-height: 1.13636364;
-  line-height: var(--h3-line-height);
-}
-
-h4 {
-  font-size: 1.375rem;
-  font-size: var(--h4-font-size);
-  line-height: 1.12636364;
-  line-height: var(--h4-line-height);
-}
-
-h5 {
-  font-size: 1.375rem;
-  font-size: var(--h5-font-size);
-  line-height: 1.11636364;
-  line-height: var(--h5-line-height);
-}
-
-h6 {
-  font-size: 1rem;
-  font-size: var(--h6-font-size);
-  line-height: 1;
-  line-height: var(--h6-line-height);
-}
-
-/* * * * * * * * * *
-  Display Headings
- * * * * * * * * * */
-
-.t-display, 
-.t-display-s, 
-.t-display-m, 
-.t-display-l {
+.-omni-display, 
+.-omni-display-s, 
+.-omni-display-m, 
+.-omni-display-l {
   color: hsl(220, 10%, 0%);
   color: var(--display-color);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -906,32 +837,74 @@ h6 {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
-  margin: 0 0 1rem;
-  margin: var(--display-margin);
 }
 
 /* Display Font Sizes */
 
-.t-display-s {
-  font-size: 2rem;
-  font-size: var(--display-s-font-size);
-  line-height: 1.125;
-  line-height: var(--display-s-line-height);
+.-omni-display-l {
+  font-size: 4rem;
+  font-size: var(--display-l-font-size);
+  line-height: 1;
+  line-height: var(--display-l-line-height);
 }
 
-.t-display,
-.t-display-m {
+.-omni-display,
+.-omni-display-m {
   font-size: 3rem;
   font-size: var(--display-m-font-size);
   line-height: 1;
   line-height: var(--display-m-line-height);
 }
 
-.t-display-l {
-  font-size: 4rem;
-  font-size: var(--display-l-font-size);
+.-omni-display-s {
+  font-size: 2rem;
+  font-size: var(--display-s-font-size);
+  line-height: 1.125;
+  line-height: var(--display-s-line-height);
+}
+
+/* Heading Font Size */
+
+h1 {
+  font-size: 2.375rem;
+  font-size: var(--h1-font-size);
+  line-height: 1.132;
+  line-height: var(--h1-line-height);
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-size: var(--h2-font-size);
+  line-height: 1.143;
+  line-height: var(--h2-line-height);
+}
+
+h3 {
+  font-size: 1.375rem;
+  font-size: var(--h3-font-size);
+  line-height: 1.136;
+  line-height: var(--h3-line-height);
+}
+
+h4 {
+  font-size: 1.375rem;
+  font-size: var(--h4-font-size);
+  line-height: 1.136;
+  line-height: var(--h4-line-height);
+}
+
+h5 {
+  font-size: 1.375rem;
+  font-size: var(--h5-font-size);
+  line-height: 1.136;
+  line-height: var(--h5-line-height);
+}
+
+h6 {
+  font-size: 1rem;
+  font-size: var(--h6-font-size);
   line-height: 1;
-  line-height: var(--display-l-line-height);
+  line-height: var(--h6-line-height);
 }
 
 /* Primitives */
@@ -1090,6 +1063,24 @@ ol.deco-list li::before {
   width: 1.5em;
   height: 1.5em;
   text-align: center;
+}
+
+.container {
+  /* border: var(--rem-6) solid red; */
+  max-width: 38.75rem;
+  max-width: 54ch;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-left: auto;
+}
+
+.column {
+  width: 100%;
+  padding-left: 1.25rem;
+  padding-left: var(--rem-20);
+  padding-right: 1.25rem;
+  padding-right: var(--rem-20);
 }
 
 /* Patterns */
