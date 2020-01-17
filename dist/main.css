@@ -345,6 +345,16 @@
   --success: hsl(120, 100%, 35%);
   --info: hsl(200, 100%, 40%);
 
+  /* Defaults */
+  --body-color: var(--black);
+  --paragraph-color: var(--body-color);
+  --heading-color: var(--black);
+  --link-color: var(--primary);
+  --list-color: var(--paragraph-color);
+  --display-color: var(--heading-color);
+  --small-color: var(--paragraph-color);
+  --caption-color: var(--paragraph-color);
+
   /*
     Type
   */
@@ -373,7 +383,7 @@
   --font-weight-black: 900;
 
   /* Body */
-  --body-color: var(--black);
+  
   --body-font-family: var(--font-family);
   --body-font-size: 100%; /* 100% = 16px on most browsers */
   --body-line-height: 1.5;
@@ -381,33 +391,17 @@
   /* Type Scale (>= 1680, 20px base) */
   /* @media (--xxl) {
     --body-font-size: 125%;
-    }
-  */
+    } */
 
   /* Paragraph */
-  --paragraph-color: var(--body-color);
   --paragraph-font-size: var(--rem-16); /* 1rem */
   --paragraph-line-height: 1.625;
+
   --paragraph-font-weight: var(--body-font-weight);
   --paragraph-letter-spacing: inherit;
-
-  /* Link */
-  --link-color: var(--primary);
-  --link-font-size: inherit;
-  --link-line-height: inherit;
-  --link-font-weight: var(--font-weight-semibold);
-  --link-letter-spacing: inherit;
-
-  /* List */
-  --list-color: var(--paragraph-color);
-  --list-font-size: var(--paragraph-font-size);
-  --list-line-height: var(--paragraph-line-height);
-  --list-letter-spacing: inherit;
+  --paragraph-text-transform: none;
 
   /* Heading/Display */
-  --heading-color: var(--black);
-  --display-color: var(--heading-color);
-
   --heading-font-family: var(--font-family);
   --display-font-family: var(--heading-font-family);
 
@@ -420,7 +414,10 @@
   --heading-text-transform: none;
   --display-text-transform: var(--heading-text-transform);
 
-  /* Display - Font Size & Line Heights */
+  /* 
+    Display
+      Font Size & Line Heights
+  */
   --display-l-font-size: var(--rem-64);
   --display-l-line-height: 1;
 
@@ -430,7 +427,10 @@
   --display-s-font-size: var(--rem-32);
   --display-s-line-height: 1.125;
 
-  /* Heading - Font Size & Line Heights */
+  /* 
+    Heading
+      Font Size & Line Heights 
+  */
   --h1-font-size: var(--rem-38);
   --h1-line-height: 1.132;
 
@@ -449,9 +449,23 @@
   --h6-font-size: var(--paragraph-font-size);
   --h6-line-height: 1;
 
+  /* Link */
+  --link-font-size: inherit;
+  --link-line-height: inherit;
+
+  --link-font-weight: var(--font-weight-semibold);
+  --link-letter-spacing: inherit;
+
+  /* List */
+  --list-font-size: var(--paragraph-font-size);
+  --list-line-height: var(--paragraph-line-height);
+
+  --list-letter-spacing: inherit;
+
+
+
   /* Formats */
   /* Small */
-  --small-color: var(--paragraph-color);
   --small-font-size: var(--rem-12);
   --small-line-height: 1.5;
   --small-letter-spacing: inherit;
@@ -464,7 +478,6 @@
   --blockquote-font-weight: var(--font-weight-light);
 
   /* Caption */
-  --caption-color: var(--paragraph-color);
   --caption-font-size: var(--rem-18);
   --caption-line-height: 1.055556;
   --caption-font-weight: var(--font-weight-bold);
@@ -608,7 +621,7 @@ body {
  * * * * * * * * * */
 
 :root {
-  --paragraph-margin: 0 0 1rem;
+
 }
 
 p {
@@ -622,8 +635,8 @@ p {
   letter-spacing: var(--paragraph-letter-spacing);
   line-height: 1.625;
   line-height: var(--paragraph-line-height);
-  margin: 0 0 1rem;
-  margin: var(--paragraph-margin);
+  text-transform: none;
+  text-transform: var(--paragraph-text-transform);
 }
 
 /* * * * * * * * * *
@@ -666,7 +679,7 @@ dl {
   line-height: 1.625;
   line-height: var(--list-line-height);
   list-style-position: outside;
-  margin: 0 0 1rem;
+  margin: var(--paragraph-margin);
   margin: var(--list-margin);
   padding: 0 0 0 2em;
   padding: var(--list-padding);
@@ -702,7 +715,7 @@ dd {
 }
 
 blockquote {
-  margin: 0 0 1rem;
+  margin: var(--paragraph-margin);
   margin: var(--blockquote-margin);
   padding: 0;
   padding: var(--blockquote-padding);
@@ -819,10 +832,10 @@ h6 {
   text-transform: var(--heading-text-transform);
 }
 
-.-omni-display, 
-.-omni-display-s, 
-.-omni-display-m, 
-.-omni-display-l {
+.o__display, 
+.o__display-s, 
+.o__display-m, 
+.o__display-l {
   color: hsl(220, 10%, 0%);
   color: var(--display-color);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -841,22 +854,22 @@ h6 {
 
 /* Display Font Sizes */
 
-.-omni-display-l {
+.o__display-l {
   font-size: 4rem;
   font-size: var(--display-l-font-size);
   line-height: 1;
   line-height: var(--display-l-line-height);
 }
 
-.-omni-display,
-.-omni-display-m {
+.o__display,
+.o__display-m {
   font-size: 3rem;
   font-size: var(--display-m-font-size);
   line-height: 1;
   line-height: var(--display-m-line-height);
 }
 
-.-omni-display-s {
+.o__display-s {
   font-size: 2rem;
   font-size: var(--display-s-font-size);
   line-height: 1.125;
@@ -938,7 +951,7 @@ input[type="reset"] {
   --figure-margin: var(--paragraph-margin);
   --figure-padding: 0;
   /* Figure Caption */
-  --figure-caption-margin: 1rem 0;
+  --figure-caption-margin: 0;
   --figure-caption-font-family: inherit;
   --figure-caption-font-weight: var(--font-weight);
   --figure-caption-font-size: var(--caption-font-size);
@@ -950,14 +963,14 @@ input[type="reset"] {
 figure {
   display: block;
   display: var(--figure-display);
-  margin: 0 0 1rem;
+  margin: var(--paragraph-margin);
   margin: var(--figure-margin);
   padding: 0;
   padding: var(--figure-padding);
 }
 
 figcaption {
-  margin: 1rem 0;
+  margin: 0;
   margin: var(--figure-caption-margin);
   font-family: inherit;
   font-family: var(--figure-caption-font-family);
@@ -977,7 +990,7 @@ figcaption {
 
 /* TEMPORARY */
 
-.omni-form {
+.o__form {
   max-width: 100vw;
   overflow: auto;
   width: 100%;
@@ -985,32 +998,32 @@ figcaption {
   font-size: var(--paragraph-font-size);
 }
 
-.omni-form label {
-  margin: .5em 0 .25em;
+.o__form label {
+  margin: 0;
 }
 
-.omni-form label,
-.omni-form input {
+.o__form label,
+.o__form input {
   display: block;
   max-width: 30rem;
 }
 
-.omni-form input[type="submit"],
-.omni-form input[type="reset"],
-.omni-form button {
+.o__form input[type="submit"],
+.o__form input[type="reset"],
+.o__form button {
   display: inline-block;
-  margin-top: 1.5em;
+  margin: 0;
 }
 
-.omni-checkbox,
-.omni-radio {
+.o__checkbox,
+.o__radio {
   max-width: none;
 }
 
-.omni-checkbox label,
-.omni-checkbox input,
-.omni-radio label,
-.omni-radio input {
+.o__checkbox label,
+.o__checkbox input,
+.o__radio label,
+.o__radio input {
   display: inline-block;
 }
 
@@ -1022,17 +1035,17 @@ figcaption {
   --list-padding: 0 0 0 2em;
 }
 
-ul.deco-list,
-ol.deco-list {
+ul.o__deco-list,
+ol.o__deco-list {
   padding: 0 0 0 2em;
   padding: var(--list-padding);
 }
 
-ol.deco-list {
+ol.o__deco-list {
   counter-reset: a;
 }
 
-ul.deco-list li::before {
+ul.o__deco-list li::before {
   content: "";
   position: absolute;
   width: 0.375em;
@@ -1044,11 +1057,11 @@ ul.deco-list li::before {
   background: var(--list-color);
 }
 
-ol.deco-list li {
+ol.o__deco-list li {
   counter-increment: a;
 }
 
-ol.deco-list li::before {
+ol.o__deco-list li::before {
   content: counter(a);
   position: absolute;
   font-size: 0.75rem;

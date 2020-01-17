@@ -1,14 +1,99 @@
 /* * * * * * * * * *
   Buttons
  * * * * * * * * * */
+:root {
+  --button-font-size: var(--rem-16);
+  --button-font-weight: var(--font-weight-semibold);
+  --button-color: var(--body-color);
+  --button-bg-color: var(--white);
+}
 button,
 .button,
 input[type="submit"],
 input[type="reset"] {
+  background-color: var(--button-bg-color);
+  border-radius: var(--rem-4);
+  border: var(--rem-1) solid var(--light-600);
+  color: var(--button-color);
+  cursor: pointer;
   display: inline-block;
-  border: var(--rem-1) solid #E0E0E0;
-  border-radius: var(--rem-6);
-  padding: var(--rem-8) var(--rem-16);
-  font-size: var(--rem-16);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
   line-height: 1.3125;
+  padding: var(--rem-8) var(--rem-16);
+  text-decoration: none;
+}
+button:hover,
+.button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  border-color: var(--dark-400);
+}
+button.primary,
+.primary.button,
+input[type="submit"].primary,
+input[type="reset"].primary {
+  background-color: var(--primary);
+  border-color: var(--primary-600);
+  color: var(--white);
+}
+
+button.secondary,
+.secondary.button,
+input[type="submit"].secondary,
+input[type="reset"].secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary-600);
+  color: var(--white);
+}
+button.info,
+.info.button,
+input[type="submit"].info,
+input[type="reset"].info {
+  background-color: var(--info);
+  border-color: var(--info-600);
+  color: var(--white);
+}
+button.error,
+.error.button,
+input[type="submit"].error,
+input[type="reset"].error {
+  background-color: var(--error);
+  border-color: var(--error-600);
+  color: var(--white);
+}
+button.warning,
+.warning.button,
+input[type="submit"].warning,
+input[type="reset"].warning {
+  background-color: var(--warning);
+  border-color: var(--warning-600);
+  color: var(--white);
+}
+button.success,
+.success.button,
+input[type="submit"].success,
+input[type="reset"].success {
+  background-color: var(--success);
+  border-color: var(--success-600);
+  color: var(--white);
+}
+
+.primary.button:hover {
+  background-color: var(--primary-hover);
+}
+.secondary.button:hover {
+  background-color: var(--secondary-hover);
+}
+.error.button:hover {
+  background-color: var(--error-hover);
+}
+.info.button:hover {
+  background-color: var(--info-hover);
+}
+.warning.button:hover {
+  background-color: var(--warning-hover);
+}
+.success.button:hover {
+  background-color: var(--success-hover);
 }
