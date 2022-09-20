@@ -4,13 +4,16 @@
 :root {
   --list-padding: 0 0 0 2em;
 }
+
 ul.o__deco-list,
 ol.o__deco-list {
   padding: var(--list-padding);
 }
+
 ol.o__deco-list {
   counter-reset: a;
 }
+
 ul.o__deco-list li::before {
   content: "";
   position: absolute;
@@ -21,9 +24,11 @@ ul.o__deco-list li::before {
   border-radius: 50%;
   background: var(--list-color);
 }
+
 ol.o__deco-list li {
   counter-increment: a;
 }  
+
 ol.o__deco-list li::before {
   content: counter(a);
   position: absolute;
