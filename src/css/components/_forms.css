@@ -5,24 +5,29 @@
   width: 100%;
   font-size: var(--paragraph-font-size);
 }
+
 .o__form label {
   margin: 0;
 }
+
 .o__form label,
 .o__form input {
   display: block;
   max-width: 30rem;
 }
+
 .o__form input[type="submit"],
 .o__form input[type="reset"],
 .o__form button {
   display: inline-block;
   margin: 0;
 }
+
 .o__checkbox,
 .o__radio {
   max-width: none;
 }
+
 .o__checkbox label,
 .o__checkbox input,
 .o__radio label,
