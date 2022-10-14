@@ -1,5 +1,5 @@
 Dev Server:
-npm run dev
+`npm run dev`
 
 Build:
-npm run build
+`npm run build`
