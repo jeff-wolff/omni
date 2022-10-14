@@ -1,7 +1,7 @@
-Dev Server:
+## Dev Server:
 
 `npm run dev`
 
-Build:
+## Build:
 
 `npm run build`
