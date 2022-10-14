@@ -43,9 +43,9 @@ module.exports = {
         })
     ],
     devServer: {
-        port: 8000,
-        contentBase: "dist",
-        stats: "minimal",
+        port: 8080,
+        // contentBase: "dist",
+        // stats: "minimal",
         // open: true,
         // compress: true,
         // host: "0.0.0.0"

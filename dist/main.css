@@ -1,4 +1,10 @@
+/*!*******************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/src/index.js!./src/css/omni.css ***!
+  \*******************************************************************************************************************************************/
 @import url(https://rsms.me/inter/inter.css);
+/*!***********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/src/index.js!./src/css/omni.css (1) ***!
+  \***********************************************************************************************************************************************/
 /* Utils */
 
 :root {
@@ -13,44 +19,44 @@
 /* Light */
 --light-hover: var(--light-400);
 --light-active: var(--light-600);
---light-50: hsl(219.99999999999497, 2.5%, 97.732%);
---light-100: hsl(220, 2.5%, 95.464%);
---light-200: hsl(219.999999999997, 2.5%, 92.44%);
---light-300: hsl(220, 2.5%, 89.2%);
+--light-50: hsl(220, 11.25%, 92.5%);
+--light-100: hsl(220.0000000000003, 11.25%, 91%);
+--light-200: hsl(219.9999999999996, 11.25%, 89.5%);
+--light-300: hsl(219.99999999999974, 11.25%, 88%);
 --light-400: hsl(220.0000000000002, 11.25%, 86.5%);
 --light-500: var(--light);
 --light-600: hsl(220.0000000000002, 12.4025974026%, 80.75%);
---light-700: hsl(220, 8.1701738335%, 72.675%);
---light-800: hsl(220, 8.0379974494%, 61.77375%);
---light-900: hsl(219.99999999999991, 8.0940528946%, 49.419%);
+--light-700: hsl(220.0000000000002, 10.7446808511%, 76.5%);
+--light-800: hsl(219.99999999999977, 9.5945945946%, 72.25%);
+--light-900: hsl(219.99999999999974, 8.75%, 68%);
 
 /* Grey */
 --grey-hover: var(--grey-400);
 --grey-active: var(--grey-600);
---grey-50: hsl(220.00000000000028, 5%, 80.722%);
---grey-100: hsl(220, 5%, 72.46%);
---grey-200: hsl(220, 5%, 63.28%);
---grey-300: hsl(220.00000000000006, 4.6296296296%, 54.1%);
+--grey-50: hsl(220.00000000000006, 9.1666666667%, 58%);
+--grey-100: hsl(220, 9.1666666667%, 55%);
+--grey-200: hsl(219.99999999999997, 9.1666666667%, 52%);
+--grey-300: hsl(219.99999999999997, 9.4387755102%, 49%);
 --grey-400: hsl(220.00000000000003, 10.3260869565%, 46%);
 --grey-500: var(--grey);
 --grey-600: hsl(220.00000000000003, 12.5%, 38%);
---grey-700: hsl(220, 5%, 34.2%);
---grey-800: hsl(220.00000000000009, 5%, 29.07%);
---grey-900: hsl(219.99999999999994, 5%, 23.256%);
+--grey-700: hsl(220.00000000000003, 12.5%, 36%);
+--grey-800: hsl(219.99999999999997, 12.5%, 34%);
+--grey-900: hsl(220.00000000000003, 12.5%, 32%);
 
 /* Dark */
 --dark-hover: var(--dark-400);
 --dark-active: var(--dark-600);
---dark-50: hsl(220.00000000000023, 5%, 74.296%);
---dark-100: hsl(219.9999999999997, 5%, 63.28%);
---dark-200: hsl(219.9999999999998, 4.0849673203%, 51.04%);
---dark-300: hsl(220, 4.0335051546%, 38.8%);
+--dark-50: hsl(220.00000000000006, 5.6818181818%, 44%);
+--dark-100: hsl(220, 6.25%, 40%);
+--dark-200: hsl(219.99999999999997, 6.9444444444%, 36%);
+--dark-300: hsl(219.99999999999997, 7.8125%, 32%);
 --dark-400: hsl(220.00000000000003, 8.9285714286%, 28%);
 --dark-500: var(--dark);
 --dark-600: hsl(220.00000000000003, 12.5%, 19%);
---dark-700: hsl(220, 5%, 17.1%);
---dark-800: hsl(220.00000000000009, 5%, 14.535%);
---dark-900: hsl(220.0000000000001, 5%, 11.628%);
+--dark-700: hsl(220.00000000000003, 12.5%, 18%);
+--dark-800: hsl(219.99999999999997, 12.5%, 17%);
+--dark-900: hsl(220.00000000000003, 12.5%, 16%);
 
 /* Black */
 --black-hover: rgb(51, 51, 51);
@@ -63,44 +69,30 @@
 /* Primary */
 --primary-hover: var(--primary-400);
 --primary-active: var(--primary-600);
---primary-50: hsl(220.00000000000188, 5%, 93.952%);
---primary-100: hsl(219.99999999999923, 5%, 84.88%);
---primary-200: hsl(220, 5%, 74.8%);
---primary-300: hsl(220, 5%, 64%);
+--primary-50: hsl(220, 82.5%, 80%);
+--primary-100: hsl(220, 82.5%, 70%);
+--primary-200: hsl(220, 82.5%, 65%);
+--primary-300: hsl(220, 82.5%, 60%);
 --primary-400: hsl(220, 82.5%, 55%);
 --primary-500: var(--primary);
 --primary-600: hsl(220, 82.5%, 42.5%);
---primary-700: hsl(219.99999999999991, 5%, 34%);
---primary-800: hsl(220, 5%, 25.5%);
---primary-900: hsl(220.00000000000014, 5%, 17.85%);
+--primary-700: hsl(220, 82.5%, 40%);
+--primary-800: hsl(220, 82.5%, 37.5%);
+--primary-900: hsl(220, 82.5%, 35%);
 
 /* Secondary */
 --secondary-hover: var(--secondary-400);
 --secondary-active: var(--secondary-600);
---secondary-50: hsl(270, 5%, 94.96%);
---secondary-100: hsl(270, 5%, 87.4%);
---secondary-200: hsl(269.99999999999966, 5%, 74.8%);
---secondary-300: hsl(269.9999999999999, 5%, 64%);
+--secondary-50: hsl(270, 82.5%, 80%);
+--secondary-100: hsl(270, 82.5%, 75%);
+--secondary-200: hsl(270, 82.5%, 65%);
+--secondary-300: hsl(270, 82.5%, 60%);
 --secondary-400: hsl(270, 82.5%, 55%);
 --secondary-500: var(--secondary);
 --secondary-600: hsl(270, 82.5%, 42.5%);
---secondary-700: hsl(270, 5%, 34%);
---secondary-800: hsl(270, 5%, 25.5%);
---secondary-900: hsl(270, 5%, 17.85%);
-
-/* Tertiary */
---tertiary-hover: var(--tertiary-400);
---tertiary-active: var(--tertiary-600);
---tertiary-50: hsl(320, 5%, 94.96%);
---tertiary-100: hsl(320.0000000000009, 5%, 87.4%);
---tertiary-200: hsl(320, 5%, 74.8%);
---tertiary-300: hsl(319.9999999999998, 5%, 64%);
---tertiary-400: hsl(320, 82.5%, 55%);
---tertiary-500: var(--tertiary);
---tertiary-600: hsl(320, 82.5%, 42.5%);
---tertiary-700: hsl(320.0000000000001, 5%, 34%);
---tertiary-800: hsl(320, 5%, 25.5%);
---tertiary-900: hsl(320.0000000000001, 5%, 17.85%);
+--secondary-700: hsl(270, 82.5%, 40%);
+--secondary-800: hsl(270, 82.5%, 37.5%);
+--secondary-900: hsl(270, 82.5%, 35%);
 
 /* * * * * * * *
   Status Indicators
@@ -109,58 +101,58 @@
 /* Error */
 --error-hover: var(--error-400);
 --error-active: var(--error-600);
---error-50: hsl(0, 5%, 93.952%);
---error-100: hsl(0, 5%, 84.88%);
---error-200: hsl(0, 5%, 69.76%);
---error-300: hsl(0, 4.6296296296%, 56.8%);
+--error-50: hsl(0, 69.1666666667%, 76%);
+--error-100: hsl(0, 69.1666666667%, 70%);
+--error-200: hsl(0, 69.1666666667%, 58%);
+--error-300: hsl(0, 69.1666666667%, 52%);
 --error-400: hsl(0, 80.7608695652%, 46%);
 --error-500: var(--error);
 --error-600: hsl(0, 100%, 34%);
---error-700: hsl(0, 5%, 27.2%);
---error-800: hsl(0, 5%, 20.4%);
---error-900: hsl(0, 5%, 14.28%);
+--error-700: hsl(0, 100%, 32%);
+--error-800: hsl(0, 100%, 30%);
+--error-900: hsl(0, 100%, 28%);
 
 /* Warning */
 --warning-hover: var(--warning-400);
 --warning-active: var(--warning-600);
---warning-50: hsl(20, 5%, 94.96%);
---warning-100: hsl(20.000000000000902, 5%, 87.4%);
---warning-200: hsl(20, 5%, 74.8%);
---warning-300: hsl(20, 5%, 64%);
+--warning-50: hsl(20.000000000000014, 100%, 80%);
+--warning-100: hsl(20.000000000000007, 100%, 75%);
+--warning-200: hsl(19.999999999999996, 100%, 65%);
+--warning-300: hsl(20.000000000000004, 100%, 60%);
 --warning-400: hsl(20, 100%, 55%);
 --warning-500: var(--warning);
 --warning-600: hsl(20.000000000000004, 100%, 42.5%);
---warning-700: hsl(20.00000000000008, 5%, 34%);
---warning-800: hsl(20, 5%, 25.5%);
---warning-900: hsl(19.999999999999844, 5%, 17.85%);
+--warning-700: hsl(20.000000000000004, 100%, 40%);
+--warning-800: hsl(20, 100%, 37.5%);
+--warning-900: hsl(20, 100%, 35%);
 
 /* Success */
 --success-hover: var(--success-400);
 --success-active: var(--success-600);
---success-50: hsl(120, 5%, 93.448%);
---success-100: hsl(120, 5%, 83.62%);
---success-200: hsl(120, 5%, 67.24%);
---success-300: hsl(120, 4.2735042735%, 53.2%);
+--success-50: hsl(120, 56.3461538462%, 74%);
+--success-100: hsl(120, 56.3461538462%, 67.5%);
+--success-200: hsl(120, 56.3461538462%, 54.5%);
+--success-300: hsl(120, 60.8333333333%, 48%);
 --success-400: hsl(120, 78.4036144578%, 41.5%);
 --success-500: var(--success);
 --success-600: hsl(120, 100%, 29.75%);
---success-700: hsl(120, 5%, 23.8%);
---success-800: hsl(120, 5%, 17.85%);
---success-900: hsl(120, 5%, 12.495%);
+--success-700: hsl(120, 100%, 28%);
+--success-800: hsl(120, 100%, 26.25%);
+--success-900: hsl(120, 100%, 24.5%);
 
 /* Info */
 --info-hover: var(--info-400);
 --info-active: var(--info-600);
---info-50: hsl(200.00000000000188, 5%, 93.952%);
---info-100: hsl(199.9999999999996, 5%, 84.88%);
---info-200: hsl(199.9999999999996, 5%, 69.76%);
---info-300: hsl(199.99999999999994, 4.6296296296%, 56.8%);
+--info-50: hsl(199.99999999999997, 69.1666666667%, 76%);
+--info-100: hsl(199.99999999999997, 69.1666666667%, 70%);
+--info-200: hsl(199.99999999999997, 69.1666666667%, 58%);
+--info-300: hsl(199.99999999999997, 69.1666666667%, 52%);
 --info-400: hsl(199.99999999999997, 80.7608695652%, 46%);
 --info-500: var(--info);
 --info-600: hsl(199.99999999999997, 100%, 34%);
---info-700: hsl(200, 5%, 27.2%);
---info-800: hsl(200, 5%, 20.4%);
---info-900: hsl(200.00000000000003, 5%, 14.28%);
+--info-700: hsl(199.99999999999997, 100%, 32%);
+--info-800: hsl(199.99999999999997, 100%, 30%);
+--info-900: hsl(199.99999999999997, 100%, 28%);
 
 }
 
@@ -926,20 +918,145 @@ h6 {
   Buttons
  * * * * * * * * * */
 
+:root {
+  --button-font-size: var(--rem-16);
+  --button-font-weight: var(--font-weight-semibold);
+  --button-color: var(--body-color);
+  --button-bg-color: var(--white);
+}
+
 button,
 .button,
 input[type="submit"],
 input[type="reset"] {
+  background-color: hsl(220, 10%, 100%);
+  background-color: var(--button-bg-color);
+  border-radius: 0.25rem;
+  border-radius: var(--rem-4);
+  border: 0.0625rem solid hsl(220.0000000000002, 12.4025974026%, 80.75%);
+  border: var(--rem-1) solid var(--light-600);
+  color: hsl(220, 10%, 0%);
+  color: var(--button-color);
+  cursor: pointer;
   display: inline-block;
-  border: 0.0625rem solid #E0E0E0;
-  border: var(--rem-1) solid #E0E0E0;
-  border-radius: 0.375rem;
-  border-radius: var(--rem-6);
+  font-size: 1rem;
+  font-size: var(--button-font-size);
+  font-weight: 600;
+  font-weight: var(--button-font-weight);
+  line-height: 1.3125;
   padding: 0.5rem 1rem;
   padding: var(--rem-8) var(--rem-16);
-  font-size: 1rem;
-  font-size: var(--rem-16);
-  line-height: 1.3125;
+  text-decoration: none;
+}
+
+button:hover,
+.button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  border-color: hsl(220.00000000000003, 8.9285714286%, 28%);
+  border-color: var(--dark-400);
+}
+
+button.primary,
+.primary.button,
+input[type="submit"].primary,
+input[type="reset"].primary {
+  background-color: hsl(220, 80%, 50%);
+  background-color: var(--primary);
+  border-color: hsl(220, 82.5%, 42.5%);
+  border-color: var(--primary-600);
+  color: hsl(220, 10%, 100%);
+  color: var(--white);
+}
+
+button.secondary,
+.secondary.button,
+input[type="submit"].secondary,
+input[type="reset"].secondary {
+  background-color: hsl(270, 80%, 50%);
+  background-color: var(--secondary);
+  border-color: hsl(270, 82.5%, 42.5%);
+  border-color: var(--secondary-600);
+  color: hsl(220, 10%, 100%);
+  color: var(--white);
+}
+
+button.info,
+.info.button,
+input[type="submit"].info,
+input[type="reset"].info {
+  background-color: hsl(200, 100%, 40%);
+  background-color: var(--info);
+  border-color: hsl(199.99999999999997, 100%, 34%);
+  border-color: var(--info-600);
+  color: hsl(220, 10%, 100%);
+  color: var(--white);
+}
+
+button.error,
+.error.button,
+input[type="submit"].error,
+input[type="reset"].error {
+  background-color: hsl(0, 100%, 40%);
+  background-color: var(--error);
+  border-color: hsl(0, 100%, 34%);
+  border-color: var(--error-600);
+  color: hsl(220, 10%, 100%);
+  color: var(--white);
+}
+
+button.warning,
+.warning.button,
+input[type="submit"].warning,
+input[type="reset"].warning {
+  background-color: hsl(20, 100%, 50%);
+  background-color: var(--warning);
+  border-color: hsl(20.000000000000004, 100%, 42.5%);
+  border-color: var(--warning-600);
+  color: hsl(220, 10%, 100%);
+  color: var(--white);
+}
+
+button.success,
+.success.button,
+input[type="submit"].success,
+input[type="reset"].success {
+  background-color: hsl(120, 100%, 35%);
+  background-color: var(--success);
+  border-color: hsl(120, 100%, 29.75%);
+  border-color: var(--success-600);
+  color: hsl(220, 10%, 100%);
+  color: var(--white);
+}
+
+.primary.button:hover {
+  background-color: hsl(220, 82.5%, 55%);
+  background-color: var(--primary-hover);
+}
+
+.secondary.button:hover {
+  background-color: hsl(270, 82.5%, 55%);
+  background-color: var(--secondary-hover);
+}
+
+.error.button:hover {
+  background-color: hsl(0, 80.7608695652%, 46%);
+  background-color: var(--error-hover);
+}
+
+.info.button:hover {
+  background-color: hsl(199.99999999999997, 80.7608695652%, 46%);
+  background-color: var(--info-hover);
+}
+
+.warning.button:hover {
+  background-color: hsl(20, 100%, 55%);
+  background-color: var(--warning-hover);
+}
+
+.success.button:hover {
+  background-color: hsl(120, 78.4036144578%, 41.5%);
+  background-color: var(--success-hover);
 }
 
 /* * * * * * * * * *
@@ -1094,6 +1211,39 @@ ol.o__deco-list li::before {
   padding-left: var(--rem-20);
   padding-right: 1.25rem;
   padding-right: var(--rem-20);
+}
+
+.color-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.color-div {
+  width: 100px;
+  height: 100px;
+  border: 0.0625rem inset rgba(0,0,0,.8);
+  font-size: .75rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0.125rem;
+  padding: .25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.color-div > span.base {
+  display: block;
+  text-align: center;
+  opacity: 0.95;
 }
 
 /* Patterns */
