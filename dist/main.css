@@ -306,6 +306,12 @@
 --rem-176:  11rem;         /* 176px */
 
 --rem-180:  11.25rem;      /* 180px */
+
+--rem-210:  13.125rem;      /* 210px */
+
+--rem-240:  15rem;      /* 240px */
+
+--rem-280:  17.5rem;      /* 280px */
 }
 
 /* Theme */
@@ -1325,101 +1331,106 @@ ol.o__deco-list li::before {
 
 @media (min-width: 80rem) {
   .m210 {
+    margin-top: 13.125rem;
     margin-top: var(--rem-210);
   }
 }
 
 .m240 {
+  margin-top: 13.125rem;
   margin-top: var(--rem-210);
 }
 
 @media (min-width: 80rem) {
   .m240 {
+    margin-top: 15rem;
     margin-top: var(--rem-240);
   }
 }
 
 .m280 {
+  margin-top: 15rem;
   margin-top: var(--rem-240);
 }
 
 @media (min-width: 80rem) {
   .m280 {
+    margin-top: 17.5rem;
     margin-top: var(--rem-280);
   }
 }
 
 @media (min-width: 60rem) and (max-width: 79.9375rem) {
-  .m0-m {
+  .m0-md {
     margin-top: 0 !important;
   }
-  .m20-m {
+  .m20-md {
     margin-top: 1.25rem;
     margin-top: var(--rem-20);
   }
-  .m40-m {
+  .m40-md {
     margin-top: 2.5rem;
     margin-top: var(--rem-40);
   }
-  .m60-m {
+  .m60-md {
     margin-top: 3.75rem;
     margin-top: var(--rem-60);
   }
-  .m80-m {
+  .m80-md {
     margin-top: 5rem;
     margin-top: var(--rem-80);
   }
-  .m100-m {
+  .m100-md {
     margin-top: 6.25rem;
     margin-top: var(--rem-100);
   }
-  .m120-m {
+  .m120-md {
     margin-top: 7.5rem;
     margin-top: var(--rem-120);
   }
-  .m160-m {
+  .m160-md {
     margin-top: 10rem;
     margin-top: var(--rem-160);
   }
-  .m180-m {
+  .m180-md {
     margin-top: 11.25rem;
     margin-top: var(--rem-180);
   }
 }
 
 @media (min-width: 36.25rem) and (max-width: 59.9375rem) {
-  .m0-s {
+  .m0-sm {
     margin-top: 0 !important;
   }
-  .m20-s {
+  .m20-sm {
     margin-top: 1.25rem;
     margin-top: var(--rem-20);
   }
-  .m40-s {
+  .m40-sm {
     margin-top: 2.5rem;
     margin-top: var(--rem-40);
   }
-  .m60-s {
+  .m60-sm {
     margin-top: 3.75rem;
     margin-top: var(--rem-60);
   }
-  .m80-s {
+  .m80-sm {
     margin-top: 5rem;
     margin-top: var(--rem-80);
   }
-  .m100-s {
+  .m100-sm {
     margin-top: 6.25rem;
     margin-top: var(--rem-100);
   }
-  .m120-s {
+  .m120-sm {
     margin-top: 7.5rem;
     margin-top: var(--rem-120);
   }
-  .m160-s {
+  .m160-sm {
     margin-top: 10rem;
     margin-top: var(--rem-160);
   }
-  .m180-s {
+  .m180-sm {
     margin-top: 11.25rem;
     margin-top: var(--rem-180);
   }
@@ -1503,101 +1514,106 @@ ol.o__deco-list li::before {
 
 @media (min-width: 80rem) {
   .mb210 {
+    margin-bottom: 13.125rem;
     margin-bottom: var(--rem-210);
   }
 }
 
 .mb240 {
+  margin-bottom: 13.125rem;
   margin-bottom: var(--rem-210);
 }
 
 @media (min-width: 80rem) {
   .mb240 {
+    margin-bottom: 15rem;
     margin-bottom: var(--rem-240);
   }
 }
 
 .mb280 {
+  margin-bottom: 15rem;
   margin-bottom: var(--rem-240);
 }
 
 @media (min-width: 80rem) {
   .mb280 {
+    margin-bottom: 17.5rem;
     margin-bottom: var(--rem-280);
   }
 }
 
 @media (min-width: 60rem) and (max-width: 79.9375rem) {
-  .mb0-m {
+  .mb0-md {
     margin-bottom: 0 !important;
   }
-  .mb20-m {
+  .mb20-md {
     margin-bottom: 1.25rem;
     margin-bottom: var(--rem-20);
   }
-  .mb40-m {
+  .mb40-md {
     margin-bottom: 2.5rem;
     margin-bottom: var(--rem-40);
   }
-  .mb60-m {
+  .mb60-md {
     margin-bottom: 3.75rem;
     margin-bottom: var(--rem-60);
   }
-  .mb80-m {
+  .mb80-md {
     margin-bottom: 5rem;
     margin-bottom: var(--rem-80);
   }
-  .mb100-m {
+  .mb100-md {
     margin-bottom: 6.25rem;
     margin-bottom: var(--rem-100);
   }
-  .mb120-m {
+  .mb120-md {
     margin-bottom: 7.5rem;
     margin-bottom: var(--rem-120);
   }
-  .mb160-m {
+  .mb160-md {
     margin-bottom: 10rem;
     margin-bottom: var(--rem-160);
   }
-  .mb180-m {
+  .mb180-md {
     margin-bottom: 11.25rem;
     margin-bottom: var(--rem-180);
   }
 }
 
 @media (min-width: 36.25rem) and (max-width: 59.9375rem) {
-  .mb0-s {
+  .mb0-sm {
     margin-bottom: 0 !important;
   }
-  .mb20-s {
+  .mb20-sm {
     margin-bottom: 1.25rem;
     margin-bottom: var(--rem-20);
   }
-  .mb40-s {
+  .mb40-sm {
     margin-bottom: 2.5rem;
     margin-bottom: var(--rem-40);
   }
-  .mb60-s {
+  .mb60-sm {
     margin-bottom: 3.75rem;
     margin-bottom: var(--rem-60);
   }
-  .mb80-s {
+  .mb80-sm {
     margin-bottom: 5rem;
     margin-bottom: var(--rem-80);
   }
-  .mb100-s {
+  .mb100-sm {
     margin-bottom: 6.25rem;
     margin-bottom: var(--rem-100);
   }
-  .mb120-s {
+  .mb120-sm {
     margin-bottom: 7.5rem;
     margin-bottom: var(--rem-120);
   }
-  .mb160-s {
+  .mb160-sm {
     margin-bottom: 10rem;
     margin-bottom: var(--rem-160);
   }
-  .mb180-s {
+  .mb180-sm {
     margin-bottom: 11.25rem;
     margin-bottom: var(--rem-180);
   }
@@ -1629,7 +1645,7 @@ ol.o__deco-list li::before {
   padding-top: var(--rem-90);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 80rem) {
   .p100 {
     padding-top: 6.25rem;
     padding-top: var(--rem-100);
@@ -1641,7 +1657,7 @@ ol.o__deco-list li::before {
   padding-top: var(--rem-80);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 80rem) {
   .p120 {
     padding-top: 7.5rem;
     padding-top: var(--rem-120);
@@ -1653,7 +1669,7 @@ ol.o__deco-list li::before {
   padding-top: var(--rem-100);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 80rem) {
   .p160 {
     padding-top: 10rem;
     padding-top: var(--rem-160);
@@ -1665,7 +1681,7 @@ ol.o__deco-list li::before {
   padding-top: var(--rem-120);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 80rem) {
   .p180 {
     padding-top: 11.25rem;
     padding-top: var(--rem-180);
@@ -1677,83 +1693,84 @@ ol.o__deco-list li::before {
   padding-top: var(--rem-180);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 80rem) {
   .p210 {
+    padding-top: 13.125rem;
     padding-top: var(--rem-210);
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .p0-m {
+@media (min-width: 60rem) and (max-width: 79.9375rem) {
+  .p0-md {
     padding-top: 0 !important;
   }
-  .p20-m {
+  .p20-md {
     padding-top: 1.25rem;
     padding-top: var(--rem-20);
   }
-  .p40-m {
+  .p40-md {
     padding-top: 2.5rem;
     padding-top: var(--rem-40);
   }
-  .p60-m {
+  .p60-md {
     padding-top: 3.75rem;
     padding-top: var(--rem-60);
   }
-  .p80-m {
+  .p80-md {
     padding-top: 5rem;
     padding-top: var(--rem-80);
   }
-  .p100-m {
+  .p100-md {
     padding-top: 6.25rem;
     padding-top: var(--rem-100);
   }
-  .p120-m {
+  .p120-md {
     padding-top: 7.5rem;
     padding-top: var(--rem-120);
   }
-  .p160-m {
+  .p160-md {
     padding-top: 10rem;
     padding-top: var(--rem-160);
   }
-  .p180-m {
+  .p180-md {
     padding-top: 11.25rem;
     padding-top: var(--rem-180);
   }
 }
 
-@media (max-width: 767px) {
-  .p0-s {
+@media (min-width: 36.25rem) and (max-width: 59.9375rem) {
+  .p0-sm {
     padding-top: 0 !important;
   }
-  .p20-s {
+  .p20-sm {
     padding-top: 1.25rem;
     padding-top: var(--rem-20);
   }
-  .p40-s {
+  .p40-sm {
     padding-top: 2.5rem;
     padding-top: var(--rem-40);
   }
-  .p60-s {
+  .p60-sm {
     padding-top: 3.75rem;
     padding-top: var(--rem-60);
   }
-  .p80-s {
+  .p80-sm {
     padding-top: 5rem;
     padding-top: var(--rem-80);
   }
-  .p100-s {
+  .p100-sm {
     padding-top: 6.25rem;
     padding-top: var(--rem-100);
   }
-  .p120-s {
+  .p120-sm {
     padding-top: 7.5rem;
     padding-top: var(--rem-120);
   }
-  .p160-s {
+  .p160-sm {
     padding-top: 10rem;
     padding-top: var(--rem-160);
   }
-  .p180-s {
+  .p180-sm {
     padding-top: 11.25rem;
     padding-top: var(--rem-180);
   }
@@ -1783,7 +1800,7 @@ ol.o__deco-list li::before {
   padding-bottom: var(--rem-90);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 80rem) {
   .pb100 {
     padding-bottom: 6.25rem;
     padding-bottom: var(--rem-100);
@@ -1795,7 +1812,7 @@ ol.o__deco-list li::before {
   padding-bottom: var(--rem-80);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 80rem) {
   .pb120 {
     padding-bottom: 7.5rem;
     padding-bottom: var(--rem-120);
@@ -1807,7 +1824,7 @@ ol.o__deco-list li::before {
   padding-bottom: var(--rem-100);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 80rem) {
   .pb160 {
     padding-bottom: 10rem;
     padding-bottom: var(--rem-160);
@@ -1819,7 +1836,7 @@ ol.o__deco-list li::before {
   padding-bottom: var(--rem-120);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 80rem) {
   .pb180 {
     padding-bottom: 11.25rem;
     padding-bottom: var(--rem-180);
@@ -1831,83 +1848,84 @@ ol.o__deco-list li::before {
   padding-bottom: var(--rem-180);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 80rem) {
   .pb210 {
+    padding-bottom: 13.125rem;
     padding-bottom: var(--rem-210);
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .pb0-m {
+@media (min-width: 60rem) and (max-width: 79.9375rem) {
+  .pb0-md {
     padding-bottom: 0 !important;
   }
-  .pb20-m {
+  .pb20-md {
     padding-bottom: 1.25rem;
     padding-bottom: var(--rem-20);
   }
-  .pb40-m {
+  .pb40-md {
     padding-bottom: 2.5rem;
     padding-bottom: var(--rem-40);
   }
-  .pb60-m {
+  .pb60-md {
     padding-bottom: 3.75rem;
     padding-bottom: var(--rem-60);
   }
-  .pb80-m {
+  .pb80-md {
     padding-bottom: 5rem;
     padding-bottom: var(--rem-80);
   }
-  .pb100-m {
+  .pb100-md {
     padding-bottom: 6.25rem;
     padding-bottom: var(--rem-100);
   }
-  .pb120-m {
+  .pb120-md {
     padding-bottom: 7.5rem;
     padding-bottom: var(--rem-120);
   }
-  .pb160-m {
+  .pb160-md {
     padding-bottom: 10rem;
     padding-bottom: var(--rem-160);
   }
-  .pb180-m {
+  .pb180-md {
     padding-bottom: 11.25rem;
     padding-bottom: var(--rem-180);
   }
 }
 
-@media (max-width: 767px) {
-  .pb0-s {
+@media (min-width: 36.25rem) and (max-width: 59.9375rem) {
+  .pb0-sm {
     padding-bottom: 0 !important;
   }
-  .pb20-s {
+  .pb20-sm {
     padding-bottom: 1.25rem;
     padding-bottom: var(--rem-20);
   }
-  .pb40-s {
+  .pb40-sm {
     padding-bottom: 2.5rem;
     padding-bottom: var(--rem-40);
   }
-  .pb60-s {
+  .pb60-sm {
     padding-bottom: 3.75rem;
     padding-bottom: var(--rem-60);
   }
-  .pb80-s {
+  .pb80-sm {
     padding-bottom: 5rem;
     padding-bottom: var(--rem-80);
   }
-  .pb100-s {
+  .pb100-sm {
     padding-bottom: 6.25rem;
     padding-bottom: var(--rem-100);
   }
-  .pb120-s {
+  .pb120-sm {
     padding-bottom: 7.5rem;
     padding-bottom: var(--rem-120);
   }
-  .pb160-s {
+  .pb160-sm {
     padding-bottom: 10rem;
     padding-bottom: var(--rem-160);
   }
-  .pb180-s {
+  .pb180-sm {
     padding-bottom: 11.25rem;
     padding-bottom: var(--rem-180);
   }

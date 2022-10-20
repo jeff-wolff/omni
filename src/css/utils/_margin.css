@@ -17,7 +17,7 @@
 .m100 {
   margin-top: var(--rem-90);
 }
-@media (--l) {
+@media (--lg) {
   .m100 {
     margin-top: var(--rem-100);
   }
@@ -25,7 +25,7 @@
 .m120 {
   margin-top: var(--rem-80);
 }
-@media (--l) {
+@media (--lg) {
   .m120 {
     margin-top: var(--rem-120);
   }
@@ -33,7 +33,7 @@
 .m160 {
   margin-top: var(--rem-100);
 }
-@media (--l) {
+@media (--lg) {
   .m160 {
     margin-top: var(--rem-160);
   }
@@ -41,7 +41,7 @@
 .m180 {
   margin-top: var(--rem-120);
 }
-@media (--l) {
+@media (--lg) {
   .m180 {
     margin-top: var(--rem-180);
   }
@@ -49,7 +49,7 @@
 .m210 {
   margin-top: var(--rem-180);
 }
-@media (--l) {
+@media (--lg) {
   .m210 {
     margin-top: var(--rem-210);
   }
@@ -57,7 +57,7 @@
 .m240 {
   margin-top: var(--rem-210);
 }
-@media (--l) {
+@media (--lg) {
   .m240 {
     margin-top: var(--rem-240);
   }
@@ -65,68 +65,68 @@
 .m280 {
   margin-top: var(--rem-240);
 }
-@media (--l) {
+@media (--lg) {
   .m280 {
     margin-top: var(--rem-280);
   }
 }
 
-@media (--m-only) {
-  .m0-m {
+@media (--md-only) {
+  .m0-md {
     margin-top: 0 !important;
   }
-  .m20-m {
+  .m20-md {
     margin-top: var(--rem-20);
   }
-  .m40-m {
+  .m40-md {
     margin-top: var(--rem-40);
   }
-  .m60-m {
+  .m60-md {
     margin-top: var(--rem-60);
   }
-  .m80-m {
+  .m80-md {
     margin-top: var(--rem-80);
   }
-  .m100-m {
+  .m100-md {
     margin-top: var(--rem-100);
   }
-  .m120-m {
+  .m120-md {
     margin-top: var(--rem-120);
   }
-  .m160-m {
+  .m160-md {
     margin-top: var(--rem-160);
   }
-  .m180-m {
+  .m180-md {
     margin-top: var(--rem-180);
   }
 }
 
-@media (--s-only) {
-  .m0-s {
+@media (--sm-only) {
+  .m0-sm {
     margin-top: 0 !important;
   }
-  .m20-s {
+  .m20-sm {
     margin-top: var(--rem-20);
   }
-  .m40-s {
+  .m40-sm {
     margin-top: var(--rem-40);
   }
-  .m60-s {
+  .m60-sm {
     margin-top: var(--rem-60);
   }
-  .m80-s {
+  .m80-sm {
     margin-top: var(--rem-80);
   }
-  .m100-s {
+  .m100-sm {
     margin-top: var(--rem-100);
   }
-  .m120-s {
+  .m120-sm {
     margin-top: var(--rem-120);
   }
-  .m160-s {
+  .m160-sm {
     margin-top: var(--rem-160);
   }
-  .m180-s {
+  .m180-sm {
     margin-top: var(--rem-180);
   }
 }
@@ -149,7 +149,7 @@
 .mb100 {
   margin-bottom: var(--rem-90);
 }
-@media (--l) {
+@media (--lg) {
   .mb100 {
     margin-bottom: var(--rem-100);
   }
@@ -157,7 +157,7 @@
 .mb120 {
   margin-bottom: var(--rem-80);
 }
-@media (--l) {
+@media (--lg) {
   .mb120 {
     margin-bottom: var(--rem-120);
   }
@@ -165,7 +165,7 @@
 .mb160 {
   margin-bottom: var(--rem-100);
 }
-@media (--l) {
+@media (--lg) {
   .mb160 {
     margin-bottom: var(--rem-160);
   }
@@ -173,7 +173,7 @@
 .mb180 {
   margin-bottom: var(--rem-120);
 }
-@media (--l) {
+@media (--lg) {
   .mb180 {
     margin-bottom: var(--rem-180);
   }
@@ -181,7 +181,7 @@
 .mb210 {
   margin-bottom: var(--rem-180);
 }
-@media (--l) {
+@media (--lg) {
   .mb210 {
     margin-bottom: var(--rem-210);
   }
@@ -189,7 +189,7 @@
 .mb240 {
   margin-bottom: var(--rem-210);
 }
-@media (--l) {
+@media (--lg) {
   .mb240 {
     margin-bottom: var(--rem-240);
   }
@@ -197,69 +197,69 @@
 .mb280 {
   margin-bottom: var(--rem-240);
 }
-@media (--l) {
+@media (--lg) {
   .mb280 {
     margin-bottom: var(--rem-280);
   }
 }
 
-@media (--m-only) {
-  .mb0-m {
+@media (--md-only) {
+  .mb0-md {
     margin-bottom: 0 !important;
   }
-  .mb20-m {
+  .mb20-md {
     margin-bottom: var(--rem-20);
   }
-  .mb40-m {
+  .mb40-md {
     margin-bottom: var(--rem-40);
   }
-  .mb60-m {
+  .mb60-md {
     margin-bottom: var(--rem-60);
   }
-  .mb80-m {
+  .mb80-md {
     margin-bottom: var(--rem-80);
   }
-  .mb100-m {
+  .mb100-md {
     margin-bottom: var(--rem-100);
   }
-  .mb120-m {
+  .mb120-md {
     margin-bottom: var(--rem-120);
   }
-  .mb160-m {
+  .mb160-md {
     margin-bottom: var(--rem-160);
   }
-  .mb180-m {
+  .mb180-md {
     margin-bottom: var(--rem-180);
   }
 }
 
 
-@media (--s-only) {
-  .mb0-s {
+@media (--sm-only) {
+  .mb0-sm {
     margin-bottom: 0 !important;
   }
-  .mb20-s {
+  .mb20-sm {
     margin-bottom: var(--rem-20);
   }
-  .mb40-s {
+  .mb40-sm {
     margin-bottom: var(--rem-40);
   }
-  .mb60-s {
+  .mb60-sm {
     margin-bottom: var(--rem-60);
   }
-  .mb80-s {
+  .mb80-sm {
     margin-bottom: var(--rem-80);
   }
-  .mb100-s {
+  .mb100-sm {
     margin-bottom: var(--rem-100);
   }
-  .mb120-s {
+  .mb120-sm {
     margin-bottom: var(--rem-120);
   }
-  .mb160-s {
+  .mb160-sm {
     margin-bottom: var(--rem-160);
   }
-  .mb180-s {
+  .mb180-sm {
     margin-bottom: var(--rem-180);
   }
 }
