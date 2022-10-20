@@ -1,10 +1,7 @@
 /* * * * * * * * * *
   Paragraph
  * * * * * * * * * */
-:root {
-
-}
-p {
+p, .p {
   color: var(--paragraph-color);
   font-size: var(--paragraph-font-size);
   font-weight: var(--paragraph-font-weight);

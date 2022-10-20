@@ -2,10 +2,6 @@
   Formats
   TODO: Add sup, sub, improve code/pre, figure out caption
  * * * * * * * */
-:root {
-  --blockquote-margin: var(--paragraph-margin);
-  --blockquote-padding: 0;
-}
 blockquote {
   margin: var(--blockquote-margin);
   padding: var(--blockquote-padding);

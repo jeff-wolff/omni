@@ -1,12 +1,6 @@
 /* * * * * * * * * *
   Buttons
  * * * * * * * * * */
-:root {
-  --button-font-size: var(--rem-16);
-  --button-font-weight: var(--font-weight-semibold);
-  --button-color: var(--body-color);
-  --button-bg-color: var(--white);
-}
 button,
 .button,
 input[type="submit"],

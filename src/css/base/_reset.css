@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+*::before,
+*::after {
+  display: inline-block;
+}
+
 /* Remove default padding */
 ul[class],
 ol[class] {
@@ -56,6 +61,10 @@ ol[class] {
   list-style: none;
 }
 
+a {
+  display: inline-block;
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
@@ -80,6 +89,18 @@ select {
   font: inherit;
 }
 
+textarea {
+  white-space: revert;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+[hidden] {
+  display: none;
+}
+
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -88,4 +109,41 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+hr {
+  display: block;
+  border-style: none;
+  height: 0.0625rem;
+  background: #ccc;
+  margin: 1.5rem 0;
+}
+
+/* Margins / Padding */
+h1,h2,h3,h4,h5,h6 {
+  margin: 0 0 0.625rem;
+}
+p {
+  margin: 0 0 1.5rem;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+blockquote {
+  margin: 0;
+}
+
+/* RTE */
+.rte ul, 
+.rte ol,
+ul.rte, 
+ol.rte, {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+.rte li,
+ul.rte li,
+ol.rte li {
+  margin-bottom: .5rem;
 }
